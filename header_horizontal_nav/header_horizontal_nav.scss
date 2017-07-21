@@ -1,7 +1,21 @@
-@mixin pnm_header_horizontal_link_container() {
+// =========================================================
+// Header Horizontal Nav Container
+// =========================================================
+@mixin pnm_style_header_horizontal_nav_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_horizontal_nav_container() {
   margin: 0;
 }
 
-@mixin pnm_header_horizontal_link_item() {
+// =========================================================
+// Header Horizontal Nav Item
+// =========================================================
+@mixin pnm_style_header_horizontal_nav_item($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_horizontal_nav_item() {
   display: inline-block;
 }

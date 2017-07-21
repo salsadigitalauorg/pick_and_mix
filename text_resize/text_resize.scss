@@ -1,7 +1,7 @@
 // =========================================================
 // Button Style
 // =========================================================
-@mixin pnm_style_text_resize_button {
+@mixin pnm_style_text_resize_button($theme: $pnm_theme) {
   background-color: transparent;
   position: relative;
   height: pnm_util_unit(30px);
@@ -22,7 +22,7 @@
 // =========================================================
 // Container
 // =========================================================
-@mixin pnm_style_text_resize_container() {
+@mixin pnm_style_text_resize_container($theme: $pnm_theme) {
   padding-right: pnm_util_unit(36px);
 }
 
@@ -36,7 +36,7 @@
 // =========================================================
 // Items
 // =========================================================
-@mixin pnm_style_text_resize_items() {
+@mixin pnm_style_text_resize_items($theme: $pnm_theme) {
   // ...
 }
 
@@ -49,7 +49,7 @@
 // =========================================================
 // Reduce
 // =========================================================
-@mixin pnm_style_text_resize_reduce() {
+@mixin pnm_style_text_resize_reduce($theme: $pnm_theme) {
   background-image: url(../images/svg/text_resize_reduce.svg);
 }
 
@@ -60,7 +60,7 @@
 // =========================================================
 // Increase
 // =========================================================
-@mixin pnm_style_text_resize_increase() {
+@mixin pnm_style_text_resize_increase($theme: $pnm_theme) {
   background-image: url(../images/svg/text_resize_increase.svg);
 }
 
@@ -71,7 +71,7 @@
 // =========================================================
 // Reset
 // =========================================================
-@mixin pnm_style_text_resize_reset() {
+@mixin pnm_style_text_resize_reset($theme: $pnm_theme) {
   background-image: url(../images/svg/text_resize_reset.svg);
 }
 

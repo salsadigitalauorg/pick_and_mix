@@ -1,11 +1,32 @@
-@mixin pnm_style_logo_container() {
-  // ..
+// =========================================================
+// Logo Container
+// =========================================================
+@mixin pnm_style_logo_container($theme: $pnm_theme) {
+  // ...
 }
 
-@mixin pnm_style_logo_link() {
-  // ..
+@mixin pnm_struct_logo_container() {
+  // ...
 }
 
-@mixin pnm_style_logo_image() {
-  @include pnm_style_shrink_image;
+// =========================================================
+// Logo Link
+// =========================================================
+@mixin pnm_style_logo_link($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_logo_link() {
+  // ...
+}
+
+// =========================================================
+// Logo Image
+// =========================================================
+@mixin pnm_style_logo_image($theme: $pnm_theme) {
+  @include pnm_style_shrink_image($theme);
+}
+
+@mixin pnm_struct_logo_image() {
+  // ...
 }

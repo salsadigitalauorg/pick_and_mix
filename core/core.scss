@@ -1,12 +1,23 @@
-@mixin pnm_style_button() {
-  background-color: black;
-  color: white;
+$pnm_theme: (
+  'primary_1': #057F83,
+  'secondary_1': #0E595B,
+  'secondary_2': #008488,
+  'secondary_3': #1B3F40,
+  'neutral_1': #3C3C3C,
+  'neutral_2': #505050,
+  'neutral_3': #BEBEBE,
+  'neutral_4': #F6F6F6
+);
+
+@mixin pnm_style_button($theme: $pnm_theme) {
+  background-color: map-get($theme, 'primary_1');
+  color: map-get($theme, 'neutral_4');
   border: 0;
   height: 100%;
   box-sizing: border-box;
 }
 
-@mixin pnm_style_hidden() {
+@mixin pnm_style_hidden($theme: $pnm_theme) {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -17,18 +28,18 @@
   width: 1px;
 }
 
-@mixin pnm_style_shrink_image() {
+@mixin pnm_style_shrink_image($theme: $pnm_theme) {
   width: auto;
   max-width: 100%;
 }
 
-@mixin pnm_style_link() {
-  color: #057F83;
+@mixin pnm_style_link($theme: $pnm_theme) {
+  color: map-get($theme, 'primary_1');
   line-height: 1.8em;
   padding: 12px;
   &:focus, &:hover {
-    background-color: #057F83;
-    color: white;
+    background-color: map-get($theme, 'secondary_1');
+    color: map-get($theme, 'neutral_4');
     text-decoration: none;
   }
 }

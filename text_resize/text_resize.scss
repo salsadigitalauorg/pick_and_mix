@@ -1,10 +1,13 @@
+// =========================================================
+// Button Style
+// =========================================================
 @mixin pnm_style_text_resize_button {
   background-color: transparent;
   position: relative;
-  height: 30px;
-  width: 320px;
+  height: pnm_util_unit(30px);
+  width: pnm_util_unit(320px);
   border: 0;
-  width: 30px;
+  width: pnm_util_unit(30px);
   padding: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,29 +19,12 @@
   }
 }
 
+// =========================================================
+// Container
+// =========================================================
 @mixin pnm_style_text_resize_container() {
-  padding-right: 36px;
+  padding-right: pnm_util_unit(36px);
 }
-
-@mixin pnm_style_text_resize_reduce() {
-  background-image: url(../images/svg/text_resize_reduce.svg);
-}
-
-@mixin pnm_style_text_resize_increase() {
-  background-image: url(../images/svg/text_resize_increase.svg);
-}
-
-@mixin pnm_style_text_resize_reset() {
-  background-image: url(../images/svg/text_resize_reset.svg);
-}
-
-@mixin pnm_style_text_resize_button_label() {
-  display: none;
-}
-
-// =========================================================
-// STRUCTURE
-// =========================================================
 
 @mixin pnm_struct_text_resize_container() {
   display: none;
@@ -47,20 +33,48 @@
   }
 }
 
+// =========================================================
+// Items
+// =========================================================
+@mixin pnm_style_text_resize_items() {
+  // ...
+}
+
 @mixin pnm_struct_text_resize_items() {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
+// =========================================================
+// Reduce
+// =========================================================
+@mixin pnm_style_text_resize_reduce() {
+  background-image: url(../images/svg/text_resize_reduce.svg);
+}
+
 @mixin pnm_struct_text_resize_reduce() {
+  // ...
+}
+
+// =========================================================
+// Increase
+// =========================================================
+@mixin pnm_style_text_resize_increase() {
+  background-image: url(../images/svg/text_resize_increase.svg);
 }
 
 @mixin pnm_struct_text_resize_increase() {
+  // ...
+}
+
+// =========================================================
+// Reset
+// =========================================================
+@mixin pnm_style_text_resize_reset() {
+  background-image: url(../images/svg/text_resize_reset.svg);
 }
 
 @mixin pnm_struct_text_resize_reset() {
-}
-
-@mixin pnm_struct_text_resize_button_label() {
+  // ...
 }

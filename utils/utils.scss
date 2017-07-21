@@ -33,3 +33,9 @@ $font-size-base: 16px;
 @function pnm_util_em($pxval, $base: $font-size-base) {
   @return ($pxval / $base) * 1em;
 }
+
+// All components use this to set values.
+// This can be overridden if there is a preference for REM / EM / PX units.
+@function pnm_util_unit($pxval, $base: $font-size-base) {
+  @return pnm_util_rem($pxval, $base);
+}

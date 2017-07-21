@@ -1,12 +1,12 @@
 @mixin pnm_style_header_search_input() {
   position: relative;
   background: #F6F6F6;
-  height: 54px;
-  width: 320px;
+  height: pnm_util_unit(54px);
+  width: pnm_util_unit(320px);
   box-sizing: border-box;
   border: 0;
   border-right: 1px solid #BEBEBE;
-  padding: 20px;
+  padding: pnm_util_unit(20px);
   &:focus {
     z-index: 1;
   }
@@ -15,8 +15,8 @@
 @mixin pnm_style_header_search_button() {
   position: relative;
   background: #F6F6F6;
-  height: 54px;
-  width: 54px;
+  height: pnm_util_unit(54px);
+  width: pnm_util_unit(54px);
   border: 0;
   background-image: url(../images/svg/search_icon.svg);
   background-repeat: no-repeat;
@@ -36,8 +36,8 @@
 @mixin pnm_style_header_search_toggle() {
   position: relative;
   background: transparent;
-  height: 54px;
-  width: 54px;
+  height: pnm_util_unit(54px);
+  width: pnm_util_unit(54px);
   border: 0;
   background-image: url(../images/svg/search_icon.svg);
   background-repeat: no-repeat;

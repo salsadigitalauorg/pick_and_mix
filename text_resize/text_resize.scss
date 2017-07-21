@@ -1,0 +1,66 @@
+@mixin pnm_style_text_resize_button {
+  background-color: transparent;
+  position: relative;
+  height: 30px;
+  width: 320px;
+  border: 0;
+  width: 30px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  &:focus {
+    z-index: 1;
+  }
+}
+
+@mixin pnm_style_text_resize_container() {
+  padding-right: 36px;
+}
+
+@mixin pnm_style_text_resize_reduce() {
+  background-image: url(../images/svg/text_resize_reduce.svg);
+}
+
+@mixin pnm_style_text_resize_increase() {
+  background-image: url(../images/svg/text_resize_increase.svg);
+}
+
+@mixin pnm_style_text_resize_reset() {
+  background-image: url(../images/svg/text_resize_reset.svg);
+}
+
+@mixin pnm_style_text_resize_button_label() {
+  display: none;
+}
+
+// =========================================================
+// STRUCTURE
+// =========================================================
+
+@mixin pnm_struct_text_resize_container() {
+  display: none;
+  @include pnm_util_breakpoint(tablet) {
+    display: block;
+  }
+}
+
+@mixin pnm_struct_text_resize_items() {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@mixin pnm_struct_text_resize_reduce() {
+}
+
+@mixin pnm_struct_text_resize_increase() {
+}
+
+@mixin pnm_struct_text_resize_reset() {
+}
+
+@mixin pnm_struct_text_resize_button_label() {
+}

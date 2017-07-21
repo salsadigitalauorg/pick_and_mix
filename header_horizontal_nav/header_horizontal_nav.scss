@@ -1,0 +1,7 @@
+@mixin pnm_header_horizontal_link_container() {
+  margin: 0;
+}
+
+@mixin pnm_header_horizontal_link_item() {
+  display: inline-block;
+}

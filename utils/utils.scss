@@ -1,0 +1,35 @@
+// Generic Component.
+@mixin pnm_util_breakpoint($class) {
+  @if $class==desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @else if $class==large_tablet {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $class==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $class==mobile {
+    @media (max-width: 420px) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: desktop, large_tablet, tablet, mobile";
+  }
+}
+
+$font-size-base: 16px;
+@function pnm_util_rem($pxval, $base: $font-size-base) {
+  @return ($pxval / $base) * 1rem;
+}
+
+@function pnm_util_em($pxval, $base: $font-size-base) {
+  @return ($pxval / $base) * 1em;
+}

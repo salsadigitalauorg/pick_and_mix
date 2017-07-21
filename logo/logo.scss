@@ -1,0 +1,11 @@
+@mixin pnm_style_logo_container() {
+  // ..
+}
+
+@mixin pnm_style_logo_link() {
+  // ..
+}
+
+@mixin pnm_style_logo_image() {
+  @include pnm_style_shrink_image;
+}

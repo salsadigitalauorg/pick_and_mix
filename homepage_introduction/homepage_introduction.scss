@@ -1,0 +1,22 @@
+// =========================================================
+// Homepage Introduction Container
+// =========================================================
+@mixin pnm_style_homepage_introduction_container($theme: $pnm_theme) {
+  background-color: map-get($theme, 'neutral_4');
+}
+
+@mixin pnm_struct_homepage_introduction_container() {
+  margin: 0;
+}
+
+// =========================================================
+// Homepage Introduction Content
+// =========================================================
+@mixin pnm_style_homepage_introduction_content($theme: $pnm_theme) {
+  text-align: center;
+}
+
+@mixin pnm_struct_homepage_introduction_content() {
+  margin: 0 auto;
+  // Set width for breakpoints in implementation..
+}

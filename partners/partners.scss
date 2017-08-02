@@ -1,0 +1,59 @@
+// =========================================================
+// Partners Container
+// =========================================================
+@mixin pnm_style_partners_container($theme: $pnm_theme) {
+  background-color: white;
+}
+
+@mixin pnm_struct_partners_container() {
+  box-sizing: border-box;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 100%;
+}
+
+// =========================================================
+// Partner Content
+// =========================================================
+@mixin pnm_style_partner($theme: $pnm_theme) {
+  border: 0;
+}
+
+@mixin pnm_struct_partner() {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  &:nth-child(2n+2) {
+    clear: both;
+  }
+  @include pnm_util_breakpoint(tablet) {
+    width: 25%;
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+    &:nth-child(4n+5) {
+      clear: both;
+    }
+  }
+}
+
+@mixin pnm_style_partner_link($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_partner_link() {
+  // ...
+}
+
+@mixin pnm_style_partner_image($theme: $pnm_theme) {
+  @include pnm_style_shrink_image;
+}
+
+@mixin pnm_struct_partner_image() {
+  display: block;
+}

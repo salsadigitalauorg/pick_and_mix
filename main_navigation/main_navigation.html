@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Test Page</title>
-    <!-- link to the CSS files for this menu type -->
-    <link rel="stylesheet" media="screen" href="superfish.css">
+<script src="node_modules/superfish/dist/js/hoverIntent.js"></script>
+<script src="node_modules/superfish/dist/js/superfish.js"></script>
 
-    <!-- link to the JavaScript files (hoverIntent is optional) -->
-    <!-- if you use hoverIntent, use the updated r7 version (see FAQ) -->
-    <script src="hoverIntent.js"></script>
-    <script src="superfish.js"></script>
-
-    <!-- initialise Superfish -->
-    <script>
-
-      jQuery(document).ready(function(){
-        jQuery('ul.sf-menu').superfish();
-      });
-
-    </script>
-  </head>
-
-  <body>
+<nav class="main-navigation">
+  <div class="main-navigation-inner">
     <ul class="sf-menu">
-      <li><a href="/test1">Test1</a></li>
-      <li>
-        <a href="/test2">Test2</a>
+      <li><a href="/home">Home</a></li>
+      <li class="menuparent active-trail">
+        <a href="/sub">Sub Theme</a>
         <ul>
-          <li><a href="test7">Test7</a></li>
+          <li><a href="/sap">Standard Article Page Link</a></li>
+          <li class="menuparent active-trail">
+            <a href="/sap">Standard Article Page</a>
+            <ul>
+              <li><a href="/sap">Standard Article Page</a></li>
+            </ul>
+          </li>
+          <li><a href="/sap">Standard Article Page</a></li>
         </ul>
       </li>
-      <li><a href="/test3">Test3</a></li>
-      <li><a href="/test4">Test4</a></li>
-      <li><a href="/test5">Test5</a></li>
-      <li><a href="/test6">Test6</a></li>
+      <li><a href="/final">Final Link</a></li>
     </ul>
-  </body>
-</html>
+  </div>
+</nav>

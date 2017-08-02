@@ -1,4 +1,5 @@
 $pnm_theme: (
+   // Colours
   'primary_1': #057F83,
   'secondary_1': #0E595B,
   'secondary_2': #008488,
@@ -6,7 +7,17 @@ $pnm_theme: (
   'neutral_1': #3C3C3C,
   'neutral_2': #505050,
   'neutral_3': #BEBEBE,
-  'neutral_4': #F6F6F6
+  'neutral_4': #F6F6F6,
+  'white': #FFFFFF,
+
+  // Menu
+  'main_navigation_link_line': #01D3DA,
+  'main_navigation_link_over': #1C3F41,
+  'main_navigation_sub_menu_background': #018488,
+  'main_navigation_link_text': white,
+
+  // Fonts
+  'font_primary': 'HelveticaNeue-Bold'
 );
 
 @mixin pnm_style_button($theme: $pnm_theme) {

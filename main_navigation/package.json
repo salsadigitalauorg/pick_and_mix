@@ -1,0 +1,14 @@
+{
+  "name": "main_navigation",
+  "version": "1.0.0",
+  "description": "Header Search component for displaying search field in header. Will display as a togglable search field on set breakpoint.",
+  "main": "main_navigation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "superfish": "^1.7.9"
+  }
+}

@@ -50,7 +50,7 @@
 // Reduce
 // =========================================================
 @mixin pnm_style_text_resize_reduce($theme: $pnm_theme) {
-  background-image: url(../images/svg/text_resize_reduce.svg);
+  background-image: pnm_util_url('text_resize_reduce.svg');
 }
 
 @mixin pnm_struct_text_resize_reduce() {
@@ -61,7 +61,7 @@
 // Increase
 // =========================================================
 @mixin pnm_style_text_resize_increase($theme: $pnm_theme) {
-  background-image: url(../images/svg/text_resize_increase.svg);
+  background-image: pnm_util_url('text_resize_increase.svg');
 }
 
 @mixin pnm_struct_text_resize_increase() {
@@ -72,7 +72,7 @@
 // Reset
 // =========================================================
 @mixin pnm_style_text_resize_reset($theme: $pnm_theme) {
-  background-image: url(../images/svg/text_resize_reset.svg);
+  background-image: pnm_util_url('text_resize_reset.svg');
 }
 
 @mixin pnm_struct_text_resize_reset() {

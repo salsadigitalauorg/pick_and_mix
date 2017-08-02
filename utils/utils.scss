@@ -39,3 +39,7 @@ $font-size-base: 16px;
 @function pnm_util_unit($pxval, $base: $font-size-base) {
   @return pnm_util_rem($pxval, $base);
 }
+
+@function pnm_util_url($filename) {
+  @return url(../images/svg/#{$filename});
+}

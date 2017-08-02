@@ -7,7 +7,7 @@
   height: pnm_util_unit(54px);
   width: pnm_util_unit(54px);
   border: 0;
-  background-image: url(../images/svg/search_icon.svg);
+  background-image: pnm_util_url('search_icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;
@@ -17,7 +17,7 @@
     z-index: 1;
   }
   &.search-open {
-    background-image: url(../images/svg/search_icon_close.svg);
+    background-image: pnm_util_url('search_icon_close.svg');
   }
 }
 
@@ -94,7 +94,7 @@
   height: pnm_util_unit(54px);
   width: pnm_util_unit(54px);
   border: 0;
-  background-image: url(../images/svg/search_icon.svg);
+  background-image: pnm_util_url('search_icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;

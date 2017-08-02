@@ -7,6 +7,7 @@
 
 @mixin pnm_struct_homepage_introduction_container() {
   margin: 0;
+  width: 100%;
 }
 
 // =========================================================
@@ -17,6 +18,8 @@
 }
 
 @mixin pnm_struct_homepage_introduction_content() {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
   // Set width for breakpoints in implementation..
 }

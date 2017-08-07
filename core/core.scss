@@ -54,3 +54,18 @@ $pnm_theme: (
     text-decoration: none;
   }
 }
+
+@mixin pnm_style_link_light($theme: $pnm_theme) {
+  color: map-get($theme, 'white');
+  line-height: 1.8em;
+  padding: 12px;
+  text-decoration: none;
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin pnm_style_background_dark($theme: $pnm_theme) {
+  background-color: map-get($theme, 'secondary_1');
+  color: map-get($theme, 'white');
+}

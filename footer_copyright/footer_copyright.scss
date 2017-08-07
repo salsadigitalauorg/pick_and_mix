@@ -1,0 +1,38 @@
+// =========================================================
+// Footer Copyright Container
+// =========================================================
+@mixin pnm_style_footer_copyright($theme: $pnm_theme) {
+  //...
+}
+
+@mixin pnm_struct_footer_copyright() {
+  @include pnm_util_breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// =========================================================
+// Footer Copyright Logo Container
+// =========================================================
+
+@mixin pnm_style_footer_logo-container() {
+  //...
+}
+
+@mixin pnm_struct_footer_logo-container() {
+  padding-right: pnm_util_unit(16px);
+}
+
+// =========================================================
+// Footer Copyright Text
+// =========================================================
+
+@mixin pnm_style_footer_copyright_text() {
+  padding-top: pnm_util_unit(12px);
+  line-height: 1.8em;
+}
+
+@mixin pnm_struct_footer_copyright_text() {
+  //...
+}

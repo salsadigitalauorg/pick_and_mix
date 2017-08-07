@@ -1,0 +1,21 @@
+// =========================================================
+// Footer Nav Container
+// =========================================================
+@mixin pnm_style_footer_nav_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_footer_nav_container() {
+  margin: 0;
+}
+
+// =========================================================
+// Footer Nav Item
+// =========================================================
+@mixin pnm_style_footer_nav_item($theme: $pnm_theme) {
+  
+}
+
+@mixin pnm_struct_footer_nav_item() {
+  display: inline-block;
+}

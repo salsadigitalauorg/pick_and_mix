@@ -1,0 +1,41 @@
+// =========================================================
+// Thick Link Container
+// =========================================================
+@mixin pnm_style_thick_link_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_thick_link_container() {
+  width: 100%;
+}
+
+// =========================================================
+// Thick Link
+// =========================================================
+@mixin pnm_style_thick_link($theme: $pnm_theme) {
+  background-color: map-get($pnm_theme, 'secondary_2');
+  display: block;
+  font-size: pnm_util_unit(18px);
+  padding: $mobile_column_padding;
+  width: 100%;
+  @include pnm_util_breakpoint(desktop) {
+    float: left;
+    border-right: $mobile_column_padding solid white;
+    width: 25%;
+  }
+}
+
+@mixin pnm_struct_thick_link() {
+  box-sizing: border-box;
+}
+
+// =========================================================
+// Thick Link Title
+// =========================================================
+@mixin pnm_style_thick_link_title($theme: $pnm_theme) {
+  color: map-get($pnm_theme, 'white');
+}
+
+@mixin pnm_struct_thick_link_title() {
+  // ...
+}

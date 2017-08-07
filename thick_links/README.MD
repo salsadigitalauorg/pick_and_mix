@@ -31,10 +31,10 @@ Thick Links component for display a set of quick links.
 .thick-link {
   @include pnm_struct_thick_link;
   @include pnm_style_thick_link;
-}
-a {
-  @include pnm_struct_thick_link_title;
-  @include pnm_style_thick_link_title;
+  a {
+    @include pnm_struct_thick_link_title;
+    @include pnm_style_thick_link_title;
+  }
 }
 ```
 

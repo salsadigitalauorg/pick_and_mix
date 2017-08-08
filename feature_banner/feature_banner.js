@@ -5,21 +5,22 @@ function pnm_feature_banner() {
     var $el = null;
 
     function set_background_image() {
-        $src = _self.find('img').attr('src');
-        _self.css('backgroundImage','url('+$src+')');
+        $src = $img.attr('src');
+        $el.css('backgroundImage','url('+$src+')');
+        $el.addClass('pnm-with-image');
         return false;
     }
 
     
     /**
      * options
-     *   - container_class
+     *   - container_element
      */
-    this.init = function(container_class) {
-        $el = $(container_class);
+    this.init = function(options) {
+        $el = $(options.container_element);
         $img = $el.find('img');
         if ($img.length > 0) {
-            $el.set_background_image();
+            set_background_image();
         }
     }
 }

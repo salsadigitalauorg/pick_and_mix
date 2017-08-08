@@ -1,0 +1,83 @@
+// =========================================================
+// Feature Banner Container
+// =========================================================
+@mixin pnm_style_feature_container($theme: $pnm_theme) {
+  background-color: map-get($theme, 'primary_1');
+  @include pnm_util_breakpoint(desktop) {
+    padding: pnm_util_unit(48px);
+  }
+}
+
+@mixin pnm_struct_feature_container() {
+  width: 100%;
+  height: 276px;
+  @include pnm_util_breakpoint(tablet) {
+    height: 320px;
+  }
+  @include pnm_util_breakpoint(desktop) {
+    height: 444px;
+  }
+}
+
+// =========================================================
+// Feature Banner Image
+// =========================================================
+@mixin pnm_style_feature_image($theme: $pnm_theme) {
+
+}
+
+@mixin pnm_struct_feature_image() {
+
+}
+
+// =========================================================
+// Feature Banner Details
+// =========================================================
+@mixin pnm_style_feature_details($theme: $pnm_theme) {
+  background-color: map-get($theme, 'secondary_3');
+  color: map-get($theme, 'white');
+}
+
+@mixin pnm_struct_feature_details() {
+  @include pnm_util_breakpoint(desktop) {
+    padding: pnm_util_unit(48px);
+  }
+}
+
+// =========================================================
+// Feature Banner Title
+// =========================================================
+@mixin pnm_style_feature_details_title() {
+  @include pnm_util_breakpoint(desktop) {
+   font-size: pnm_util_unit(48px);
+  }
+}
+
+@mixin pnm_struct_feature_details_title() {
+
+}
+
+// =========================================================
+// Feature Banner Body
+// =========================================================
+@mixin pnm_style_feature_details_body() {
+  @include pnm_util_breakpoint(desktop) {
+   font-size: pnm_util_unit(20px);
+   line-height: 1.8em;
+  }
+}
+
+@mixin pnm_struct_feature_details_body() {
+
+}
+
+// =========================================================
+// Feature Banner Button
+// =========================================================
+@mixin pnm_style_feature_details_button($theme: $pnm_theme) {
+
+}
+
+@mixin pnm_struct_feature_details_button() {
+
+}

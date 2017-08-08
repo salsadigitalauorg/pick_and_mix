@@ -1,22 +1,13 @@
 // =========================================================
 // Card Container
 // =========================================================
-/*
 @mixin pnm_style_card_container($theme: $pnm_theme) {
   // ...
 }
 
 @mixin pnm_struct_card_container() {
-  box-sizing: border-box;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 $mobile_column_padding;
-  @include pnm_util_breakpoint(large_tablet) {
-    max-width: $desktop_column;
-  }
+  width: 100%;
 }
-*/
 
 // =========================================================
 // Card
@@ -45,6 +36,9 @@
   }
 }
 
+// =========================================================
+// Card Image
+// =========================================================
 @mixin pnm_style_card_image($theme: $pnm_theme) {
   @include pnm_style_shrink_image;
 }
@@ -53,6 +47,9 @@
   // ...
 }
 
+// =========================================================
+// Card Title
+// =========================================================
 @mixin pnm_style_card_title($theme: $pnm_theme) {
   // ...
 }
@@ -61,6 +58,9 @@
   // ...
 }
 
+// =========================================================
+// Card Description
+// =========================================================
 @mixin pnm_style_card_description($theme: $pnm_theme) {
   // ...
 }

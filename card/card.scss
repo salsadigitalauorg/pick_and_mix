@@ -1,0 +1,70 @@
+// =========================================================
+// Card Container
+// =========================================================
+/*
+@mixin pnm_style_card_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_card_container() {
+  box-sizing: border-box;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $mobile_column_padding;
+  @include pnm_util_breakpoint(large_tablet) {
+    max-width: $desktop_column;
+  }
+}
+*/
+
+// =========================================================
+// Card
+// =========================================================
+@mixin pnm_style_card($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_card() {
+  box-sizing: border-box;
+  @include pnm_util_breakpoint(tablet) {
+    float: left;
+    width: 50%;
+    &:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+  @include pnm_util_breakpoint(large_tablet) {
+    width: 33.333%;
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+    &:nth-child(3n+4) {
+      clear: both;
+    }
+  }
+}
+
+@mixin pnm_style_card_image($theme: $pnm_theme) {
+  @include pnm_style_shrink_image;
+}
+
+@mixin pnm_struct_card_image() {
+  // ...
+}
+
+@mixin pnm_style_card_title($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_card_title() {
+  // ...
+}
+
+@mixin pnm_style_card_description($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_card_description() {
+  // ...
+}

@@ -1,0 +1,114 @@
+// =========================================================
+// Title Crumbs Banner Container
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) {
+  @include pnm_style_linear_gradient($theme: $pnm_theme);
+  padding-top: pnm_util_unit(16px);
+  padding-bottom: pnm_util_unit(16px);
+  @include pnm_util_breakpoint(large_tablet) {
+	padding-top: pnm_util_unit(24px);
+    padding-bottom: pnm_util_unit(24px);
+  }
+  @include pnm_util_breakpoint(desktop) {
+    padding-top: pnm_util_unit(50px);
+    padding-bottom: pnm_util_unit(52px);
+  }
+}
+
+@mixin pnm_struct_title_crumbs_banner_container() {
+  width: 100%
+}
+
+// =========================================================
+// Title Crumbs Banner Inner
+// =========================================================
+@mixin pnm_struct_title_crumbs_banner_inner() {
+  width: 100%;
+  @include pnm_util_breakpoint(large_tablet) {
+    max-width: $large_tablet_column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include pnm_util_breakpoint(desktop) {
+    max-width: $desktop_column;
+  }
+}
+
+// =========================================================
+// Title Crumbs Banner Breadcrumb Wrapper
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb_wrapper($theme: $pnm_theme) {
+  &:after {
+    content: ">";
+    padding: 0 pnm_util_unit(6px);
+    color: map-get($theme, 'white');
+  }
+}
+
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_wrapper() {
+
+}
+
+// =========================================================
+// Title Crumbs Banner Breadcrumbs
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb($theme: $pnm_theme) {
+  color: map-get($theme, 'white');
+  font-size: pnm_util_unit(16px);
+  text-decoration: underline;
+}
+
+@mixin pnm_struct_title_crumbs_banner_breadcrumb() {
+
+}
+
+// =========================================================
+// Title Crumbs Banner Breadcrumbs Wrapper Last Item
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb_wrapper_last($theme: $pnm_theme) {
+  &:after {
+    content: "";
+    padding: 0;
+  }
+}
+
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_wrapper_last() {
+
+}
+
+// =========================================================
+// Title Crumbs Banner Breadcrumbs Last Item
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb_last($theme: $pnm_theme) {
+  text-decoration:none;
+}
+
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_last() {
+
+}
+
+// =========================================================
+// Title Crumbs Banner Title
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_title($theme: $pnm_theme) {
+  font-weight: normal;
+  color: map-get($theme, 'white');
+  font-size: pnm_util_unit(24px);
+  line-height: pnm_util_unit(24px);
+   margin-top: pnm_util_unit(16px);
+   margin-bottom: pnm_util_unit(16px);
+  @include pnm_util_breakpoint(large_tablet) {
+   font-size: pnm_util_unit(32px);
+   line-height: pnm_util_unit(32px);
+  }
+  @include pnm_util_breakpoint(desktop) {
+   font-size: pnm_util_unit(48px);
+   line-height: pnm_util_unit(48px);
+   margin-top: pnm_util_unit(32px);
+   margin-bottom: pnm_util_unit(32px);
+  }
+}
+
+@mixin pnm_struct_title_crumbs_banner_title() {
+
+}

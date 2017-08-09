@@ -43,3 +43,8 @@ $font-size-base: 16px;
 @function pnm_util_url($filename) {
   @return url(../images/svg/#{$filename});
 }
+
+// Set image path
+@function pnm_image($format, $filename) {
+  @return url("../images/"+$format+"/"+$filename);
+}

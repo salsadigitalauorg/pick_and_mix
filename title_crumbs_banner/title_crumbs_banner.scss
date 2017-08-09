@@ -1,18 +1,21 @@
 // =========================================================
 // Title Crumbs Banner Container
 // =========================================================
-@mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) {
-  @include pnm_style_linear_gradient($theme: $pnm_theme);
-  padding-top: pnm_util_unit(16px);
-  padding-bottom: pnm_util_unit(16px);
+@mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) { 
+  background-color: map-get($theme, 'secondary_1');
   @include pnm_util_breakpoint(tablet) {
-	  padding-top: pnm_util_unit(50px);
-    padding-bottom: pnm_util_unit(52px);
+    @include pnm_style_linear_gradient($theme: $pnm_theme);
   }
 }
 
 @mixin pnm_struct_title_crumbs_banner_container() {
-  width: 100%
+  width: 100%;
+  padding: pnm_util_unit(20px) $mobile_column_padding pnm_util_unit(24px);
+  box-sizing: border-box;
+  @include pnm_util_breakpoint(tablet) {
+    padding-top: pnm_util_unit(54px);
+    padding-bottom: pnm_util_unit(52px);
+  }
 }
 
 // =========================================================
@@ -27,57 +30,43 @@
   }
 }
 
+
 // =========================================================
-// Title Crumbs Banner Breadcrumb Wrapper
+// Title Crumbs Banner Breadcrumbs Nav
 // =========================================================
-@mixin pnm_style_title_crumbs_banner_breadcrumb_wrapper($theme: $pnm_theme) {
-  &:after {
-    content: ">";
-    padding: 0 pnm_util_unit(6px);
-    color: map-get($theme, 'white');
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_nav() {
+  padding: 0;
+  margin: 0;
+  display:none;
+  @include pnm_util_breakpoint(tablet) {
+    display:block;
   }
 }
 
-@mixin pnm_struct_title_crumbs_banner_breadcrumb_wrapper() {
-
+// =========================================================
+// Title Crumbs Banner Breadcrumb Item
+// =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb_item($theme: $pnm_theme) {
+  list-style:none;
+  display:inline-block;
+  margin-right: pnm_util_unit(6px);
+  padding-right: pnm_util_unit(22px);
+  &:not(:last-child) {
+    background-image: pnm_image("svg", "nav_right_arrow_white.svg");
+    background-position: right center;
+    background-repeat: no-repeat;    
+  }
 }
 
 // =========================================================
-// Title Crumbs Banner Breadcrumbs
+// Title Crumbs Banner Breadcrumb Link
 // =========================================================
-@mixin pnm_style_title_crumbs_banner_breadcrumb($theme: $pnm_theme) {
+@mixin pnm_style_title_crumbs_banner_breadcrumb_link($theme: $pnm_theme) {
   color: map-get($theme, 'white');
   font-size: pnm_util_unit(16px);
+  line-height: pnm_util_unit(16px);
   text-decoration: underline;
-}
-
-@mixin pnm_struct_title_crumbs_banner_breadcrumb() {
-
-}
-
-// =========================================================
-// Title Crumbs Banner Breadcrumbs Wrapper Last Item
-// =========================================================
-@mixin pnm_style_title_crumbs_banner_breadcrumb_wrapper_last($theme: $pnm_theme) {
-  &:after {
-    content: "";
-    padding: 0;
-  }
-}
-
-@mixin pnm_struct_title_crumbs_banner_breadcrumb_wrapper_last() {
-
-}
-
-// =========================================================
-// Title Crumbs Banner Breadcrumbs Last Item
-// =========================================================
-@mixin pnm_style_title_crumbs_banner_breadcrumb_last($theme: $pnm_theme) {
-  text-decoration:none;
-}
-
-@mixin pnm_struct_title_crumbs_banner_breadcrumb_last() {
-
+  whitespace: no-wrap;
 }
 
 // =========================================================
@@ -87,13 +76,13 @@
   font-weight: normal;
   color: map-get($theme, 'white');
   font-size: pnm_util_unit(24px);
-  line-height: pnm_util_unit(24px);
+  line-height: pnm_util_unit(40px);
    margin-top: pnm_util_unit(16px);
    margin-bottom: pnm_util_unit(16px);
   @include pnm_util_breakpoint(tablet) {
    font-size: pnm_util_unit(48px);
    line-height: pnm_util_unit(48px);
-   margin-top: pnm_util_unit(32px);
+   margin-top: pnm_util_unit(30px);
    margin-bottom: pnm_util_unit(32px);
   }
 }

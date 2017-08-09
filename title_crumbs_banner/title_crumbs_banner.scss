@@ -5,12 +5,8 @@
   @include pnm_style_linear_gradient($theme: $pnm_theme);
   padding-top: pnm_util_unit(16px);
   padding-bottom: pnm_util_unit(16px);
-  @include pnm_util_breakpoint(large_tablet) {
-	padding-top: pnm_util_unit(24px);
-    padding-bottom: pnm_util_unit(24px);
-  }
-  @include pnm_util_breakpoint(desktop) {
-    padding-top: pnm_util_unit(50px);
+  @include pnm_util_breakpoint(tablet) {
+	  padding-top: pnm_util_unit(50px);
     padding-bottom: pnm_util_unit(52px);
   }
 }
@@ -24,13 +20,10 @@
 // =========================================================
 @mixin pnm_struct_title_crumbs_banner_inner() {
   width: 100%;
-  @include pnm_util_breakpoint(large_tablet) {
-    max-width: $large_tablet_column;
+  @include pnm_util_breakpoint(tablet) {
+    max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
-  }
-  @include pnm_util_breakpoint(desktop) {
-    max-width: $desktop_column;
   }
 }
 
@@ -97,11 +90,7 @@
   line-height: pnm_util_unit(24px);
    margin-top: pnm_util_unit(16px);
    margin-bottom: pnm_util_unit(16px);
-  @include pnm_util_breakpoint(large_tablet) {
-   font-size: pnm_util_unit(32px);
-   line-height: pnm_util_unit(32px);
-  }
-  @include pnm_util_breakpoint(desktop) {
+  @include pnm_util_breakpoint(tablet) {
    font-size: pnm_util_unit(48px);
    line-height: pnm_util_unit(48px);
    margin-top: pnm_util_unit(32px);

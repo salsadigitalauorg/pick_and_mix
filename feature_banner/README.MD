@@ -7,14 +7,16 @@ Homepage Introduction component for displaying introduction / welcome message on
 ### Example HTML
 ```html
 <div class="homepage-banner-container">
-  <img src="http://via.placeholder.com/1600x444" alt="banner image" title="banner image">
+  <div class="homepage-banner-image-wrapper">
+    <img src="http://via.placeholder.com/1600x444" alt="banner image" title="banner image">
+  </div>
   <div class="homepage-banner-container-inner">
     <div class="homepage-banner-details">
       <h2 class="homepage-banner-title">
        Homepage banner title over 2 lines
       </h2>
       <p class="homepage-banner-text">This is a summary of the banner's headline which can be displayed on a maximum of three lines, depending on the length of the text.</p>
-      <a class="homepage-banner-button">Find out more</a>
+      <a href="#" title="find out more" class="homepage-banner-button">Find out more</a>
     </div>
   </div>
 </div>
@@ -26,7 +28,11 @@ Homepage Introduction component for displaying introduction / welcome message on
   @include pnm_struct_feature_container;
   @include pnm_style_feature_container;
   .homepage-banner-container-inner {
-    @include pnm_struct_feature_container_inner
+    @include pnm_style_feature_container_inner;
+    @include pnm_struct_feature_container_inner;
+  }
+  .homepage-banner-image-wrapper {
+    @include pnm_struct_feature_image_wrapper
   }
   img {
     @include pnm_struct_feature_image;
@@ -51,10 +57,4 @@ Homepage Introduction component for displaying introduction / welcome message on
 ```
 
 ### Example JS
-```javascript
-var banner_background = new pnm_feature_banner();
-banner_background.init({
-  container_element: '.homepage-banner-container',
-});
-```
-
+None

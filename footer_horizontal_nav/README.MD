@@ -27,7 +27,6 @@ ul.footer-nav-container {
     }
   }
 }
-
 ```
 
 ### Example JS

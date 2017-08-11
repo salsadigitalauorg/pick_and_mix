@@ -77,11 +77,3 @@ $pnm_theme: (
   background-color: map-get($theme, 'secondary_1');
   color: map-get($theme, 'white');
 }
-
-@mixin pnm_style_linear_gradient($theme: $pnm_theme) {
-  background: map-get($theme, 'gradient_top'); 
-  background: -webkit-linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom')); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom')); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom')); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom')); /* Standard syntax */
-}

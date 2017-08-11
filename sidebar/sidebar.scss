@@ -2,110 +2,158 @@
 // Sidebar Container
 // =========================================================
 @mixin pnm_style_sidebar_container($theme: $pnm_theme) {
-  // ...
+
 }
 
 @mixin pnm_struct_sidebar_container() {
-  // ...
+  position: relative;
 }
 
 // =========================================================
 // Sidebar Title
 // =========================================================
 @mixin pnm_style_sidebar_title($theme: $pnm_theme) {
-  font-size: pnm_util_unit(30px);
+  font-size: pnm_util_unit(18px);
+  line-height: pnm_util_unit(48px);
   font-weight: normal;
-  background: pnm_util_url("nav_down_arrow_secondary2.svg") 95% pnm_util_em(8px) no-repeat map-get($theme, 'neutral_4');
+  background: pnm_util_url("nav_down_arrow_secondary2.svg") 96% 50% no-repeat map-get($theme, 'neutral_4');
+  &.expanded {
+    background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
+  }
+  cursor: pointer;
   @include pnm_util_breakpoint(tablet) {
     background:none;
+    &.expanded {
+      background: none;
+    }  
+    font-size: pnm_util_unit(30px);  
+    cursor: default;
   }
 }
 
 @mixin pnm_struct_sidebar_title() {
-  // ...
+  padding: 0 0 0 pnm_util_unit(15px);
+  margin-bottom: pnm_util_unit(16px);
+  &.expanded {
+    margin-bottom: 0;
+  }
+  @include pnm_util_breakpoint(tablet) {
+    padding: 0;
+    margin-bottom: pnm_util_unit(30px);
+  }
 }
 
 // =========================================================
-// Sidebar Nav Container 
+// Sidebar Nav
 // =========================================================
-@mixin pnm_style_sidebar_nav_container($theme: $pnm_theme) { 
+@mixin pnm_style_sidebar_nav($theme: $pnm_theme) { 
   list-style:none;
   background-color: map-get($theme, 'neutral_7');
   @include pnm_util_breakpoint(tablet) {
-    background-color: none;
+    background: none;
+    ul {
+      background-color: map-get($theme, 'neutral_4');
+      border-top: 2px solid map-get($theme, 'neutral_6');    
+      ul {
+        background-color: transparent;
+        border-top: none;
+        padding-top: 0;
+      }
+    }
   }
 }
 
-@mixin pnm_struct_sidebar_nav_container() {
+@mixin pnm_struct_sidebar_nav() {
   display:none;
-  padding: pnm_util_unit(8px) 0 0;
+  padding:0 pnm_util_unit(20px);
   margin:0;
-  @include pnm_util_breakpoint(tablet) {
-    display:block;
-  }
-  &.expanded {
+  width: 100%;
+  ul {
     display: block;
   }
-}
-
-// =========================================================
-// Sidebar Sub Nav Container
-// =========================================================
-@mixin pnm_style_sidebar_subnav_container($theme: $pnm_theme) {
-  background-color: map-get($theme, 'neutral_4');
-  border-top: 2px solid map-get($theme, 'neutral_6');
-  display:block;
   @include pnm_util_breakpoint(tablet) {
-    display:none;
-    &.expanded {
-	  display: block;
-	}
-  }  
-}
-
-@mixin pnm_struct_sidebar_subnav_container() {
- padding: pnm_util_unit(18px) pnm_util_unit(8px) 0 pnm_util_unit(16px);
+    display:block;
+    padding:0;
+    ul {
+      padding: pnm_util_unit(18px) pnm_util_unit(8px) 0 pnm_util_unit(16px);
+      display:none;
+      &.menu-open {
+        display: block;
+      }
+    }
+  }
+  &.menu-open {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    @include pnm_util_breakpoint(tablet) {
+      position: static;
+    }
+  }
 }
 
 // =========================================================
 // Sidebar list Item
 // =========================================================
 @mixin pnm_style_sidebar_list_item($theme: $pnm_theme) {
-  font-size: pnm_util_unit(16px);
+  font-size: pnm_util_unit(14px);
   line-height: pnm_util_unit(42px);
-  font-weight: bold;
-}
-
-@mixin pnm_struct_sidebar_list_item() {
-  // ...
-}
-
-// =========================================================
-// Sidebar list Item Sub Levels
-// =========================================================
-@mixin pnm_style_sidebar_list_item_sub($theme: $pnm_theme) {
-  font-weight: normal;
-}
-
-@mixin pnm_struct_sidebar_list_item_sub() {
-  // ...
-}
-
-
-// =========================================================
-// Sidebar list Item Parent
-// =========================================================
-@mixin pnm_style_sidebar_list_item_parent($theme: $pnm_theme) {
+  button {
+    border:none;
+    text-indent: -99999px;
+    height: pnm_util_unit(42px);
+    padding: 0 pnm_util_unit(6px);
+    background: pnm_util_url("nav_down_arrow_secondary2.svg") 50% 50% no-repeat transparent;
+    &.expanded {
+      background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
+    }
+  }
+  li {
+    font-weight: normal;
+    padding-top: pnm_util_unit(0px);
+  }
   @include pnm_util_breakpoint(tablet) {
-	background: pnm_util_url("nav_down_arrow_secondary2.svg") 100% pnm_util_em(16px) no-repeat transparent;
-	&.expanded {
-	  background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
-	}
+    font-size: pnm_util_unit(16px);
+    font-weight: bold;
   }
 }
 
-@mixin pnm_struct_sidebar_list_item_parent() {
-  // ...
+@mixin pnm_struct_sidebar_list_item() {
+  padding-top: pnm_util_unit(10px);
+  padding-left: pnm_util_unit(10px);
+  li {
+    padding-left: 0;
+  }
+  @include pnm_util_breakpoint(tablet) {
+    padding-top: pnm_util_unit(30px);
+    padding-left: 0;
+    button {
+      display:block;
+      float:right;
+    }
+  }
+}
+
+// =========================================================
+// Sidebar list Item Active Trail
+// =========================================================
+@mixin pnm_style_sidebar_list_item_active_trail($theme: $pnm_theme) {
+   
+}
+
+@mixin pnm_struct_sidebar_list_item_active_trail() {
+ 
+}
+
+// =========================================================
+// Sidebar list Item Active 
+// =========================================================
+@mixin pnm_style_sidebar_list_item_active($theme: $pnm_theme) {
+  
+}
+
+@mixin pnm_struct_sidebar_list_item_active() {
+ 
 }
 
 // =========================================================
@@ -114,6 +162,9 @@
 @mixin pnm_style_sidebar_link($theme: $pnm_theme) {
   text-decoration:none;
   color: map-get($theme, 'neutral_5');
+  &:hover {
+   text-decoration: underline;
+  }
 }
 
 @mixin pnm_struct_sidebar_link() {

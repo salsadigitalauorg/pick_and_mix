@@ -1,0 +1,19 @@
+// =========================================================
+// Last Updated
+// =========================================================
+@mixin pnm_style_last_updated_text($theme: $pnm_theme) {
+  font-size: pnm_util_unit(14px);
+  padding-left: pnm_util_unit(32px);
+  line-height: pnm_util_unit(30px);
+  background: pnm_util_url('time_icon.svg') 0 50% no-repeat transparent;
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(16px);
+  }
+}
+
+@mixin pnm_struct_last_updated_text() {
+  margin: pnm_util_unit(14px) 0;
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(16px) 0;
+  }
+}

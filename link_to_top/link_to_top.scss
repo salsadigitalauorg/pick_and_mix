@@ -1,0 +1,14 @@
+// =========================================================
+// Link to top
+// =========================================================
+@mixin pnm_style_link_to_top($theme: $pnm_theme) {
+  color: map-get($theme, 'primary_1');
+  font-size:pnm_util_unit(16px);
+  line-height: pnm_util_unit(30px);
+}
+
+@mixin pnm_struct_link_to_top() {
+  display:inline-block;
+  float:right;
+  margin: pnm_util_unit(16px);
+}

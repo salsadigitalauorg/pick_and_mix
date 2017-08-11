@@ -77,3 +77,11 @@ $pnm_theme: (
   background-color: map-get($theme, 'secondary_1');
   color: map-get($theme, 'white');
 }
+
+@mixin pnm_clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

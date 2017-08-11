@@ -7,9 +7,9 @@ Footer copyright component for displaying logo and copyright text in footer.
 ### Example HTML
 ```html
 <div class="logo-and-copyright-container">
-  <div class="footer-logo-container"
+  <div class="footer-logo-container">
     <a href="/" title="Back to Homepage">
-      <img src="dist/images/png/monash-university-white.png" alt="Website name">
+      <img src="dist/images/png/monash-university-white.png" alt="Website name" />
     </a>
   </div>
   <div class="copyright-text">&copy; 2017, Monash University, All rights reserved.</div>

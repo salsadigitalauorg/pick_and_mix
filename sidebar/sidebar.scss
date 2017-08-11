@@ -65,17 +65,20 @@
 
 @mixin pnm_struct_sidebar_nav() {
   display:none;
-  padding:0 pnm_util_unit(20px);
+  padding:pnm_util_unit(20px) pnm_util_unit(20px) 0;
   margin:0;
   width: 100%;
+  box-sizing: border-box;
   ul {
     display: block;
+    padding-top: 0;
   }
   @include pnm_util_breakpoint(tablet) {
     display:block;
     padding:0;
     ul {
       padding: pnm_util_unit(18px) pnm_util_unit(8px) 0 pnm_util_unit(16px);
+      margin-bottom: pnm_util_unit(20px);
       display:none;
       &.menu-open {
         display: block;
@@ -86,6 +89,9 @@
     display: block;
     position: absolute;
     z-index: 100;
+    .menu-open {
+      position: static;
+    }
     @include pnm_util_breakpoint(tablet) {
       position: static;
     }
@@ -110,7 +116,6 @@
   }
   li {
     font-weight: normal;
-    padding-top: pnm_util_unit(0px);
   }
   @include pnm_util_breakpoint(tablet) {
     font-size: pnm_util_unit(16px);
@@ -119,14 +124,11 @@
 }
 
 @mixin pnm_struct_sidebar_list_item() {
-  padding-top: pnm_util_unit(10px);
-  padding-left: pnm_util_unit(10px);
+  padding:0 pnm_util_unit(10px);
   li {
-    padding-left: 0;
+    padding: 0;
   }
   @include pnm_util_breakpoint(tablet) {
-    padding-top: pnm_util_unit(30px);
-    padding-left: 0;
     button {
       display:block;
       float:right;
@@ -138,7 +140,11 @@
 // Sidebar list Item Active Trail
 // =========================================================
 @mixin pnm_style_sidebar_list_item_active_trail($theme: $pnm_theme) {
-   
+  background-color: map-get($theme, 'neutral_7');
+  ul {
+    background-color: transparent;
+    border:none;
+  }
 }
 
 @mixin pnm_struct_sidebar_list_item_active_trail() {

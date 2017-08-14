@@ -1,0 +1,290 @@
+// =========================================================
+// Wisiwyg Container
+// =========================================================
+@mixin pnm_style_wysiwyg_container($theme: $pnm_theme) {
+  font-size: pnm_util_unit(14px);
+  line-height: pnm_util_unit(30px);
+  color: map-get($theme, 'neutral_1');
+  p {
+  	font-size: pnm_util_unit(14px);
+    line-height: pnm_util_unit(30px);
+  }
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(16px);
+    line-height: pnm_util_unit(30px);
+    p {
+  	  font-size: pnm_util_unit(16px);
+      line-height: pnm_util_unit(30px);
+    }
+  }
+}
+
+@mixin pnm_struct_wysiwyg_container() {
+  p {
+    @include pnm_util_breakpoint(tablet) {
+      margin: 0 0 pnm_util_unit(16px);
+    }
+  }
+}
+
+// =========================================================
+// Wisiwyg Heading 2
+// =========================================================
+@mixin pnm_style_wysiwyg_heading_2($theme: $pnm_theme) {
+  color: map-get($theme, 'secondary_2');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(20px);
+  line-height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(36px);
+    line-height: pnm_util_unit(42px);
+  }
+}
+
+@mixin pnm_struct_wysiwyg_heading_2() {
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(64px) 0 pnm_util_unit(32px);
+  }
+}
+
+// =========================================================
+// Wisiwyg Heading 3
+// =========================================================
+@mixin pnm_style_wysiwyg_heading_3($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(18px);
+  line-height: pnm_util_unit(36px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(30px);
+    line-height: pnm_util_unit(36px);
+  }
+}
+
+@mixin pnm_struct_wysiwyg_heading_3() {
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(64px) 0 pnm_util_unit(32px);
+  }
+}
+
+// =========================================================
+// Wisiwyg Heading 4
+// =========================================================
+@mixin pnm_style_wysiwyg_heading_4($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(16px);
+  line-height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(24px);
+    line-height: pnm_util_unit(36px);
+  }
+}
+
+@mixin pnm_struct_wysiwyg_heading_4() {
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(32px) 0;
+  }
+}
+
+// =========================================================
+// Wisiwyg Heading 5
+// =========================================================
+@mixin pnm_style_wysiwyg_heading_5($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(14px);
+  line-height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(20px);
+    line-height: pnm_util_unit(36px);
+  }
+}
+
+@mixin pnm_struct_wysiwyg_heading_5() {
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(34px) 0 pnm_util_unit(26px);
+  }
+}
+
+// =========================================================
+// Wisiwyg Heading 6
+// =========================================================
+@mixin pnm_style_wysiwyg_heading_6($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(12px);
+  line-height: pnm_util_unit(24px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(18px);
+    line-height: pnm_util_unit(36px);
+  }
+}
+
+@mixin pnm_struct_wysiwyg_heading_6() {
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(24px) 0;
+  }
+}
+
+// =========================================================
+// Wisiwyg Table Responsive Wrapper
+// =========================================================
+@mixin pnm_style_wysiwyg_table_responsive_wrapper($theme: $pnm_theme) {
+	
+}
+@mixin pnm_struct_wysiwyg_table_responsive_wrapper() {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  margin: pnm_util_unit(18px) 0;
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(32px) 0;
+  }
+  table {
+    margin: 0;
+  }
+}
+
+// =========================================================
+// Wisiwyg Table
+// =========================================================
+@mixin pnm_style_wysiwyg_table($theme: $pnm_theme) {
+  background:transparent;
+  border:none;
+  border-collapse: collapse;
+  color: map-get($theme, 'neutral_1');
+  thead {
+    border-bottom: 2px solid map-get($theme, 'neutral_8');
+  }
+  tr {
+    border-bottom: 1px solid map-get($theme, 'neutral_8');
+  }
+  td, th {
+    border:none;
+    font-size: pnm_util_unit(14px);
+    line-height: pnm_util_unit(28px);
+    font-weight: normal;  
+    border:none;
+    text-align: left;
+    padding: pnm_util_unit(12px);
+  }
+  @include pnm_util_breakpoint(tablet) {
+    td, th {
+      font-size: pnm_util_unit(16px);
+      line-height: pnm_util_unit(30px);
+      padding: pnm_util_unit(12px) pnm_util_unit(20px);
+    }
+  }
+}
+
+@mixin pnm_struct_wysiwyg_table() {
+  width: 100%;
+  margin: pnm_util_unit(18px) 0;
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(32px) 0;
+  }
+}
+
+// =========================================================
+// Wisiwyg Quote
+// =========================================================
+@mixin pnm_style_wysiwyg_quote($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_5');
+  font-size: pnm_util_unit(14px);
+  line-height: pnm_util_unit(30px);
+  padding: pnm_util_unit(12px) pnm_util_unit(20px);
+  border-left: 5px solid map-get($theme, 'secondary_2');
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(18px);
+    padding: pnm_util_unit(12px) pnm_util_unit(20px);
+    p {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  }
+  cite {
+    color: map-get($theme, 'neutral_2');
+    font-style: normal;
+    display:block;
+    font-size: pnm_util_unit(12px);
+	line-height: pnm_util_unit(24px);
+	padding-top: 6px;
+    &:before {
+      content: "\2014 ";
+    }
+    @include pnm_util_breakpoint(tablet) {
+      padding-top: 2px;
+	  font-size: pnm_util_unit(14px);
+	  line-height: pnm_util_unit(32px);
+	}
+  }
+}
+
+@mixin pnm_struct_wysiwyg_quote() {
+  margin: pnm_util_unit(32px) 0;
+  p {
+    margin: 0;
+  }
+  @include pnm_util_breakpoint(tablet) {
+    margin: pnm_util_unit(32px) 0;
+  }
+}
+
+// =========================================================
+// Wisiwyg Quote Right Align
+// =========================================================
+@mixin pnm_style_wysiwyg_quote_right_align($theme: $pnm_theme) {
+  @include pnm_style_wysiwyg_quote;
+  @include pnm_struct_wysiwyg_quote;
+  border-right: 3px solid map-get($theme, 'secondary_2');
+  border-left: 0;
+  cite {
+	display:block;
+	@include pnm_util_breakpoint(tablet) {
+	text-align: right;
+	  &:before {
+	  	  content: "";
+		}
+		&:after {
+	  	  content: "\2014";
+		}
+	}
+  }
+}
+@mixin pnm_struct_wysiwyg_quote_right_align() {
+	
+}
+
+// =========================================================
+// Wisiwyg Unordered List
+// =========================================================
+@mixin pnm_style_wysiwyg_ulist($theme: $pnm_theme) {
+  padding: 0;
+  li {
+    list-style:none;
+  }
+}
+
+@mixin pnm_struct_wysiwyg_ulist() {
+  margin: pnm_util_unit(16px) 0;
+}
+
+// =========================================================
+// Wisiwyg Ordered List
+// =========================================================
+@mixin pnm_style_wysiwyg_olist($theme: $pnm_theme) {
+   padding: 0 0 0 pnm_util_unit(20px);
+}
+
+@mixin pnm_struct_wysiwyg_olist() {
+  margin: pnm_util_unit(16px) 0;
+}
+
+

@@ -54,7 +54,7 @@ Standard page elements as defined in the wysiwyg editor.
 	</table>
 	</div>
 	<div class="table-responsive">
-	  <table>
+	  <table class="striped">
 	    <thead>
 	      <tr>
 	        <th>#</th>
@@ -138,6 +138,10 @@ Standard page elements as defined in the wysiwyg editor.
   table {
     @include pnm_style_wysiwyg_table;
     @include pnm_struct_wysiwyg_table;
+    &.striped {
+      @include pnm_style_wysiwyg_table_striped;
+      @include pnm_struct_wysiwyg_table_striped;
+    }
   }
   ul {
     @include pnm_style_wysiwyg_ulist;

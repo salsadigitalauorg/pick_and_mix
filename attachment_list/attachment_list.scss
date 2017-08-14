@@ -1,0 +1,85 @@
+// =========================================================
+// Attachment List Container
+// =========================================================
+@mixin pnm_style_attachment_list_container($theme: $pnm_theme) {
+  background-color: map-get($theme, 'neutral_4');
+  border: 1px solid map-get($theme, 'neutral_3');
+  border-radius: 4px;
+  padding: pnm_util_unit(24px) pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    padding: pnm_util_unit(28px) pnm_util_unit(30px);
+  }
+}
+
+@mixin pnm_struct_attachment_list_container() { 
+  margin-bottom: pnm_util_unit(16px);
+  @include pnm_util_breakpoint(tablet) {
+    margin-bottom: pnm_util_unit(20px);
+  }
+}
+
+// =========================================================
+// Attachment List Title
+// =========================================================
+@mixin pnm_style_attachment_list_title($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  font-weight: normal;
+  padding: 0;
+  font-size: pnm_util_unit(16px);
+  line-height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(24px);
+    line-height: pnm_util_unit(36px);
+  }
+}
+
+@mixin pnm_struct_attachment_list_title() {
+  margin:0 0 pnm_util_unit(6px);
+  @include pnm_util_breakpoint(tablet) {
+    margin:0 0 pnm_util_unit(18px);
+  }
+}
+
+// =========================================================
+// Attachment List
+// =========================================================
+@mixin pnm_style_attachment_list($theme: $pnm_theme) {
+  padding: 0;
+}
+
+@mixin pnm_struct_attachment_list() {
+  margin: 0;
+}
+
+// =========================================================
+// Attachment List Item
+// =========================================================
+@mixin pnm_style_attachment_list_item($theme: $pnm_theme) {
+  list-style:none;
+  font-size: pnm_util_unit(14px);
+  height: pnm_util_unit(40px);
+  line-height: pnm_util_unit(40px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(16px);
+    height: pnm_util_unit(42px);
+    line-height: pnm_util_unit(42px);
+  }
+}
+
+@mixin pnm_struct_attachment_list_item() {
+
+}
+
+// =========================================================
+// Attachment List Item Link
+// =========================================================
+@mixin pnm_style_attachment_list_item_link($theme: $pnm_theme) {
+  color: map-get($theme, 'primary_1');
+  text-decoration: underline; 
+}
+
+@mixin pnm_struct_attachment_list_item_link() {
+  @include pnm_util_breakpoint(tablet) {
+    margin-bottom: pnm_util_unit(12px);
+  }
+}

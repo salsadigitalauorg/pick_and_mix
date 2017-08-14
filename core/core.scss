@@ -15,6 +15,7 @@ $pnm_theme: (
   'neutral_6': #E6E6E6,
   'neutral_7': #FAFAFA,
   'neutral_8': #DDDDDD,
+  'neutral_9': #F9F9F9,
   'white': #FFFFFF,
   'gradient_top': #079BA0,
   'gradient_bottom': #137779,
@@ -59,6 +60,14 @@ $pnm_theme: (
   padding: 12px;
   &:focus, &:hover {
     background-color: map-get($theme, 'secondary_1');
+    color: map-get($theme, 'neutral_4');
+    text-decoration: none;
+  }
+}
+
+@mixin pnm_style_body_link($theme: $pnm_theme) {
+  color: map-get($theme, 'primary_1');
+  &:focus, &:hover {
     color: map-get($theme, 'neutral_4');
     text-decoration: none;
   }

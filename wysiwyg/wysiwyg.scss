@@ -169,8 +169,7 @@
     border:none;
     font-size: pnm_util_unit(14px);
     line-height: pnm_util_unit(28px);
-    font-weight: normal;  
-    border:none;
+    font-weight: normal;
     text-align: left;
     padding: pnm_util_unit(12px);
   }
@@ -189,6 +188,18 @@
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(32px) 0;
   }
+}
+
+// =========================================================
+// Wisiwyg Table - Striped
+// =========================================================
+@mixin pnm_style_wysiwyg_table_striped($theme: $pnm_theme) {
+  tbody > tr:nth-child(odd) {
+    background-color: map-get($theme, 'neutral_9');
+  } 
+}
+@mixin pnm_struct_wysiwyg_table_striped($theme: $pnm_theme) {
+
 }
 
 // =========================================================
@@ -214,8 +225,8 @@
     font-style: normal;
     display:block;
     font-size: pnm_util_unit(12px);
-	line-height: pnm_util_unit(24px);
-	padding-top: 6px;
+	  line-height: pnm_util_unit(24px);
+	  padding-top: 6px;
     &:before {
       content: "\2014 ";
     }

@@ -1,0 +1,32 @@
+# PNM - Search Result Component
+
+Component for displaying search result item including title and summary.
+
+## Example Implementation
+
+### Example HTML
+```html
+<div class="search-result-item">
+  <h3><a href="#">Search result title</a></h3>
+  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+</div>
+```
+
+### Example SCSS
+```scss
+.search-result-item {
+  @include pnm_struct_search_result_container;
+  @include pnm_style_search_result_container;
+  h3 {
+    @include pnm_struct_search_result_title;
+    @include pnm_style_search_result_title;
+  }
+  p {
+    @include pnm_struct_search_result_description;
+    @include pnm_style_search_result_description;
+  }
+}
+```
+
+### Example JS
+None

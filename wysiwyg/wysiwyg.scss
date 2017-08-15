@@ -20,6 +20,7 @@
 }
 
 @mixin pnm_struct_wysiwyg_container() {
+   margin: 0 0 pnm_util_unit(14px);
   p {
     @include pnm_util_breakpoint(tablet) {
       margin: 0 0 pnm_util_unit(16px);

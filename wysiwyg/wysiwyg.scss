@@ -44,8 +44,9 @@
 }
 
 @mixin pnm_struct_wysiwyg_heading_2() {
+  margin: pnm_util_unit(30px) 0;
   @include pnm_util_breakpoint(tablet) {
-    margin: pnm_util_unit(64px) 0 pnm_util_unit(32px);
+    margin: pnm_util_unit(72px) 0 pnm_util_unit(32px);
   }
 }
 
@@ -65,8 +66,9 @@
 }
 
 @mixin pnm_struct_wysiwyg_heading_3() {
+  margin: pnm_util_unit(16px) 0 pnm_util_unit(10px);
   @include pnm_util_breakpoint(tablet) {
-    margin: pnm_util_unit(64px) 0 pnm_util_unit(32px);
+    margin: pnm_util_unit(72px) 0 pnm_util_unit(32px);
   }
 }
 
@@ -86,6 +88,7 @@
 }
 
 @mixin pnm_struct_wysiwyg_heading_4() {
+  margin: pnm_util_unit(16px) 0;
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(32px) 0;
   }
@@ -107,6 +110,7 @@
 }
 
 @mixin pnm_struct_wysiwyg_heading_5() {
+  margin: pnm_util_unit(14px) 0;
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(34px) 0 pnm_util_unit(26px);
   }
@@ -128,6 +132,7 @@
 }
 
 @mixin pnm_struct_wysiwyg_heading_6() {
+  margin: pnm_util_unit(14px) 0;
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(24px) 0;
   }
@@ -178,7 +183,7 @@
     td, th {
       font-size: pnm_util_unit(16px);
       line-height: pnm_util_unit(30px);
-      padding: pnm_util_unit(12px) pnm_util_unit(20px);
+      padding: pnm_util_unit(16px) pnm_util_unit(20px) 0;
     }
   }
 }
@@ -210,11 +215,11 @@
   color: map-get($theme, 'neutral_5');
   font-size: pnm_util_unit(14px);
   line-height: pnm_util_unit(30px);
-  padding: pnm_util_unit(12px) pnm_util_unit(20px);
+  padding: pnm_util_unit(4px) pnm_util_unit(20px);
   border-left: 5px solid map-get($theme, 'secondary_2');
   @include pnm_util_breakpoint(tablet) {
     font-size: pnm_util_unit(18px);
-    padding: pnm_util_unit(12px) pnm_util_unit(20px);
+    padding: pnm_util_unit(4px) pnm_util_unit(20px);
     p {
       font-size: inherit;
       line-height: inherit;
@@ -245,7 +250,7 @@
     margin: 0;
   }
   @include pnm_util_breakpoint(tablet) {
-    margin: pnm_util_unit(32px) 0;
+    margin: pnm_util_unit(32px) 0 pnm_util_unit(32px);
   }
 }
 

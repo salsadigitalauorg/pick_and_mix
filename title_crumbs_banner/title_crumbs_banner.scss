@@ -48,6 +48,7 @@
 // Title Crumbs Banner Breadcrumb Item
 // =========================================================
 @mixin pnm_style_title_crumbs_banner_breadcrumb_item($theme: $pnm_theme) {
+  color: map-get($pnm_theme, 'white');
   list-style:none;
   display:inline-block;
   margin-right: pnm_util_unit(6px);

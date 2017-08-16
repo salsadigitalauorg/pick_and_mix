@@ -2,10 +2,11 @@
 // Social Links Container
 // =========================================================
 @mixin pnm_style_social_links_container($theme: $pnm_theme) {
-  background-color: map-get($pnm_theme, 'secondary_1');
+  background-color: map-get($pnm_theme, 'secondary_3');
 }
 
 @mixin pnm_struct_social_links_container() {
+  padding: pnm_util_unit(38px) 0;
   width: 100%;
 }
 

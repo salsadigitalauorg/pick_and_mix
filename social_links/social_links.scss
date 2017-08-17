@@ -34,7 +34,7 @@
 
 @mixin pnm_struct_social_links_title() {
   display: inline;
-  margin: 0 pnm_util_unit(10px) 0 0;
+  margin: 0 pnm_util_unit(16px) 0 0;
 }
 
 // =========================================================
@@ -58,7 +58,7 @@
 
 @mixin pnm_struct_social_links_item() {
   display: inline-block;
-  margin-right: pnm_util_unit(10px);
+  margin-right: pnm_util_unit(8px);
   vertical-align: middle;
 }
 

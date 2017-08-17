@@ -2,12 +2,12 @@
 // Search Result Container
 // =========================================================
 @mixin pnm_style_search_result_container($theme: $pnm_theme) {
-  
-}
-@mixin pnm_struct_search_result_container {
-  
+  // ...
 }
 
+@mixin pnm_struct_search_result_container {
+  // ...
+}
 
 // =========================================================
 // Search Result Title
@@ -26,6 +26,7 @@
     text-decoration: underline;
   }
 }
+
 @mixin pnm_struct_search_result_title {
   margin: pnm_util_unit(24px) 0 pnm_util_unit(16px);
   @include pnm_util_breakpoint(tablet) {

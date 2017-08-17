@@ -72,7 +72,7 @@
   list-style: none;
   position: relative;
   &:hover, &.sfHover {
-    & > ul {
+    &>ul {
       display: block;
     }
   }

@@ -2,7 +2,7 @@
 // Sidebar Container
 // =========================================================
 @mixin pnm_style_sidebar_container($theme: $pnm_theme) {
-
+  // ...
 }
 
 @mixin pnm_struct_sidebar_container() {
@@ -22,10 +22,10 @@
   }
   cursor: pointer;
   @include pnm_util_breakpoint(tablet) {
-    background:none;
+    background: none;
     &.expanded {
       background: none;
-    }  
+    }
     font-size: pnm_util_unit(30px);
     cursor: default;
   }
@@ -46,14 +46,14 @@
 // =========================================================
 // Sidebar Nav
 // =========================================================
-@mixin pnm_style_sidebar_nav($theme: $pnm_theme) { 
-  list-style:none;
+@mixin pnm_style_sidebar_nav($theme: $pnm_theme) {
+  list-style: none;
   background-color: map-get($theme, 'neutral_7');
   @include pnm_util_breakpoint(tablet) {
     background: none;
     ul {
       background-color: map-get($theme, 'neutral_4');
-      border-top: 2px solid map-get($theme, 'neutral_6');    
+      border-top: 2px solid map-get($theme, 'neutral_6');
       ul {
         background-color: transparent;
         border-top: none;
@@ -64,9 +64,9 @@
 }
 
 @mixin pnm_struct_sidebar_nav() {
-  display:none;
-  padding:pnm_util_unit(20px) pnm_util_unit(20px) 0;
-  margin:0;
+  display: none;
+  padding: pnm_util_unit(20px) pnm_util_unit(20px) 0;
+  margin: 0;
   width: 100%;
   box-sizing: border-box;
   ul {
@@ -74,12 +74,12 @@
     padding-top: 0;
   }
   @include pnm_util_breakpoint(tablet) {
-    display:block;
-    padding:0;
+    display: block;
+    padding: 0;
     ul {
       padding: pnm_util_unit(18px) pnm_util_unit(8px) 0 pnm_util_unit(16px);
       margin-bottom: pnm_util_unit(20px);
-      display:none;
+      display: none;
       &.menu-open {
         display: block;
       }
@@ -105,7 +105,7 @@
   font-size: pnm_util_unit(14px);
   line-height: pnm_util_unit(42px);
   button {
-    border:none;
+    border: none;
     text-indent: -99999px;
     height: pnm_util_unit(42px);
     padding: 0 pnm_util_unit(6px);
@@ -124,14 +124,14 @@
 }
 
 @mixin pnm_struct_sidebar_list_item() {
-  padding:0 pnm_util_unit(10px);
+  padding: 0 pnm_util_unit(10px);
   li {
     padding: 0;
   }
   @include pnm_util_breakpoint(tablet) {
     button {
-      display:block;
-      float:right;
+      display: block;
+      float: right;
     }
   }
 }
@@ -143,37 +143,36 @@
   background-color: map-get($theme, 'neutral_7');
   ul {
     background-color: transparent;
-    border:none;
+    border: none;
   }
 }
 
 @mixin pnm_struct_sidebar_list_item_active_trail() {
- 
+  // ...
 }
 
 // =========================================================
 // Sidebar list Item Active 
 // =========================================================
 @mixin pnm_style_sidebar_list_item_active($theme: $pnm_theme) {
-  
+  // ...
 }
 
 @mixin pnm_struct_sidebar_list_item_active() {
- 
+  // ...
 }
 
 // =========================================================
 // Sidebar Link
 // =========================================================
 @mixin pnm_style_sidebar_link($theme: $pnm_theme) {
-  text-decoration:none;
+  text-decoration: none;
   color: map-get($theme, 'neutral_5');
   &:hover {
-   text-decoration: underline;
+    text-decoration: underline;
   }
 }
 
 @mixin pnm_struct_sidebar_link() {
   // ...
 }
-

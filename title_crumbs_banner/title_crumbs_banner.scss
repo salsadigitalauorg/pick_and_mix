@@ -1,10 +1,10 @@
 // =========================================================
 // Title Crumbs Banner Container
 // =========================================================
-@mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) { 
+@mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) {
   background-color: map-get($theme, 'secondary_1');
   @include pnm_util_breakpoint(tablet) {
-    background: map-get($theme, 'gradient_top'); 
+    background: map-get($theme, 'gradient_top');
     background: linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom'));
   }
 }
@@ -31,16 +31,15 @@
   }
 }
 
-
 // =========================================================
 // Title Crumbs Banner Breadcrumbs Nav
 // =========================================================
 @mixin pnm_struct_title_crumbs_banner_breadcrumb_nav() {
   padding: 0;
   margin: 0;
-  display:none;
+  display: none;
   @include pnm_util_breakpoint(tablet) {
-    display:block;
+    display: block;
   }
 }
 
@@ -49,14 +48,14 @@
 // =========================================================
 @mixin pnm_style_title_crumbs_banner_breadcrumb_item($theme: $pnm_theme) {
   color: map-get($pnm_theme, 'white');
-  list-style:none;
-  display:inline-block;
+  list-style: none;
+  display: inline-block;
   margin-right: pnm_util_unit(6px);
   padding-right: pnm_util_unit(22px);
   &:not(:last-child) {
     background-image: pnm_image("svg", "nav_right_arrow_white.svg");
     background-position: right center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
   }
 }
 
@@ -79,16 +78,16 @@
   color: map-get($theme, 'white');
   font-size: pnm_util_unit(24px);
   line-height: pnm_util_unit(40px);
-   margin-top: pnm_util_unit(16px);
-   margin-bottom: pnm_util_unit(16px);
+  margin-top: pnm_util_unit(16px);
+  margin-bottom: pnm_util_unit(16px);
   @include pnm_util_breakpoint(tablet) {
-   font-size: pnm_util_unit(48px);
-   line-height: pnm_util_unit(48px);
-   margin-top: pnm_util_unit(30px);
-   margin-bottom: pnm_util_unit(32px);
+    font-size: pnm_util_unit(48px);
+    line-height: pnm_util_unit(48px);
+    margin-top: pnm_util_unit(30px);
+    margin-bottom: pnm_util_unit(32px);
   }
 }
 
 @mixin pnm_struct_title_crumbs_banner_title() {
-
+  // ...
 }

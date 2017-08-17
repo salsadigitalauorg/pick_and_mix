@@ -2,19 +2,19 @@
 // Content Introduction Text
 // =========================================================
 @mixin pnm_style_content_introduction_text($theme: $pnm_theme) {
-	font-size: pnm_util_unit(14px);
-	line-height: pnm_util_unit(30px);
-	font-weight: bold;
-	@include pnm_util_breakpoint(tablet) {
-	  font-size: pnm_util_unit(22px);
-	  line-height: pnm_util_unit(36px);
-	  font-weight: normal;
-	}
-}   
+  font-size: pnm_util_unit(14px);
+  line-height: pnm_util_unit(30px);
+  font-weight: bold;
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(22px);
+    line-height: pnm_util_unit(36px);
+    font-weight: normal;
+  }
+}
 
 @mixin pnm_struct_content_introduction_text() {
   margin: pnm_util_unit(16px) 0 pnm_util_unit(18px);
   @include pnm_util_breakpoint(tablet) {
-
+    // ...
   }
 }

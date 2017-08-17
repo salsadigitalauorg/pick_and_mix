@@ -6,7 +6,18 @@
 }
 
 @mixin pnm_struct_card_container() {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 370px;
+  @include pnm_util_breakpoint(tablet) {
+    max-width: 780px;
+  }
+  @include pnm_util_breakpoint(large_tablet) {
+    max-width: $desktop_column;
+  }
 }
 
 // =========================================================
@@ -18,20 +29,45 @@
 
 @mixin pnm_struct_card() {
   box-sizing: border-box;
+  margin-bottom: 25px;
+  width: 100%;
   @include pnm_util_breakpoint(tablet) {
-    float: left;
     width: 50%;
-    &:nth-child(2n+1) {
-      clear: both;
-    }
+    margin-bottom: 50px;
   }
   @include pnm_util_breakpoint(large_tablet) {
-    width: 33.333%;
-    &:nth-child(2n+1) {
-      clear: none;
+    width: 100 / 3 * 1%;
+  }
+  &:nth-child(2n + 1) {
+    @include pnm_util_breakpoint(tablet) {
+      padding-right: 20px;
     }
-    &:nth-child(3n+4) {
-      clear: both;
+    @include pnm_util_breakpoint(large_tablet) {
+      padding-right: 0;
+    }
+  }
+  &:nth-child(2n + 2) {
+    @include pnm_util_breakpoint(tablet) {
+      padding-left: 20px;
+    }
+    @include pnm_util_breakpoint(large_tablet) {
+      padding-left: 0;
+    }
+  }
+  &:nth-child(3n + 1) {
+    @include pnm_util_breakpoint(large_tablet) {
+      padding-right: 20px;
+    }
+  }
+  &:nth-child(3n + 2) {
+    @include pnm_util_breakpoint(large_tablet) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &:nth-child(3n + 3) {
+    @include pnm_util_breakpoint(large_tablet) {
+      padding-left: 20px;
     }
   }
 }

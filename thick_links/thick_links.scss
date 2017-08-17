@@ -2,11 +2,19 @@
 // Thick Link Container
 // =========================================================
 @mixin pnm_style_thick_link_container($theme: $pnm_theme) {
-  // ...
+  padding-left: 20px;
+  padding-right: 20px;
+  @include pnm_util_breakpoint(tablet) {
+    max-width: $desktop_column;
+  }
 }
 
 @mixin pnm_struct_thick_link_container() {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 // =========================================================
@@ -18,10 +26,9 @@
   font-size: pnm_util_unit(18px);
   padding: $mobile_column_padding;
   width: 100%;
-  @include pnm_util_breakpoint(desktop) {
-    float: left;
-    border-right: $mobile_column_padding solid white;
-    width: 25%;
+  margin-bottom: 25px;
+  @include pnm_util_breakpoint(tablet) {
+    width: calc(25% - 10px);
   }
 }
 

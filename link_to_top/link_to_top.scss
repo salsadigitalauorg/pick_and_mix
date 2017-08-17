@@ -3,16 +3,16 @@
 // =========================================================
 @mixin pnm_style_link_to_top($theme: $pnm_theme) {
   color: map-get($theme, 'primary_1');
-  font-size:pnm_util_unit(14px);
+  font-size: pnm_util_unit(14px);
   line-height: pnm_util_unit(30px);
   @include pnm_util_breakpoint(tablet) {
-    font-size:pnm_util_unit(16px);
-  }  
+    font-size: pnm_util_unit(16px);
+  }
 }
 
 @mixin pnm_struct_link_to_top() {
-  display:inline-block;
-  float:right;
+  display: inline-block;
+  float: right;
   margin: pnm_util_unit(14px);
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(16px);

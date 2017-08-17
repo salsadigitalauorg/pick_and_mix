@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-@mixin pnm_struct_pagination_container() { 
+@mixin pnm_struct_pagination_container() {
   margin: pnm_util_unit(20px) 0;
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(48px) 0;
@@ -35,7 +35,7 @@
 }
 
 @mixin pnm_struct_pagination_list_item() {
-  display:none;
+  display: none;
   @include pnm_util_breakpoint(tablet) {
     display: inline-block;
   }
@@ -46,57 +46,57 @@
 // =========================================================
 @mixin pnm_style_pagination_list_item_active($theme: $pnm_theme) {
   a {
-    text-decoration:none;
+    text-decoration: none;
   }
 }
 
 @mixin pnm_struct_pagination_list_item_active() {
-  display:inline-block;
+  display: inline-block;
 }
 
 // =========================================================
 // Pagination List Item Prev
 // =========================================================
 @mixin pnm_style_pagination_list_item_prev($theme: $pnm_theme) {
-  position:relative;
+  position: relative;
   a {
     text-indent: -99999px;
-    display:inline-block;
+    display: inline-block;
     &:after {
-      position:absolute;
+      position: absolute;
       left: 0;
       right: auto;
       top: 0;
       content: "<<";
       text-indent: 0;
     }
-   }
-   @include pnm_util_breakpoint(tablet) {
-     position: static;
-     a {
-       text-indent: 0;
-       &:after {
-         position: static;
-         content: "";
-       }
-     }
-   }
+  }
+  @include pnm_util_breakpoint(tablet) {
+    position: static;
+    a {
+      text-indent: 0;
+      &:after {
+        position: static;
+        content: "";
+      }
+    }
+  }
 }
 
 @mixin pnm_struct_pagination_list_item_prev() {
-  display:inline-block;
+  display: inline-block;
 }
 
 // =========================================================
 // Pagination List Item Next
 // =========================================================
 @mixin pnm_style_pagination_list_item_next($theme: $pnm_theme) {
-  position:relative;
+  position: relative;
   a {
     text-indent: -99999px;
-    display:inline-block;
+    display: inline-block;
     &:after {
-    position:absolute;
+      position: absolute;
       right: 0;
       left: auto;
       top: 0;
@@ -105,19 +105,19 @@
     }
   }
   @include pnm_util_breakpoint(tablet) {
-     position: static;
-     a {
-       text-indent: 0;
-       &:after {
-         position: static;
-         content: "";
-       }
-     }
-   }
+    position: static;
+    a {
+      text-indent: 0;
+      &:after {
+        position: static;
+        content: "";
+      }
+    }
+  }
 }
 
 @mixin pnm_struct_pagination_list_item_next() {
-  display:inline-block;
+  display: inline-block;
 }
 
 // =========================================================
@@ -125,9 +125,8 @@
 // =========================================================
 @mixin pnm_style_pagination_link($theme: $pnm_theme) {
   color: map-get($theme, 'primary_1');
-  
 }
 
 @mixin pnm_struct_pagination_link() {
-  
+  // ...
 }

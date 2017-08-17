@@ -4,7 +4,6 @@
 $mobile_image_height: 276px;
 $desktop_details_height: 444px;
 $desktop_details_width: 524px;
-
 @mixin pnm_style_feature_container($theme: $pnm_theme) {
   @include pnm_util_breakpoint(tablet) {
     background-color: map-get($theme, 'primary_1');
@@ -13,7 +12,7 @@ $desktop_details_width: 524px;
 
 @mixin pnm_struct_feature_container() {
   width: 100%;
-  position:relative;
+  position: relative;
 }
 
 // =========================================================
@@ -21,12 +20,11 @@ $desktop_details_width: 524px;
 // =========================================================
 @mixin pnm_struct_feature_image_wrapper() {
   @include pnm_util_breakpoint(tablet) {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -39,7 +37,7 @@ $desktop_details_width: 524px;
   object-fit: cover;
   display: block;
   @include pnm_util_breakpoint(tablet) {
-    height: 100%;  
+    height: 100%;
   }
 }
 
@@ -64,7 +62,6 @@ $desktop_details_width: 524px;
     margin-right: auto;
     min-height: $desktop_details_height;
     position: relative;
-    z-index:1;
   }
 }
 
@@ -95,8 +92,8 @@ $desktop_details_width: 524px;
   font-size: pnm_util_unit(24px);
   line-height: pnm_util_unit(36px);
   @include pnm_util_breakpoint(tablet) {
-   font-size: pnm_util_unit(48px);
-   line-height: pnm_util_unit(56px);
+    font-size: pnm_util_unit(48px);
+    line-height: pnm_util_unit(56px);
   }
 }
 
@@ -110,16 +107,16 @@ $desktop_details_width: 524px;
 // =========================================================
 @mixin pnm_style_feature_details_body() {
   font-size: pnm_util_unit(14px);
-  line-height: pnm_util_unit(30px);  
+  line-height: pnm_util_unit(30px);
   @include pnm_util_breakpoint(tablet) {
-   font-size: pnm_util_unit(20px);
-   line-height: pnm_util_unit(36px);  
+    font-size: pnm_util_unit(20px);
+    line-height: pnm_util_unit(36px);
   }
 }
 
 @mixin pnm_struct_feature_details_body() {
   padding-top: pnm_util_unit(10px);
-  margin-top:0;
+  margin-top: 0;
   @include pnm_util_breakpoint(tablet) {
     padding-top: pnm_util_unit(26px);
   }

@@ -3,6 +3,8 @@
 // =========================================================
 @mixin pnm_style_homepage_introduction_container($theme: $pnm_theme) {
   background-color: map-get($theme, 'neutral_4');
+  padding-top: pnm_util_unit(30px);
+  padding-bottom: pnm_util_unit(30px);
 }
 
 @mixin pnm_struct_homepage_introduction_container() {
@@ -15,11 +17,20 @@
 // =========================================================
 @mixin pnm_style_homepage_introduction_content($theme: $pnm_theme) {
   text-align: center;
+  font-size: pnm_util_unit(22px);
+  padding-left: pnm_util_unit(20px);
+  padding-right: pnm_util_unit(20px);
+  @include pnm_util_breakpoint(desktop) {
+    max-width: pnm_util_unit(930px);
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @mixin pnm_struct_homepage_introduction_content() {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  // Set width for breakpoints in implementation..
 }

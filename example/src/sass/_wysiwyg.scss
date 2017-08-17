@@ -1,0 +1,52 @@
+.content-container {
+  @include pnm_style_wysiwyg_container;
+  @include pnm_struct_wysiwyg_container;
+  h2 {
+    @include pnm_style_wysiwyg_heading_2;
+    @include pnm_struct_wysiwyg_heading_2;
+  }
+  h3 {
+    @include pnm_style_wysiwyg_heading_3;
+    @include pnm_struct_wysiwyg_heading_3;
+  }
+  h4 {
+    @include pnm_style_wysiwyg_heading_4;
+    @include pnm_struct_wysiwyg_heading_4;
+  }
+  h5 {
+    @include pnm_style_wysiwyg_heading_5;
+    @include pnm_struct_wysiwyg_heading_5;
+  }
+  h6 {
+    @include pnm_style_wysiwyg_heading_6;
+    @include pnm_struct_wysiwyg_heading_6;
+  }
+  blockquote {
+    @include pnm_style_wysiwyg_quote;
+    @include pnm_struct_wysiwyg_quote;
+    &.right {
+      @include pnm_style_wysiwyg_quote_right_align;
+      @include pnm_struct_wysiwyg_quote_right_align;
+    }
+  }
+  table {
+    @include pnm_style_wysiwyg_table;
+    @include pnm_struct_wysiwyg_table;
+    &.striped {
+      @include pnm_style_wysiwyg_table_striped;
+      @include pnm_struct_wysiwyg_table_striped;
+    }
+  }
+  .table-responsive {
+    @include pnm_style_wysiwyg_table_responsive_wrapper;
+    @include pnm_struct_wysiwyg_table_responsive_wrapper;
+  }
+  ul {
+    @include pnm_style_wysiwyg_ulist;
+    @include pnm_struct_wysiwyg_ulist;
+  }
+  ol {
+    @include pnm_style_wysiwyg_olist;
+    @include pnm_struct_wysiwyg_olist;
+  }
+}

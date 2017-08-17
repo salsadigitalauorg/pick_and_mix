@@ -1,0 +1,10 @@
+.logo-and-copyright-container {
+  @include pnm_style_footer_copyright;
+  @include pnm_struct_footer_copyright;
+  .footer-logo-container {
+    @include pnm_struct_footer_logo-container;
+  }
+  .copyright-text {
+    @include pnm_style_footer_copyright_text;
+  }
+}

@@ -1,0 +1,26 @@
+.social-links-container {
+  @include pnm_struct_social_links_container;
+  @include pnm_style_social_links_container;
+}
+
+.social-links-inner {
+  @include pnm_struct_social_links_container_inner;
+  @include pnm_style_social_links_container_inner;
+  h2 {
+    @include pnm_struct_social_links_title;
+    @include pnm_style_social_links_title;
+  }
+}
+
+.social-links {
+  @include pnm_style_social_links;
+  @include pnm_struct_social_links;
+  a {
+    @include pnm_style_social_links_item;
+    @include pnm_struct_social_links_item;
+  }
+  img {
+    @include pnm_style_social_links_image;
+    @include pnm_struct_social_links_image;
+  }
+}

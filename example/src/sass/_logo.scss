@@ -1,0 +1,9 @@
+.logo-container {
+  @include pnm_style_logo_container;
+  a {
+    @include pnm_style_logo_link;
+    img {
+      @include pnm_style_logo_image;
+    }
+  }
+}

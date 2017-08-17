@@ -1,0 +1,4 @@
+.last-updated {
+  @include pnm_style_last_updated_text;
+  @include pnm_struct_last_updated_text;
+}

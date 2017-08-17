@@ -1,0 +1,30 @@
+.homepage-banner-container {
+  @include pnm_struct_feature_container;
+  @include pnm_style_feature_container;
+  .homepage-banner-container-inner {
+    @include pnm_style_feature_container_inner;
+    @include pnm_struct_feature_container_inner;
+  }
+  .homepage-banner-image-wrapper {
+    @include pnm_struct_feature_image_wrapper
+  }
+  img {
+    @include pnm_struct_feature_image;
+  }
+  .homepage-banner-details {
+    @include pnm_struct_feature_details;
+    @include pnm_style_feature_details;
+    .homepage-banner-title {
+      @include pnm_struct_feature_details_title;
+      @include pnm_style_feature_details_title;
+    }
+    .homepage-banner-text {
+      @include pnm_struct_feature_details_body;
+      @include pnm_style_feature_details_body;
+    }
+    .homepage-banner-button {
+      @include pnm_struct_feature_details_button;
+      @include pnm_style_feature_details_button;
+    }
+  }
+}

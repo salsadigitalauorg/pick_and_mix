@@ -1,0 +1,164 @@
+// =========================================================
+// Pick and Mix.
+// =========================================================
+@import '../../../utils/utils';
+@import '../../../core/core';
+@import '../../../header_search/header_search';
+@import '../../../header_horizontal_nav/header_horizontal_nav';
+@import '../../../text_resize/text_resize';
+@import '../../../logo/logo';
+@import '../../../homepage_introduction/homepage_introduction';
+@import '../../../main_navigation/main_navigation';
+@import '../../../partners/partners';
+@import '../../../social_links/social_links';
+@import '../../../footer_copyright/footer_copyright';
+@import '../../../footer_horizontal_nav/footer_horizontal_nav';
+@import '../../../feature_banner/feature_banner';
+@import '../../../card/card';
+@import '../../../title_crumbs_banner/title_crumbs_banner';
+@import '../../../sidebar/sidebar';
+@import '../../../content_introduction/content_introduction';
+@import '../../../pagination/pagination';
+@import '../../../link_to_top/link_to_top';
+@import '../../../last_updated/last_updated';
+@import '../../../wysiwyg/wysiwyg';
+@import '../../../attachment_list/attachment_list';
+@import '../../../search_result_item/search_result_item';
+@import '../../../thick_links/thick_links';
+// =========================================================
+// Implementation.
+// =========================================================
+@import 'header_search';
+@import 'header_horizontal_nav';
+@import 'text_resize';
+@import 'logo';
+@import 'homepage_introduction';
+@import 'main_navigation';
+@import 'partners';
+@import 'social_links';
+@import 'footer_nav';
+@import 'footer_copyright';
+@import 'homepage_banner';
+@import 'title_crumbs_banner';
+@import 'sidebar';
+@import 'content_introduction';
+@import 'pagination';
+@import 'link_to_top';
+@import 'last_updated';
+@import 'wysiwyg';
+@import 'attachment_list';
+@import 'card';
+@import 'search_result_item';
+@import 'thick_links';
+// =========================================================
+// Custom Scaffolding.
+// =========================================================
+body {
+  font-family: helvetica;
+  margin: 0;
+}
+
+.custom-grid {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 100%;
+    grid-template-columns: 25% 75%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.grid-sidebar {
+  @media (min-width: 768px) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+
+.grid-content {
+  @media (min-width: 768px) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}
+
+.custom-header {
+  font-family: Arial;
+  font-size: pnm_util_em(16px);
+  input {
+    font-size: pnm_util_em(16px);
+  }
+  .container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: pnm_util_em(15px);
+    padding-bottom: pnm_util_em(15px);
+    .row {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .top-bar {
+      text-align: right;
+      padding-top: pnm_util_em(15px);
+      padding-bottom: pnm_util_em(15px);
+    }
+    .logo-and-tools-container {
+      @include pnm_util_breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-container {
+        // ...
+      }
+      .tools-container {
+        @include pnm_util_breakpoint(tablet) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.container-center {
+  .row {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sidebar-menu {
+  font-family: helvetica;
+}
+
+.custom-footer {
+  font-size: pnm_util_em(16px);
+  font-family: Arial;
+  @include pnm_style_background_dark;
+  .container {
+    padding-top: pnm_util_em(36px);
+    padding-bottom: pnm_util_em(36px);
+    .row {
+      max-width: 1168px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .footer-container {
+    @include pnm_util_breakpoint(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.content-introduction {
+  font-family: helvetica;
+}

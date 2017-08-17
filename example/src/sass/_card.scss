@@ -1,0 +1,20 @@
+.card-container {
+  @include pnm_struct_card_container;
+  @include pnm_style_card_container;
+  .card {
+    @include pnm_struct_card;
+    @include pnm_style_card;
+    img {
+      @include pnm_style_card_image;
+      @include pnm_struct_card_image;
+    }
+    h3 {
+      @include pnm_style_card_title;
+      @include pnm_struct_card_title;
+    }
+    p {
+      @include pnm_style_card_description;
+      @include pnm_struct_card_description;
+    }
+  }
+}

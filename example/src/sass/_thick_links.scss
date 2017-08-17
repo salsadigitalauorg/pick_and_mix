@@ -1,0 +1,12 @@
+.thick-link-container {
+  @include pnm_style_thick_link_container;
+  @include pnm_struct_thick_link_container;
+  .thick-link {
+    @include pnm_struct_thick_link;
+    @include pnm_style_thick_link;
+    a {
+      @include pnm_struct_thick_link_title;
+      @include pnm_style_thick_link_title;
+    }
+  }
+}

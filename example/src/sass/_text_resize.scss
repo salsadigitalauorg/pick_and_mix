@@ -1,0 +1,26 @@
+.resize-container {
+  @include pnm_struct_text_resize_container;
+  @include pnm_style_text_resize_container;
+  .resize-items {
+    @include pnm_struct_text_resize_items;
+  }
+  .resize-reduce, .resize-increase, .resize-reset {
+    @include pnm_style_text_resize_button;
+  }
+  .resize-reduce {
+    @include pnm_struct_text_resize_reduce;
+    @include pnm_style_text_resize_reduce;
+  }
+  .resize-increase {
+    @include pnm_struct_text_resize_increase;
+    @include pnm_style_text_resize_increase;
+  }
+  .resize-reset {
+    @include pnm_struct_text_resize_reset;
+    @include pnm_style_text_resize_reset;
+  }
+}
+
+.pnm-text-resize-large {
+  font-size: 22px;
+}

@@ -1,0 +1,8 @@
+.introduction-container {
+  @include pnm_struct_homepage_introduction_container;
+  @include pnm_style_homepage_introduction_container;
+  .introduction-content {
+    @include pnm_struct_homepage_introduction_content;
+    @include pnm_style_homepage_introduction_content;
+  }
+}

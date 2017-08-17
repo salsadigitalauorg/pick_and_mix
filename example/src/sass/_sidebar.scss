@@ -1,0 +1,28 @@
+.sidebar {
+  @include pnm_style_sidebar_container;
+  @include pnm_struct_sidebar_container;
+  .section-title {
+    @include pnm_style_sidebar_title;
+    @include pnm_struct_sidebar_title;
+  }
+  ul.sidebar-menu {
+    @include pnm_struct_sidebar_nav;
+    @include pnm_style_sidebar_nav;
+    li {
+      @include pnm_style_sidebar_list_item;
+      @include pnm_struct_sidebar_list_item;
+      &.active-trail {
+        @include pnm_style_sidebar_list_item_active_trail;
+        @include pnm_struct_sidebar_list_item_active_trail;
+      }
+      &.active {
+        @include pnm_style_sidebar_list_item_active;
+        @include pnm_struct_sidebar_list_item_active;
+      }
+    }
+    a {
+      @include pnm_style_sidebar_link;
+      @include pnm_struct_sidebar_link;
+    }
+  }
+}

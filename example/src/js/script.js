@@ -1,0 +1,66 @@
+// =========================================================
+// HEADER SEARCH
+// =========================================================
+$(function() {
+  var header_search = new pnm_header_search();
+  header_search.init({
+    toggle_element_container: '.header-search-toggle-container',
+    container_element: '#header-search-form',
+    breakpoint: 768,
+    on_change: function() { /* ... */ }
+  });
+});
+
+// =========================================================
+// RESIZE
+// =========================================================
+$(function() {
+  var text_resize = new pnm_text_resize();
+  text_resize.init({
+    root_element: 'html',
+    reduce_button_element: '.resize-container .resize-reduce',
+    increase_button_element: '.resize-container .resize-increase',
+    reset_button_element: '.resize-container .resize-reset',
+    on_change: function() { /* ... */ }
+  });
+});
+
+// =========================================================
+// MAIN NAVIGATION
+// =========================================================
+$(function() {
+  var main_nagivation = new pnm_main_navigation();
+  main_nagivation.init({
+    breakpoint: 768,
+    menu_element: '.sf-menu',
+    toggle_element_container: '.menu-toggle-container',
+    container_element: '#main-navigation-top'
+    // toggle_element_html
+  });
+});
+
+// =========================================================
+// SIDEBAR RESIZE
+// =========================================================
+$(function() {
+  var sidebar_nav = new pnm_sidebar_nav();
+  sidebar_nav.init({
+    title_element: '.section-title',
+    nav_element: '.sidebar-menu',
+    nav_wrapper_element: '.sidebar > .sidebar-menu',
+    sidebar_element: '.sidebar',
+    breakpoint: 768,
+    on_change: function() { /* ... */ }
+  });
+});
+
+// =========================================================
+// LINK TO TOP
+// =========================================================
+$(function() {
+  var link_to_top = new pnm_link_to_top();
+  link_to_top.init({
+    link_element: '.back-to-top',
+    on_change: function() { /* ... */ }
+  });
+});

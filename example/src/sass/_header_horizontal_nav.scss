@@ -1,0 +1,9 @@
+ul.header-horizontal-link-container {
+  @include pnm_struct_header_horizontal_nav_container;
+  li {
+    @include pnm_struct_header_horizontal_nav_item;
+    a {
+      @include pnm_style_link;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.attachments-container {
+  @include pnm_style_attachment_list_container;
+  @include pnm_struct_attachment_list_container;
+  h4 {
+    @include pnm_style_attachment_list_title;
+    @include pnm_struct_attachment_list_title;
+  }
+  .files-list {
+    @include pnm_style_attachment_list;
+    @include pnm_struct_attachment_list;
+    li {
+      @include pnm_style_attachment_list_item;
+      @include pnm_struct_attachment_list_item;
+      a {
+        @include pnm_style_attachment_list_item_link;
+        @include pnm_struct_attachment_list_item_link;
+      }
+    }
+  }
+}

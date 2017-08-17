@@ -1,0 +1,4 @@
+.content-introduction {
+  @include pnm_style_content_introduction_text;
+  @include pnm_struct_content_introduction_text;
+}

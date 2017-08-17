@@ -1,0 +1,12 @@
+.search-result-item {
+  @include pnm_struct_search_result_container;
+  @include pnm_style_search_result_container;
+  h3 {
+    @include pnm_struct_search_result_title;
+    @include pnm_style_search_result_title;
+  }
+  p {
+    @include pnm_struct_search_result_description;
+    @include pnm_style_search_result_description;
+  }
+}

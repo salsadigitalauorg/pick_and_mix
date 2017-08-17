@@ -1,0 +1,72 @@
+.main-navigation {
+  @include pnm_struct_main_navigation_container;
+  @include pnm_style_main_navigation_container;
+  .main-navigation-inner {
+    @include pnm_struct_main_navigation_container_inner;
+    @include pnm_style_main_navigation_container_inner;
+  }
+  ul.sf-menu {
+    @include pnm_struct_main_navigation_list_container;
+    @include pnm_style_main_navigation_list_container;
+    html.no-flexbox & {
+      @include pnm_struct_main_navigation_list_container_compat;
+      @include pnm_style_main_navigation_list_container_compat;
+    }
+    li {
+      @include pnm_struct_main_navigation_list_item;
+      @include pnm_style_main_navigation_list_item;
+    }
+    a {
+      @include pnm_struct_main_navigation_link;
+      @include pnm_style_main_navigation_link;
+    }
+    ul {
+      @include pnm_struct_main_navigation_sub_menu;
+      @include pnm_style_main_navigation_sub_menu;
+    }
+    &>li {
+      @include pnm_struct_main_navigation_list_item_level_1;
+      @include pnm_style_main_navigation_list_item_level_1;
+      html.no-flexbox & {
+        @include pnm_struct_main_navigation_list_item_level_1_compat;
+        @include pnm_style_main_navigation_list_item_level_1_compat;
+      }
+      &.menuparent>a {
+        @include pnm_struct_main_navigation_list_item_level_1_parent;
+        @include pnm_style_main_navigation_list_item_level_1_parent;
+      }
+      &.active-trail>a {
+        @include pnm_struct_main_navigation_list_item_level_1_active;
+        @include pnm_style_main_navigation_list_item_level_1_active;
+      }
+      &>a {
+        @include pnm_struct_main_navigation_list_item_level_1_link;
+        @include pnm_style_main_navigation_list_item_level_1_link;
+      }
+      &>ul {
+        @include pnm_style_main_navigation_sub_menu_level_1;
+        @include pnm_struct_main_navigation_sub_menu_level_1;
+        li {
+          @include pnm_struct_main_navigation_sub_menu_list_item_level_n;
+          @include pnm_style_main_navigation_sub_menu_list_item_level_n;
+          &.menuparent>a {
+            @include pnm_struct_main_navigation_sub_menu_list_item_level_n_parent;
+            @include pnm_style_main_navigation_sub_menu_list_item_level_n_parent;
+          }
+          &.active-trail>a {
+            @include pnm_struct_main_navigation_sub_menu_list_item_level_n_active;
+            @include pnm_style_main_navigation_sub_menu_list_item_level_n_active;
+          }
+          a {
+            @include pnm_struct_main_navigation_sub_menu_link_level_n;
+            @include pnm_style_main_navigation_sub_menu_link_level_n;
+          }
+        }
+        ul {
+          @include pnm_struct_main_navigation_sub_menu_level_n;
+          @include pnm_style_main_navigation_sub_menu_level_n;
+        }
+      }
+    }
+  }
+}

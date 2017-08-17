@@ -1,0 +1,17 @@
+.partner-container {
+  @include pnm_style_partner_container;
+  @include pnm_struct_partner_container;
+}
+
+.partner {
+  @include pnm_style_partner;
+  @include pnm_struct_partner;
+  .partner-title {
+    @include pnm_style_partner_title;
+    @include pnm_struct_partner_title;
+  }
+  img {
+    @include pnm_style_partner_image;
+    @include pnm_struct_partner_image;
+  }
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Pick and Mix</title>
+    <!-- Third party -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Pick and Mix -->
+    <script src="../main_navigation/node_modules/superfish/dist/js/hoverIntent.js"></script>
+    <script src="../main_navigation/node_modules/superfish/dist/js/superfish.js"></script>
+    <script src="../main_navigation/main_navigation.js"></script>
+    <script src="../header_search/header_search.js"></script>
+    <script src="../text_resize/text_resize.js"></script>
+    <script src="../sidebar/sidebar.js"></script>
+    <script src="../link_to_top/link_to_top.js"></script>
+    <!-- Implementation -->
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <script src="dist/js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="custom-header">
+      <div class="container">
+        <div class="row top-bar">
+          <!-- Header Horizontal Nav -->
+          <ul class="header-horizontal-link-container">
+            <li><a href="/">Home</a></li>
+            <li><a href="/sitemap">Sitemap</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="row logo-and-tools-container">
+          <!-- Logo -->
+          <div class="logo-container">
+            <a href="/" title="Back to Homepage">
+              <img src="dist/images/png/monash-university.png" alt="Website name">
+            </a>
+          </div>
+          <div class="tools-container">
+            <!-- Resize -->
+            <div class="resize-container resize-container">
+              <div class="resize-items">
+                <button class="resize-reduce">Reduce</button>
+                <button class="resize-increase">Increase</button>
+                <button class="resize-reset">Reset</button>
+              </div>
+            </div>
+            <!-- Search -->
+            <div>
+              <div class="header-search-toggle-container"></div>
+              <form id="header-search-form" class="header-search-container">
+                <div class="header-search-field-container">
+                  <div class="header-search-field">
+                    <label for="search-input">Search for keywords</label>
+                    <input id="search-input" class="header-search-input" type="text" />
+                  </div>
+                  <div class="header-search-field">
+                    <input class="header-search-button" type="submit" value="Submit" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Nav -->
+    <div class="menu-toggle-container"></div>
+    <nav id="main-navigation-top" class="main-navigation">
+      <div class="main-navigation-inner">
+        <ul class="sf-menu">
+          <li><a href="/test1">Home</a></li>
+          <li class="menuparent active-trail">
+            <a href="/test2">Courses</a>
+            <ul>
+              <li><a href="/sap">Standard Article Page Link</a></li>
+              <li><a href="/sap">Standard Article Page Link</a></li>
+              <li class="menuparent active-trail">
+                <a href="/sap">Standard Article Page Link</a>
+                <ul>
+                  <li><a href="/sap">Standard Article Page Link</a></li>
+                  <li><a href="/sap">Standard Article Page Link</a></li>
+                  <li><a href="/sap">Standard Article Page Link</a></li>
+                </ul>
+              </li>
+              <li><a href="/sap">Standard Article Page Link</a></li>
+            </ul>
+          </li>
+          <li><a href="/test3">How to apply</a></li>
+          <li><a href="/test4">Publications</a></li>
+          <li><a href="/test5">Blog</a></li>
+          <li><a href="/test6">News &amp; Events</a></li>
+          <li><a href="/test6">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <div class="homepage-banner-container">
+      <div class="homepage-banner-image-wrapper">
+        <img src="http://via.placeholder.com/1600x444" alt="Homepage banner title over 2 lines" title="Homepage banner title over 2 lines">
+      </div>
+      <div class="homepage-banner-container-inner">
+        <div class="homepage-banner-details">
+          <h2 class="homepage-banner-title">Homepage banner title over 2 lines</h2>
+          <p class="homepage-banner-text">This is a summary of the banner's headline which can be displayed on a maximum of three lines, depending on the length of the text.</p>
+          <a href="#" class="homepage-banner-button">Find out more</a>
+        </div>
+      </div>
+    </div>
+    <!-- Introduction -->
+    <div class="introduction-container">
+      <div class="introduction-content">
+        <p>This is our purpose statement which can be displayed on a maximum of three lines. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+    <!-- Title Crumb Banner -->
+    <div class="title-crumbs-banner">
+      <div class="title-crumbs-banner-inner">
+        <nav class="crumbs">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/for-partners">Nav item 1</a>
+            </li>
+            <li>
+              <a href="/for-partners">Nav item 2</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Heading 1 section title</h1>
+      </div>
+    </div>
+    <!-- Cards -->
+    <div class="card-container">
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda impedit eius eligendi soluta cum optio repellendus quam quisquam inventore, labore.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus in est. Ducimus unde non perspiciatis ab blanditiis.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam distinctio vel quos perferendis quis magnam mollitia. Id, velit reprehenderit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <img width="370" src="https://placehold.it/370x234" alt="Image of card">
+          <h3><a href="#">Card Title</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Thick Links -->
+    <div class="thick-link-container">
+      <div class="thick-link">
+        <a href="#">Thick Link #1</a>
+      </div>
+      <div class="thick-link">
+        <a href="#">Thick Link #2</a>
+      </div>
+      <div class="thick-link">
+        <a href="#">Thick Link #3</a>
+      </div>
+      <div class="thick-link">
+        <a href="#">Thick Link #4</a>
+      </div>
+      <div class="thick-link">
+        <a href="#">Thick Link #5</a>
+      </div>
+      <div class="thick-link">
+        <a href="#">Thick Link #6</a>
+      </div>
+    </div>
+    <div class="container-center uikit-grid">
+      <div class="custom-grid">
+        <div class="grid-sidebar">
+          <div class="sidebar">
+            <h2 class="section-title">In this section</h2>
+            <ul class="sidebar-menu">
+              <li><a href="#">menu level 2</a></li>
+              <li><a href="#">menu level 2 parent</a>
+                <ul class="sidebar-menu">
+                  <li><a href="#">menu level 3</a></li>
+                  <li class="active-trail"><a href="#">menu level 3 (active trail)</a>
+                    <ul class="sidebar-menu">
+                      <li><a href="#">menu level 4</a></li>
+                      <li class="active"><a href="#">menu level 4 (active)</a></li>
+                      <li><a href="#">menu level 4</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">menu level 3</a>
+                    <ul class="sidebar-menu">
+                      <li><a href="#">menu level 4</a></li>
+                      <li><a href="#">menu level 4</a></li>
+                      <li><a href="#">menu level 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">menu level 2</a>
+                <ul class="sidebar-menu">
+                  <li><a href="#">menu level 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">menu level 2</a></li>
+              <li><a href="#">menu level 2 parent</a>
+                <ul class="sidebar-menu">
+                  <li><a href="#">menu level 3</a></li>
+                  <li><a href="#">menu level 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-content">
+          <!-- Standard Page -->
+          <div class="content-introduction">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+          <div class="content-container">
+            <h2>h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <p>p. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            <p>p. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+            <p>p. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+            <h3>h3 Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+            <p>p. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. </p>
+            <h4>h4 Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+            <p>p. <i>Italics. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</i> </p>
+            <h5>h5 Lorem ipsum dolor sit amet, consectetur adipiscing</h5>
+            <h6>h6 Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+            <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+              <cite>The author of the quote</cite>
+            </blockquote>
+            <blockquote>
+              <p>p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae. </p>
+            </blockquote>
+            <blockquote class="right"> Right align: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi lacus, auctor sit amet purus vel, gravida luctus lectus. Aenean rhoncus dapibus enim, sit amet faucibus leo ornare vitae.
+              <cite>The author of the quote</cite>
+            </blockquote>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@motto</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>The Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive">
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@motto</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>The Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li>Ulist Item 1</li>
+              <li>Ulist Item 2</li>
+              <li>Ulist Item 3</li>
+            </ul>
+            <ol>
+              <li>Olist Item 1</li>
+              <li>Olist Item 2</li>
+              <li>Olist Item 3</li>
+            </ol>
+          </div>
+          <div class="attachments-container">
+            <h4>Files list</h4>
+            <ul class="files-list">
+              <li><a href="#">Document Name.pdf</a></li>
+              <li><a href="#">Document Name.doc</a></li>
+              <li><a href="#">Document Name.xml</a></li>
+            </ul>
+          </div>
+          <!-- Last Updated -->
+          <div class="last-updated">Page last updated on 15 August 2017</div>
+          <!-- Search Results -->
+          <div class="content-container">
+            <h2>Search results</h2>
+            <div class="search-result-item">
+              <h3><a href="#">Search result title</a></h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+            <div class="search-result-item">
+              <h3><a href="#">Search result title</a></h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+            <div class="search-result-item">
+              <h3><a href="#">Search result title</a></h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+            <div class="search-result-item">
+              <h3><a href="#">Search result title</a></h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+            <div class="search-result-item">
+              <h3><a href="#">Search result title</a></h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li><a href="#">First</a></li>
+              <li class="prev"><a href="#">Previous</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li class="next"><a href="#">Next</a></li>
+              <li><a href="#">Last</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" title="Back to top" class="back-to-top">Back to top</a>
+    </div>
+    <!-- social links -->
+    <div class="social-links-container">
+      <div class="social-links-inner">
+        <h2>Connect with us</h2>
+        <div class="social-links">
+          <a href="#" rel="external">
+            <img typeof="foaf:Image" src="dist/images/svg/social-facebook.svg" alt="Facebook" title="Facebook">
+          </a>
+          <a href="#" class="has-image" rel="external">
+            <img typeof="foaf:Image" src="dist/images/svg/social-twitter.svg" alt="Twitter" title="Twitter">
+          </a>
+          <a href="#" class="has-image" rel="external">
+            <img typeof="foaf:Image" src="dist/images/svg/social-youtube.svg" alt="Youtube" title="Youtube">
+          </a>
+          <a href="/contact-us" class="has-image">
+            <img typeof="foaf:Image" src="dist/images/svg/social-email.svg" alt="Email" title="Email">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="custom-footer">
+      <div class="container">
+        <div class="row footer-container">
+          <div class="logo-and-copyright-container">
+            <div class="footer-logo-container" <a href="/" title="Back to Homepage">
+              <img src="dist/images/png/monash-university-white.png" alt="Website name">
+              </a>
+            </div>
+            <div class="copyright-text">&copy; 2017, Monash University, All rights reserved.</div>
+          </div>
+          <ul class="footer-nav-container">
+            <li><a href="/">Disclaimer</a></li>
+            <li><a href="/sitemap">Accessibility</a></li>
+            <li><a href="/faq">Copyright</a></li>
+            <li><a href="/contact">Help</a></li>
+            <li><a href="/faq">Site map</a></li>
+            <li><a href="/contact">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -26,16 +26,23 @@ $pnm_theme: (
   'main_navigation_sub_menu_background': #018488,
   'main_navigation_link_text': white,
 
+  // Button
+  'button_default_background': #057F83,
+  'button_default_text': white,
+
   // Fonts
   'font_primary': 'HelveticaNeue-Bold'
 );
 
 @mixin pnm_style_button($theme: $pnm_theme) {
-  background-color: map-get($theme, 'primary_1');
-  color: map-get($theme, 'neutral_4');
+  background-color: map-get($theme, 'button_default_background');
+  color: map-get($theme, 'button_default_text');
   border: 0;
   height: 100%;
   box-sizing: border-box;
+  &:focus, &:hover {
+    background-color: mix(black, map-get($theme, 'button_default_background'), 25%);
+  }
 }
 
 @mixin pnm_style_hidden($theme: $pnm_theme) {

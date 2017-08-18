@@ -146,6 +146,11 @@
     margin-left: pnm_util_unit(4px);
     vertical-align: middle;
   }
+  &:focus, &:hover {
+    &::after {
+      background-image: pnm_util_url('nav_down_arrow_hover.svg');
+    }
+  }
 }
 
 @mixin pnm_struct_main_navigation_list_item_level_1_parent() {
@@ -235,6 +240,9 @@
   background-image: pnm_util_url('nav_right_arrow.svg');
   background-repeat: no-repeat;
   background-position: right pnm_util_unit(22px) center;
+  &:focus, &:hover {
+    background-image: pnm_util_url('nav_right_arrow_hover.svg');
+  }
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_list_item_level_n_parent() {

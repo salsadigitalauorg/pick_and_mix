@@ -5,7 +5,10 @@
   font-size: pnm_util_unit(14px);
   padding-left: pnm_util_unit(32px);
   line-height: pnm_util_unit(30px);
-  background: pnm_util_url('time_icon.svg') 0 50% no-repeat transparent;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: pnm_util_url('time_icon.svg');
   @include pnm_util_breakpoint(tablet) {
     font-size: pnm_util_unit(16px);
   }

@@ -1,12 +1,13 @@
-// =========================================================
-// Feature Banner Container
-// =========================================================
 $mobile_image_height: 276px;
 $desktop_details_height: 444px;
 $desktop_details_width: 524px;
+// =========================================================
+// Feature Banner Container
+// =========================================================
 @mixin pnm_style_feature_container($theme: $pnm_theme) {
   @include pnm_util_breakpoint(tablet) {
-    background-color: map-get($theme, 'primary_1');
+    background-color: map-get($theme, 'gradient_top');
+    background-image: linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom'));
   }
 }
 
@@ -57,6 +58,7 @@ $desktop_details_width: 524px;
   padding-right: $mobile_column_padding;
   box-sizing: border-box;
   @include pnm_util_breakpoint(tablet) {
+    box-sizing: content-box;
     max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +73,7 @@ $desktop_details_width: 524px;
 @mixin pnm_style_feature_details($theme: $pnm_theme) {
   color: map-get($theme, 'white');
   @include pnm_util_breakpoint(tablet) {
-    background-color: map-get($theme, 'secondary_3');
+    background-color: map-get($theme, 'main_navigation_link_over');
   }
 }
 

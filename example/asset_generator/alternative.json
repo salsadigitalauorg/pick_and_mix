@@ -1,0 +1,156 @@
+[
+  {
+    "template": "search_icon.svg",
+    "default": "search_icon.svg",
+    "secondary": "search_icon_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "nav_down_arrow.svg",
+    "default": "nav_down_arrow.svg",
+    "secondary": "nav_down_arrow_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "nav_down_arrow_secondary2.svg",
+    "default": "nav_down_arrow_secondary2.svg",
+    "secondary": "nav_down_arrow_secondary2_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "nav_right_arrow.svg",
+    "default": "nav_right_arrow.svg",
+    "secondary": "nav_right_arrow_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "nav_right_arrow_white.svg",
+    "default": "nav_right_arrow_white.svg",
+    "secondary": "nav_right_arrow_white_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "nav_up_arrow_secondary2.svg",
+    "default": "nav_up_arrow_secondary2.svg",
+    "secondary": "nav_up_arrow_secondary2_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "search_icon.svg",
+    "default": "search_icon.svg",
+    "secondary": "search_icon_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "search_icon_close.svg",
+    "default": "search_icon_close.svg",
+    "secondary": "search_icon_close_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "social-Instagram.svg",
+    "default": "social-Instagram.svg",
+    "secondary": "social-Instagram_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-email.svg",
+    "default": "social-email.svg",
+    "secondary": "social-email_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-facebook.svg",
+    "default": "social-facebook.svg",
+    "secondary": "social-facebook_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-flickr.svg",
+    "default": "social-flickr.svg",
+    "secondary": "social-flickr_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-googleplus.svg",
+    "default": "social-googleplus.svg",
+    "secondary": "social-googleplus_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-linkedin.svg",
+    "default": "social-linkedin.svg",
+    "secondary": "social-linkedin_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-rss.svg",
+    "default": "social-rss.svg",
+    "secondary": "social-rss_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-twitter.svg",
+    "default": "social-twitter.svg",
+    "secondary": "social-twitter_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-vimeo.svg",
+    "default": "social-vimeo.svg",
+    "secondary": "social-vimeo_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "social-youtube.svg",
+    "default": "social-youtube.svg",
+    "secondary": "social-youtube_hover.svg",
+    "colour_default": "#FFF",
+    "colour_secondary": null
+  },
+  {
+    "template": "text_resize_increase.svg",
+    "default": "text_resize_increase.svg",
+    "secondary": "text_resize_increase_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "text_resize_reduce.svg",
+    "default": "text_resize_reduce.svg",
+    "secondary": "text_resize_reduce_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "text_resize_reset.svg",
+    "default": "text_resize_reset.svg",
+    "secondary": "text_resize_reset_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "time_icon.svg",
+    "default": "time_icon.svg",
+    "secondary": "time_icon_hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  }
+]

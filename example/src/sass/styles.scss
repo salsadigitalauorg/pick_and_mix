@@ -3,6 +3,9 @@
 // =========================================================
 @import '../../../utils/utils';
 @import '../../../core/core';
+// Add custom theme colours.
+@import 'theme';
+// Add individual PNM Components
 @import '../../../header_search/header_search';
 @import '../../../header_horizontal_nav/header_horizontal_nav';
 @import '../../../text_resize/text_resize';
@@ -98,9 +101,11 @@ body {
     padding-top: pnm_util_em(15px);
     padding-bottom: pnm_util_em(15px);
     .row {
-      max-width: 1024px;
+      max-width: 1170px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     .top-bar {
       text-align: right;

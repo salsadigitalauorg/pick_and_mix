@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="govCMS-Theme" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="MU_LIST_PAGE" transform="translate(-570.000000, -2145.000000)" fill="#008488">
+        <g id="MU_LIST_PAGE" transform="translate(-570.000000, -2145.000000)" fill="#006DAE">
             <g id="Last-updated" transform="translate(570.000000, 2139.000000)">
                 <path d="M12,6 C7.03,6 3,10.03 3,15 L0,15 L3.89,18.89 L3.96,19.03 L8,15 L5,15 C5,11.13 8.13,8 12,8 C15.87,8 19,11.13 19,15 C19,18.87 15.87,22 12,22 C10.07,22 8.32,21.21 7.06,19.94 L5.64,21.36 C7.27,22.99 9.51,24 12,24 C16.97,24 21,19.97 21,15 C21,10.03 16.97,6 12,6 L12,6 Z M11,11 L11,16 L15.28,18.54 L16,17.33 L12.5,15.25 L12.5,11 L11,11 L11,11 Z" id="Shape"></path>
             </g>

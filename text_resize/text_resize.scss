@@ -51,6 +51,9 @@
 // =========================================================
 @mixin pnm_style_text_resize_reduce($theme: $pnm_theme) {
   background-image: pnm_util_url('text_resize_reduce.svg');
+  &:focus, &:hover {
+    background-image: pnm_util_url('text_resize_reduce_hover.svg');
+  }
 }
 
 @mixin pnm_struct_text_resize_reduce() {
@@ -62,6 +65,9 @@
 // =========================================================
 @mixin pnm_style_text_resize_increase($theme: $pnm_theme) {
   background-image: pnm_util_url('text_resize_increase.svg');
+  &:focus, &:hover {
+    background-image: pnm_util_url('text_resize_increase_hover.svg');
+  }
 }
 
 @mixin pnm_struct_text_resize_increase() {
@@ -73,6 +79,9 @@
 // =========================================================
 @mixin pnm_style_text_resize_reset($theme: $pnm_theme) {
   background-image: pnm_util_url('text_resize_reset.svg');
+  &:focus, &:hover {
+    background-image: pnm_util_url('text_resize_reset_hover.svg');
+  }
 }
 
 @mixin pnm_struct_text_resize_reset() {

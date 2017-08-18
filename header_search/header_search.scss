@@ -16,8 +16,14 @@
   &:focus {
     z-index: 1;
   }
+  &:focus, &:hover {
+    background-image: pnm_util_url('search_icon_hover.svg');
+  }
   &.search-open {
     background-image: pnm_util_url('search_icon_close.svg');
+    &:focus, &:hover {
+      background-image: pnm_util_url('search_icon_close_hover.svg');
+    }
   }
 }
 
@@ -102,6 +108,9 @@
   cursor: pointer;
   &:focus {
     z-index: 1;
+  }
+  &:focus, &:hover {
+    background-image: pnm_util_url('search_icon_hover.svg');
   }
 }
 

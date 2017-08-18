@@ -49,6 +49,7 @@ $(function() {
     nav_element: '.sidebar-menu',
     nav_wrapper_element: '.sidebar > .sidebar-menu',
     sidebar_element: '.sidebar',
+    active_trail_class: 'active-trail',
     breakpoint: 768,
     on_change: function() { /* ... */ }
   });

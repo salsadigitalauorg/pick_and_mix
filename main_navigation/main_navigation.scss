@@ -2,7 +2,9 @@
 // MAIN NAVIGATION CONTAINER
 // =========================================================
 @mixin pnm_style_main_navigation_container($theme: $pnm_theme) {
-  background-color: map-get($theme, 'secondary_1');
+  @include pnm_util_breakpoint(tablet) {
+    background-color: map-get($theme, 'secondary_1');
+  }
 }
 
 @mixin pnm_struct_main_navigation_container() {
@@ -24,28 +26,33 @@
 }
 
 @mixin pnm_struct_main_navigation_container_inner() {
-  width: 100%;
-  max-width: pnm_util_unit(1024px);
-  margin-left: auto;
-  margin-right: auto;
+  @include pnm_util_breakpoint(tablet) {
+    width: 100%;
+    max-width: pnm_util_unit(1024px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // =========================================================
 // MAIN NAVIGATION LIST CONTAINER
 // =========================================================
 @mixin pnm_style_main_navigation_list_container($theme: $pnm_theme) {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
+  @include pnm_util_breakpoint(tablet) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
 }
 
 @mixin pnm_struct_main_navigation_list_container() {
-  // ...
+  @include pnm_util_breakpoint(tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
 }
 
 @mixin pnm_style_main_navigation_list_container_compat($theme: $pnm_theme) {
@@ -53,7 +60,9 @@
 }
 
 @mixin pnm_struct_main_navigation_list_container_compat() {
-  display: table;
+  @include pnm_util_breakpoint(tablet) {
+    display: table;
+  }
   @include pnm_util_breakpoint(desktop) {
     table-layout: fixed;
   }
@@ -67,13 +76,17 @@
 }
 
 @mixin pnm_struct_main_navigation_list_item() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
+  @include pnm_util_breakpoint(tablet) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
   &:hover, &.sfHover {
     &>ul {
-      display: block;
+      @include pnm_util_breakpoint(tablet) {
+        display: block;
+      }
     }
   }
 }
@@ -82,14 +95,18 @@
 // MAIN NAVIGATION LINK
 // =========================================================
 @mixin pnm_style_main_navigation_link($theme: $pnm_theme) {
-  padding: pnm_util_unit(14px) pnm_util_unit(16px);
-  font-size: pnm_util_unit(18px);
-  font-family: map-get($theme, 'font_primary');
+  @include pnm_util_breakpoint(tablet) {
+    padding: pnm_util_unit(14px) pnm_util_unit(16px);
+    font-size: pnm_util_unit(18px);
+    font-family: map-get($theme, 'font_primary');
+  }
 }
 
 @mixin pnm_struct_main_navigation_link() {
-  display: block;
-  position: relative;
+  @include pnm_util_breakpoint(tablet) {
+    display: block;
+    position: relative;
+  }
 }
 
 // =========================================================
@@ -100,10 +117,12 @@
 }
 
 @mixin pnm_struct_main_navigation_sub_menu() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
+  @include pnm_util_breakpoint(tablet) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+  }
 }
 
 // =========================================================
@@ -114,12 +133,14 @@
 }
 
 @mixin pnm_struct_main_navigation_list_item_level_1() {
-  position: relative;
-  vertical-align: top;
-  float: none;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
+  @include pnm_util_breakpoint(tablet) {
+    position: relative;
+    vertical-align: top;
+    float: none;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 @mixin pnm_style_main_navigation_list_item_level_1_compat($theme: $pnm_theme) {
@@ -127,8 +148,10 @@
 }
 
 @mixin pnm_struct_main_navigation_list_item_level_1_compat() {
-  display: table-cell;
-  width: auto;
+  @include pnm_util_breakpoint(tablet) {
+    display: table-cell;
+    width: auto;
+  }
 }
 
 // =========================================================
@@ -136,19 +159,23 @@
 // =========================================================
 @mixin pnm_style_main_navigation_list_item_level_1_parent($theme: $pnm_theme) {
   &::after {
-    content: '';
-    display: inline-block;
-    background-image: pnm_util_url('nav_down_arrow.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: pnm_util_unit(12px);
-    height: pnm_util_unit(8px);
-    margin-left: pnm_util_unit(4px);
-    vertical-align: middle;
+    @include pnm_util_breakpoint(tablet) {
+      content: '';
+      display: inline-block;
+      background-image: pnm_util_url('nav_down_arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      width: pnm_util_unit(12px);
+      height: pnm_util_unit(8px);
+      margin-left: pnm_util_unit(4px);
+      vertical-align: middle;
+    }
   }
   &:focus, &:hover {
     &::after {
-      background-image: pnm_util_url('nav_down_arrow_hover.svg');
+      @include pnm_util_breakpoint(tablet) {
+        background-image: pnm_util_url('nav_down_arrow_hover.svg');
+      }
     }
   }
 }
@@ -162,7 +189,9 @@
 // =========================================================
 @mixin pnm_style_main_navigation_list_item_level_1_active($theme: $pnm_theme) {
   &::before {
-    border-bottom-color: map-get($theme, 'main_navigation_link_line');
+    @include pnm_util_breakpoint(tablet) {
+      border-bottom-color: map-get($theme, 'main_navigation_link_line');
+    }
   }
 }
 
@@ -176,50 +205,62 @@
 @mixin pnm_style_main_navigation_list_item_level_1_link($theme: $pnm_theme) {
   $default_padding: 22px;
   $border_bottom: 4px;
-  padding-top: $default_padding;
-  padding-bottom: pnm_util_unit($default_padding - $border_bottom);
-  color: map-get($theme, 'main_navigation_link_text');
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  padding-left: pnm_util_unit(2px);
-  padding-right: pnm_util_unit(2px);
+  @include pnm_util_breakpoint(tablet) {
+    padding-top: $default_padding;
+    padding-bottom: pnm_util_unit($default_padding - $border_bottom);
+    color: map-get($theme, 'main_navigation_link_text');
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: pnm_util_unit(2px);
+    padding-right: pnm_util_unit(2px);
+  }
   &:hover, &:focus {
     &::before {
-      background-color: map-get($theme, 'main_navigation_link_over');
+      @include pnm_util_breakpoint(tablet) {
+        background-color: map-get($theme, 'main_navigation_link_over');
+      }
     }
   }
   &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
-    border-bottom: $border_bottom solid transparent;
+    @include pnm_util_breakpoint(tablet) {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      border-bottom: $border_bottom solid transparent;
+    }
   }
 }
 
 @mixin pnm_struct_main_navigation_list_item_level_1_link() {
-  position: static;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  @include pnm_util_breakpoint(tablet) {
+    position: static;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // =========================================================
 // MAIN NAVIGATION SUB MENU LEVEL 1
 // =========================================================
 @mixin pnm_style_main_navigation_sub_menu_level_1($theme: $pnm_theme) {
-  background-color: map-get($theme, 'main_navigation_sub_menu_background');
+  @include pnm_util_breakpoint(tablet) {
+    background-color: map-get($theme, 'main_navigation_sub_menu_background');
+  }
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_level_1() {
-  left: 0;
+  @include pnm_util_breakpoint(tablet) {
+    left: 0;
+  }
 }
 
 // =========================================================
@@ -237,9 +278,11 @@
 // MAIN NAVIGATION SUB MENU LEVEL LIST ITEM LEVEL N PARENT
 // =========================================================
 @mixin pnm_style_main_navigation_sub_menu_list_item_level_n_parent($theme: $pnm_theme) {
-  background-image: pnm_util_url('nav_right_arrow.svg');
-  background-repeat: no-repeat;
-  background-position: right pnm_util_unit(22px) center;
+  @include pnm_util_breakpoint(tablet) {
+    background-image: pnm_util_url('nav_right_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right pnm_util_unit(22px) center;
+  }
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_list_item_level_n_parent() {
@@ -250,7 +293,9 @@
 // MAIN NAVIGATION SUB MENU LEVEL LIST ITEM LEVEL N ACTIVE
 // =========================================================
 @mixin pnm_style_main_navigation_sub_menu_list_item_level_n_active($theme: $pnm_theme) {
-  border-bottom-color: map-get($theme, 'main_navigation_link_line');
+  @include pnm_util_breakpoint(tablet) {
+    border-bottom-color: map-get($theme, 'main_navigation_link_line');
+  }
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_list_item_level_n_active() {
@@ -261,16 +306,20 @@
 // MAIN NAVIGATION SUB MENU LINK LEVEL N
 // =========================================================
 @mixin pnm_style_main_navigation_sub_menu_link_level_n($theme: $pnm_theme) {
-  color: map-get($theme, 'main_navigation_link_text');
-  text-decoration: none;
-  font-size: pnm_util_unit(16px);
-  border-bottom: 1px solid transparent;
-  padding-left: pnm_util_unit(30px);
-  padding-right: pnm_util_unit(30px);
-  padding-top: pnm_util_unit(16px);
-  padding-bottom: pnm_util_unit((16px - 1px));
+  @include pnm_util_breakpoint(tablet) {
+    color: map-get($theme, 'main_navigation_link_text');
+    text-decoration: none;
+    font-size: pnm_util_unit(16px);
+    border-bottom: 1px solid transparent;
+    padding-left: pnm_util_unit(30px);
+    padding-right: pnm_util_unit(30px);
+    padding-top: pnm_util_unit(16px);
+    padding-bottom: pnm_util_unit((16px - 1px));
+  }
   &:hover, &:focus {
-    background-color: map-get($theme, 'main_navigation_link_over');
+    @include pnm_util_breakpoint(tablet) {
+      background-color: map-get($theme, 'main_navigation_link_over');
+    }
   }
 }
 
@@ -282,10 +331,14 @@
 // MAIN NAVIGATION SUB MENU LEVEL N
 // =========================================================
 @mixin pnm_style_main_navigation_sub_menu_level_n($theme: $pnm_theme) {
-  background-color: map-get($theme, 'main_navigation_sub_menu_background');
+  @include pnm_util_breakpoint(tablet) {
+    background-color: map-get($theme, 'main_navigation_sub_menu_background');
+  }
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_level_n() {
-  top: 0;
-  left: 100%;
+  @include pnm_util_breakpoint(tablet) {
+    top: 0;
+    left: 100%;
+  }
 }

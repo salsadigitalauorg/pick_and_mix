@@ -5,6 +5,7 @@ function pnm_header_search() {
   var $button = null;
   var $toggle_container = null;
   var search_toggle_enabled = false;
+  var $toggle_class = null;
   var breakpoint = 768;
 
   function search_bar_resize() {
@@ -27,6 +28,9 @@ function pnm_header_search() {
     if (search_toggle_enabled) {
       var was_open = $widget.hasClass('search-open');
       $widget.toggleClass('search-open');
+      if ($toggle_class !== null) {
+        $toggle_class.toggleClass('search-open');
+      }
       if (was_open) {
         $widget.attr('aria-hidden', 'true');
         $button.removeClass('search-open').attr('aria-expanded', 'false');
@@ -46,10 +50,14 @@ function pnm_header_search() {
    *   - container_element        = Element that contains the form. String.
    *   - toggle_element_html      = HTML for button. String.
    *   - toggle_element_container = Element that will hold the small version toggle button. String.
+   *   - toggle_class_on_element  = Element that will hold the small version toggle button. String.
    */
   this.init = function(options) {
     breakpoint = options.breakpoint;
     $widget = $(options.container_element);
+    if (options['toggle_class_on_element'] !== undefined) {
+      $toggle_class = $(options.toggle_class_on_element);
+    }
     if ($widget.length > 0) {
       if (options['toggle_element_html'] !== undefined) {
         $button = $(options.toggle_element_html);

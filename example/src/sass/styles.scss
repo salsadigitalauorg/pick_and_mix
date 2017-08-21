@@ -7,7 +7,6 @@
 @import 'theme';
 // Add individual PNM Components
 @import '../../../header_search/header_search';
-@import '../../../header_horizontal_nav/header_horizontal_nav';
 @import '../../../text_resize/text_resize';
 @import '../../../logo/logo';
 @import '../../../homepage_introduction/homepage_introduction';
@@ -29,11 +28,11 @@
 @import '../../../search_result_item/search_result_item';
 @import '../../../thick_links/thick_links';
 @import '../../../partners/partners';
+@import '../../../header/header';
 // =========================================================
 // Implementation.
 // =========================================================
 @import 'header_search';
-@import 'header_horizontal_nav';
 @import 'text_resize';
 @import 'logo';
 @import 'homepage_introduction';
@@ -55,16 +54,13 @@
 @import 'search_result_item';
 @import 'thick_links';
 @import 'partners';
+@import 'header';
 // =========================================================
 // Custom Scaffolding.
 // =========================================================
 body {
   font-family: helvetica;
   margin: 0;
-}
-
-* {
-  // outline: 1px solid red;
 }
 
 .custom-grid {
@@ -92,47 +88,6 @@ body {
   @media (min-width: 768px) {
     grid-column-start: 2;
     grid-row-start: 1;
-  }
-}
-
-.custom-header {
-  font-family: Arial;
-  font-size: pnm_util_em(16px);
-  input {
-    font-size: pnm_util_em(16px);
-  }
-  .container {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: pnm_util_em(15px);
-    padding-bottom: pnm_util_em(15px);
-    .row {
-      max-width: 1170px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    .top-bar {
-      text-align: right;
-      padding-top: pnm_util_em(15px);
-      padding-bottom: pnm_util_em(15px);
-    }
-    .logo-and-tools-container {
-      @include pnm_util_breakpoint(tablet) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .logo-container {
-        // ...
-      }
-      .tools-container {
-        @include pnm_util_breakpoint(tablet) {
-          display: flex;
-        }
-      }
-    }
   }
 }
 

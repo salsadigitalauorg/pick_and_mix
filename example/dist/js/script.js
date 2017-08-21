@@ -4,6 +4,7 @@
 $(function() {
   var header_search = new pnm_header_search();
   header_search.init({
+    toggle_class_on_element: '.header-inner .layer-2',
     toggle_element_container: '.header-search-toggle-container',
     container_element: '#header-search-form',
     breakpoint: 768,

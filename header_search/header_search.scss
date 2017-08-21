@@ -35,7 +35,18 @@
 // Search Container
 // =========================================================
 @mixin pnm_style_header_search_container($theme: $pnm_theme) {
-  // ...
+  &.search-open {
+    position: absolute;
+    left: $mobile_column_padding;
+    right: $mobile_column_padding;
+    margin-top: 15px;
+    @include pnm_util_breakpoint(tablet) {
+      position: relative;
+      left: auto;
+      right: auto;
+      margin-top: auto;
+    }
+  }
 }
 
 @mixin pnm_struct_header_search_container() {
@@ -71,17 +82,31 @@
 }
 
 // =========================================================
+// Search Field
+// =========================================================
+@mixin pnm_style_header_search_input_field($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_search_input_field() {
+  width: 100%;
+}
+
+// =========================================================
 // Search Input
 // =========================================================
 @mixin pnm_style_header_search_input($theme: $pnm_theme) {
   position: relative;
   background: #F6F6F6;
   height: pnm_util_unit(54px);
-  width: pnm_util_unit(320px);
   box-sizing: border-box;
   border: 0;
   border-right: 1px solid #BEBEBE;
   padding: pnm_util_unit(20px);
+  width: 100%;
+  @include pnm_util_breakpoint(tablet) {
+    width: pnm_util_unit(320px);
+  }
   &:focus {
     z-index: 1;
   }

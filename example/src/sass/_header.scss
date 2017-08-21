@@ -1,0 +1,26 @@
+.header {
+  .header-inner {
+    @include pnm_struct_header_inner;
+    .layer {
+      @include pnm_struct_header_layer;
+    }
+    .layer-1 {
+      @include pnm_struct_header_layer_1;
+      ul.header-horizontal-link-container {
+        @include pnm_struct_header_horizontal_nav_container;
+        li {
+          @include pnm_struct_header_horizontal_nav_item;
+          a {
+            @include pnm_style_link;
+          }
+        }
+      }
+    }
+    .layer-2 {
+      @include pnm_struct_header_layer_2;
+      .tools-container {
+        @include pnm_struct_header_tools_container;
+      }
+    }
+  }
+}

@@ -19,9 +19,10 @@
   </head>
 
   <body>
-    <div class="custom-header">
-      <div class="container">
-        <div class="row top-bar">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <nav class="layer layer-1">
           <!-- Header Horizontal Nav -->
           <ul class="header-horizontal-link-container">
             <li><a href="/">Home</a></li>
@@ -29,8 +30,8 @@
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="row logo-and-tools-container">
+        </nav>
+        <div class="layer layer-2">
           <!-- Logo -->
           <div class="logo-container">
             <a href="/" title="Back to Homepage">
@@ -38,7 +39,7 @@
             </a>
           </div>
           <div class="tools-container">
-            <!-- Resize -->
+            <!-- Text Resize -->
             <div class="resize-container resize-container">
               <div class="resize-items">
                 <button class="resize-reduce">Reduce</button>
@@ -46,7 +47,7 @@
                 <button class="resize-reset">Reset</button>
               </div>
             </div>
-            <!-- Search -->
+            <!-- Header Search -->
             <div>
               <div class="header-search-toggle-container"></div>
               <form id="header-search-form" class="header-search-container">
@@ -61,12 +62,13 @@
                 </div>
               </form>
             </div>
+            <!-- Main Nav (toggle) -->
+            <div class="menu-toggle-container"></div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Main Nav -->
-    <div class="menu-toggle-container"></div>
+    </header>
+    <!-- Main Nav (menu) -->
     <nav id="main-navigation-top" class="main-navigation">
       <div class="main-navigation-inner">
         <ul class="sf-menu">

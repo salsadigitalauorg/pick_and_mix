@@ -1,0 +1,106 @@
+// =========================================================
+// Header
+// =========================================================
+@mixin pnm_style_header($theme: $pnm_theme) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $desktop_column;
+}
+
+@mixin pnm_struct_header() {
+  // ...
+}
+
+// =========================================================
+// Header Inner
+// =========================================================
+@mixin pnm_style_header_inner($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_inner() {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: pnm_util_em(15px);
+  padding-bottom: pnm_util_em(15px);
+}
+
+// =========================================================
+// Header First Layer
+// =========================================================
+@mixin pnm_style_header_layer_1($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_layer_1() {
+  text-align: right;
+  padding-top: pnm_util_em(15px);
+  padding-bottom: pnm_util_em(15px);
+}
+
+// =========================================================
+// Header Second Layer
+// =========================================================
+@mixin pnm_style_header_layer_2($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_layer_2() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &.search-open {
+    margin-bottom: pnm_util_unit(54px + 30px);
+    @include pnm_util_breakpoint(tablet) {
+      margin-bottom: auto;
+    }
+  }
+}
+
+// =========================================================
+// Header All Layers
+// =========================================================
+@mixin pnm_style_header_layer($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_layer() {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $desktop_column;
+  padding-left: $mobile_column_padding;
+  padding-right: $mobile_column_padding;
+}
+
+// =========================================================
+// Header All Layers
+// =========================================================
+@mixin pnm_style_header_tools_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_tools_container() {
+  display: flex;
+}
+
+// =========================================================
+// Header Horizontal Nav Container
+// =========================================================
+@mixin pnm_style_header_horizontal_nav_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_horizontal_nav_container() {
+  margin: 0;
+}
+
+// =========================================================
+// Header Horizontal Nav Item
+// =========================================================
+@mixin pnm_style_header_horizontal_nav_item($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_horizontal_nav_item() {
+  display: inline-block;
+}

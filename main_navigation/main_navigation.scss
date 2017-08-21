@@ -1,7 +1,37 @@
 // =========================================================
+// MAIN NAVIGATION TOGGLE MENU BUTTON
+// =========================================================
+@mixin pnm_style_main_navigation_toggle_menu_button($theme: $pnm_theme) {
+  padding: 10px;
+  background-color: transparent;
+  background-image: pnm_util_url('menu_open.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: pnm_util_unit(54px);
+  width: pnm_util_unit(54px);
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+  &:focus, &:hover {
+    background-image: pnm_util_url('menu_open_hover.svg');
+  }
+  &.menu-open {
+    background-image: pnm_util_url('search_icon_close.svg');
+    &:focus, &:hover {
+      background-image: pnm_util_url('search_icon_close_hover.svg');
+    }
+  }
+}
+
+@mixin pnm_struct_main_navigation_toggle_menu_button() {
+  // ...
+}
+
+// =========================================================
 // MAIN NAVIGATION CONTAINER
 // =========================================================
 @mixin pnm_style_main_navigation_container($theme: $pnm_theme) {
+  background-color: map-get($theme, 'secondary_2');
   @include pnm_util_breakpoint(tablet) {
     background-color: map-get($theme, 'secondary_1');
   }
@@ -28,7 +58,7 @@
 @mixin pnm_struct_main_navigation_container_inner() {
   @include pnm_util_breakpoint(tablet) {
     width: 100%;
-    max-width: pnm_util_unit(1024px);
+    max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
   }
@@ -38,8 +68,9 @@
 // MAIN NAVIGATION LIST CONTAINER
 // =========================================================
 @mixin pnm_style_main_navigation_list_container($theme: $pnm_theme) {
+  margin: 0;
+  padding: pnm_util_unit(14px) 0;
   @include pnm_util_breakpoint(tablet) {
-    margin: 0;
     padding: 0;
     list-style: none;
     position: relative;
@@ -76,10 +107,10 @@
 }
 
 @mixin pnm_struct_main_navigation_list_item() {
+  list-style: none;
   @include pnm_util_breakpoint(tablet) {
     margin: 0;
     padding: 0;
-    list-style: none;
     position: relative;
   }
   &:hover, &.sfHover {
@@ -95,16 +126,23 @@
 // MAIN NAVIGATION LINK
 // =========================================================
 @mixin pnm_style_main_navigation_link($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_primary');
+  color: map-get($theme, 'main_navigation_link_text');
+  padding: pnm_util_unit(14px) pnm_util_unit(20px);
+  text-align: center;
   @include pnm_util_breakpoint(tablet) {
     padding: pnm_util_unit(14px) pnm_util_unit(16px);
     font-size: pnm_util_unit(18px);
-    font-family: map-get($theme, 'font_primary');
+    text-align: left;
+  }
+  &:focus, &:hover {
+    background-color: map-get($theme, 'secondary_1');
   }
 }
 
 @mixin pnm_struct_main_navigation_link() {
+  display: block;
   @include pnm_util_breakpoint(tablet) {
-    display: block;
     position: relative;
   }
 }
@@ -258,7 +296,9 @@
 }
 
 @mixin pnm_struct_main_navigation_sub_menu_level_1() {
+  display: none;
   @include pnm_util_breakpoint(tablet) {
+    display: block;
     left: 0;
   }
 }

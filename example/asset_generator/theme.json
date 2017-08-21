@@ -7,6 +7,13 @@
     "colour_secondary": "#1D3E66"
   },
   {
+    "template": "menu_open.svg",
+    "default": "menu_open.svg",
+    "secondary": "menu_open_hover.svg",
+    "colour_default": "#006DAE",
+    "colour_secondary": "#1D3E66"
+  },
+  {
     "template": "nav_down_arrow.svg",
     "default": "nav_down_arrow.svg",
     "secondary": "nav_down_arrow_hover.svg",

@@ -70,3 +70,8 @@
     }
   }
 }
+
+.mobile-expand-menu {
+  @include pnm_struct_main_navigation_toggle_menu_button;
+  @include pnm_style_main_navigation_toggle_menu_button;
+}

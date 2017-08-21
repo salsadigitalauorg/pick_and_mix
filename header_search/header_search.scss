@@ -3,7 +3,7 @@
 // =========================================================
 @mixin pnm_style_header_search_toggle($theme: $pnm_theme) {
   position: relative;
-  background: transparent;
+  background-color: transparent;
   height: pnm_util_unit(54px);
   width: pnm_util_unit(54px);
   border: 0;

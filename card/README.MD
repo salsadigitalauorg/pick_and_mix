@@ -45,33 +45,30 @@ Large Tablet+: 3 items per row.
 .card-container {
   @include pnm_struct_card_container;
   @include pnm_style_card_container;
-}
-
-.card {
-  @include pnm_struct_card;
-  @include pnm_style_card;
-  img {
-    @include pnm_style_card_image;
-    max-height: pnm_util_unit(200px);
-  }
-  @include pnm_util_breakpoint(tablet) {
-    padding-left: $mobile_column_padding;
-    &:first-child {
-      margin-left: (-1 * $mobile_column_padding);
-    }
-    &:nth-child(2n+1) {
-      margin-left: (-1 * $mobile_column_padding);
+  &.full-col-card-container {
+    .card {
+      @include pnm_struct_card_3_2_1_col;
     }
   }
-  @include pnm_util_breakpoint(large_tablet) {
-    &:nth-child(2n+1) {
-      margin-left: 0;
+  &.short-col-card-container {
+    .card {
+      @include pnm_struct_card_2_1_col;
     }
-    &:first-child {
-      margin-left: (-1 * $mobile_column_padding);
+  }
+  .card {
+    @include pnm_struct_card;
+    @include pnm_style_card;
+    img {
+      @include pnm_style_card_image;
+      @include pnm_struct_card_image;
     }
-    &:nth-child(3n+4) {
-      margin-left: (-1 * $mobile_column_padding);
+    h3 {
+      @include pnm_style_card_title;
+      @include pnm_struct_card_title;
+    }
+    p {
+      @include pnm_style_card_description;
+      @include pnm_struct_card_description;
     }
   }
 }

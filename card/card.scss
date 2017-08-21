@@ -31,6 +31,9 @@
   box-sizing: border-box;
   margin-bottom: 25px;
   width: 100%;
+}
+
+@mixin pnm_struct_card_3_2_1_col() {
   @include pnm_util_breakpoint(tablet) {
     width: 50%;
     margin-bottom: 50px;
@@ -72,6 +75,23 @@
   }
 }
 
+@mixin pnm_struct_card_2_1_col() {
+  @include pnm_util_breakpoint(tablet) {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  &:nth-child(2n + 1) {
+    @include pnm_util_breakpoint(tablet) {
+      padding-right: 20px;
+    }
+  }
+  &:nth-child(2n + 2) {
+    @include pnm_util_breakpoint(tablet) {
+      padding-left: 20px;
+    }
+  }
+}
+
 // =========================================================
 // Card Image
 // =========================================================
@@ -87,7 +107,12 @@
 // Card Title
 // =========================================================
 @mixin pnm_style_card_title($theme: $pnm_theme) {
-  // ...
+  font-size: pnm_util_unit(24px);
+  color: map-get($theme, 'primary_1');
+  line-height: 1.5em;
+  a {
+    color: map-get($theme, 'primary_1');
+  }
 }
 
 @mixin pnm_struct_card_title() {

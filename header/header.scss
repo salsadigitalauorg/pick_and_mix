@@ -19,8 +19,6 @@
 }
 
 @mixin pnm_struct_header_inner() {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding-top: pnm_util_em(15px);
   padding-bottom: pnm_util_em(15px);
 }

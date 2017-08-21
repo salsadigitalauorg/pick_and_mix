@@ -1,6 +1,16 @@
 .card-container {
   @include pnm_struct_card_container;
   @include pnm_style_card_container;
+  &.full-col-card-container {
+    .card {
+      @include pnm_struct_card_3_2_1_col;
+    }
+  }
+  &.short-col-card-container {
+    .card {
+      @include pnm_struct_card_2_1_col;
+    }
+  }
   .card {
     @include pnm_struct_card;
     @include pnm_style_card;

@@ -28,6 +28,7 @@
 @import '../../../attachment_list/attachment_list';
 @import '../../../search_result_item/search_result_item';
 @import '../../../thick_links/thick_links';
+@import '../../../partners/partners';
 // =========================================================
 // Implementation.
 // =========================================================
@@ -53,12 +54,17 @@
 @import 'card';
 @import 'search_result_item';
 @import 'thick_links';
+@import 'partners';
 // =========================================================
 // Custom Scaffolding.
 // =========================================================
 body {
   font-family: helvetica;
   margin: 0;
+}
+
+* {
+  // outline: 1px solid red;
 }
 
 .custom-grid {

@@ -3,15 +3,22 @@
 // =========================================================
 @mixin pnm_style_partner_container($theme: $pnm_theme) {
   background-color: map-get($theme, 'white');
+  padding-left: pnm_util_unit(20px);
+  padding-right: pnm_util_unit(20px);
+  @include pnm_util_breakpoint(tablet) {
+    max-width: $desktop_column;
+  }
 }
 
 @mixin pnm_struct_partner_container() {
-  box-sizing: border-box;
-  clear: both;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 pnm_util_unit(20px);
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  @include pnm_util_breakpoint(tablet) {
+    box-sizing: content-box;
+  }
 }
 
 // =========================================================
@@ -19,28 +26,28 @@
 // =========================================================
 @mixin pnm_style_partner($theme: $pnm_theme) {
   border: 0;
-  border-right: pnm_util_unit(20px) solid white;
+  margin-bottom: 34px;
 }
 
 @mixin pnm_struct_partner() {
   box-sizing: border-box;
   display: block;
-  float: left;
-  padding: 0;
-  margin: 0;
   width: 50%;
-  &:nth-child(2n+1) {
-    clear: both;
-  }
   @include pnm_util_breakpoint(tablet) {
     width: 25%;
-    &:nth-child(2n+1) {
-      clear: none;
-    }
-    &:nth-child(4n+1) {
-      clear: both;
-    }
   }
+}
+
+// =========================================================
+// Partner Link
+// =========================================================
+@mixin pnm_style_partner_link($theme: $pnm_theme) {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin pnm_struct_partner_link() {
+  display: block;
 }
 
 // =========================================================
@@ -60,7 +67,8 @@
 // Partner Title
 // =========================================================
 @mixin pnm_style_partner_title($theme: $pnm_theme) {
-  // ...
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @mixin pnm_struct_partner_title() {

@@ -53,7 +53,6 @@ $desktop_details_width: 524px;
 }
 
 @mixin pnm_struct_feature_container_inner() {
-  width: 100%;
   padding-left: $mobile_column_padding;
   padding-right: $mobile_column_padding;
   box-sizing: border-box;

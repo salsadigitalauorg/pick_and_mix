@@ -11,6 +11,12 @@ Requirements
 -----------
 * jQuery
 
+Exmaple Site
+-----------
+Open `example` folder for an example implementation of Pick and Mix.
+* Icons can be generated in `asset_generator` folder (run `npm install` and `npm start`). See readme for more details.
+* Colours can be updated in `src/sass/_theme.scss` file.
+
 Getting Started
 -----------
 * Clone repository.

@@ -2,7 +2,7 @@
 // Social Links Container
 // =========================================================
 @mixin pnm_style_social_links_container($theme: $pnm_theme) {
-  background-color: map-get($pnm_theme, 'secondary_3');
+  background-color: mix(black, map-get($theme, 'secondary_1'), 25%);
 }
 
 @mixin pnm_struct_social_links_container() {
@@ -14,13 +14,16 @@
 // Social Links Container Inner
 // =========================================================
 @mixin pnm_style_social_links_container_inner($theme: $pnm_theme) {
-  // ...
+  padding-left: 20px;
+  padding-right: 20px;
+  @include pnm_util_breakpoint(tablet) {
+    max-width: $desktop_column;
+  }
 }
 
 @mixin pnm_struct_social_links_container_inner() {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 // =========================================================
@@ -45,7 +48,10 @@
 }
 
 @mixin pnm_struct_social_links() {
-  display: inline;
+  display: block;
+  @include pnm_util_breakpoint(tablet) {
+    display: inline;
+  }
 }
 
 // =========================================================

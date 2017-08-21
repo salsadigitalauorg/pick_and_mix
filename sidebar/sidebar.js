@@ -129,6 +129,7 @@ function pnm_sidebar_nav() {
     active_trail_class = options.active_trail_class;
     if ($widget.length > 0) {
       $(window).unbind('resize', side_menu_responsive).bind('resize', side_menu_responsive);
+      add_toggle_buttons();
       side_menu_responsive();
     }
   }

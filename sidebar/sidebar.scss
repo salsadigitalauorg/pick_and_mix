@@ -22,9 +22,20 @@
     background-color: map-get($theme, 'neutral_4');
     border: 0;
     font-size: pnm_util_unit(18px);
-    display: block;
-    width: 100%;
     padding: pnm_util_unit(20px);
+    padding-right: 30px;
+    background-image: pnm_util_url('nav_down_arrow_secondary2.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    &:focus, &:hover {
+      background-image: pnm_util_url('nav_down_arrow_secondary2_hover.svg');
+    }
+    &.menu-open {
+      background-image: pnm_util_url('nav_up_arrow_secondary2.svg');
+      &:focus, &:hover {
+        background-image: pnm_util_url('nav_up_arrow_secondary2_hover.svg');
+      }
+    }
   }
 }
 
@@ -32,6 +43,10 @@
   margin-bottom: 0;
   @include pnm_util_breakpoint(tablet) {
     margin-bottom: pnm_util_unit(30px);
+  }
+  button {
+    display: block;
+    width: 100%;
   }
 }
 

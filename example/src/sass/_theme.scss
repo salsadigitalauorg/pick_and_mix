@@ -1,33 +1,6 @@
 // Custom implementation of default theme.
-$pnm_theme: (
-   // Colours
-  'primary_1': #006DAE,
-  'secondary_1': #1D3E66,
-  'secondary_2': #00739d,
-  'secondary_3': #1C1634,
-  'neutral_1': #3C3C3C,
-  'neutral_2': #505050,
-  'neutral_3': #BEBEBE,
-  'neutral_4': #F6F6F6,
-  'neutral_5': #313131,
-  'neutral_6': #E6E6E6,
-  'neutral_7': #FAFAFA,
-  'neutral_8': #DDDDDD,
-  'neutral_9': #F9F9F9,
-  'white': #FFFFFF,
-  'gradient_top': #006DAE,
-  'gradient_bottom': #1D3E66,
-
-  // Menu
-  'main_navigation_link_line': #00739d,
-  'main_navigation_link_over': #1D3E66,
-  'main_navigation_sub_menu_background': #00739D,
-  'main_navigation_link_text': white,
-
-  // Button
-  'button_default_background': #00739D,
-  'button_default_text': white,
-
-  // Fonts
-  'font_primary': 'HelveticaNeue-Bold'
-);
+$pnm_theme: ( // Colours
+'primary_1': #006DAE, 'secondary_1': #1D3E66, 'secondary_2': #00739d, 'secondary_3': #1C1634, 'neutral_1': #3C3C3C, 'neutral_2': #505050, 'neutral_3': #BEBEBE, 'neutral_4': #F6F6F6, 'neutral_5': #313131, 'neutral_6': #E6E6E6, 'neutral_7': #FAFAFA, 'neutral_8': #DDDDDD, 'neutral_9': #F9F9F9, 'white': #FFFFFF, 'gradient_top': #006DAE, 'gradient_bottom': #1D3E66, // Menu
+'main_navigation_link_line': #00739d, 'main_navigation_link_over': #1D3E66, 'main_navigation_sub_menu_background': #00739D, 'main_navigation_link_text': white, // Button
+'button_default_background': #00739D, 'button_default_text': white, // Fonts
+'font_primary': 'HelveticaNeue-Bold');

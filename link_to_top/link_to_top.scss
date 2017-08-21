@@ -12,7 +12,6 @@
 
 @mixin pnm_struct_link_to_top() {
   display: inline-block;
-  float: right;
   margin: pnm_util_unit(14px);
   @include pnm_util_breakpoint(tablet) {
     margin: pnm_util_unit(16px);

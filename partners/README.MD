@@ -40,13 +40,14 @@ Note: the <img> CSS definition is independent to the <a> definition as linking i
 .partner-container {
   @include pnm_style_partner_container;
   @include pnm_struct_partner_container;
-  @include pnm_util_breakpoint(desktop) {
-    max-width: $desktop_column;
-  }
 }
 .partner {
   @include pnm_style_partner;
   @include pnm_struct_partner;
+  a {
+    @include pnm_style_partner_link;
+    @include pnm_struct_partner_link;
+  }
   .partner-title {
     @include pnm_style_partner_title;
     @include pnm_struct_partner_title;

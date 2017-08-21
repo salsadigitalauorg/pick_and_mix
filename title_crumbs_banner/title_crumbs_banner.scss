@@ -56,9 +56,6 @@
     background-image: pnm_util_url("nav_right_arrow_white.svg");
     background-position: right center;
     background-repeat: no-repeat;
-    &:focus, &:hover {
-      background-image: pnm_util_url("nav_right_arrow_white_hover.svg");
-    }
   }
 }
 

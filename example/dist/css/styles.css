@@ -646,14 +646,19 @@ ul.footer-nav-container li {
 }
 
 ul.footer-nav-container li a {
-  color: #FFFFFF;
-  line-height: 1.8em;
-  padding: 12px;
+  color: white;
   text-decoration: none;
+  border-bottom: solid 1px white;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
 }
 
 ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
-  text-decoration: underline;
+  background-color: white;
+  color: #3C3C3C;
+  border-color: transparent;
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 @media (min-width: 768px) {
@@ -878,11 +883,22 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .title-crumbs-banner .crumbs ul a {
-  color: #FFFFFF;
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px white;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
   font-size: 1rem;
   line-height: 1rem;
-  text-decoration: underline;
   whitespace: no-wrap;
+}
+
+.title-crumbs-banner .crumbs ul a:focus, .title-crumbs-banner .crumbs ul a:hover {
+  background-color: white;
+  color: #3C3C3C;
+  border-color: transparent;
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 .title-crumbs-banner h1 {
@@ -1581,6 +1597,22 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   margin: 1rem 0;
 }
 
+.content-container a {
+  color: #006DAE;
+  text-decoration: none;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
+}
+
+.content-container a:focus, .content-container a:hover {
+  background-color: #00739d;
+  color: #FFFFFF;
+  border-color: transparent;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+}
+
 .attachments-container {
   background-color: #F6F6F6;
   border: 1px solid #BEBEBE;
@@ -1646,12 +1678,25 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 .attachments-container .files-list li a {
   color: #006DAE;
   text-decoration: underline;
+  color: #006DAE;
+  text-decoration: none;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
 }
 
 @media (min-width: 768px) {
   .attachments-container .files-list li a {
     margin-bottom: 0.75rem;
   }
+}
+
+.attachments-container .files-list li a:focus, .attachments-container .files-list li a:hover {
+  background-color: #00739d;
+  color: #FFFFFF;
+  border-color: transparent;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .card-container {
@@ -1771,6 +1816,22 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 
 .card-container .card h3 a {
   color: #006DAE;
+}
+
+.card-container .card h3 a {
+  color: #006DAE;
+  text-decoration: none;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
+}
+
+.card-container .card h3 a:focus, .card-container .card h3 a:hover {
+  background-color: #00739d;
+  color: #FFFFFF;
+  border-color: transparent;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .search-result-item h3 {
@@ -1947,14 +2008,18 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li a {
   color: #006DAE;
+  text-decoration: none;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
   line-height: 1.8em;
-  padding: 12px;
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li a:focus, .header .header-inner .layer-1 ul.header-horizontal-link-container li a:hover {
-  background-color: #1D3E66;
-  color: #F6F6F6;
-  text-decoration: none;
+  background-color: #00739d;
+  color: #FFFFFF;
+  border-color: transparent;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .header .header-inner .layer-2 {

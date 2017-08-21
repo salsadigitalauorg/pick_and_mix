@@ -61,33 +61,27 @@ $pnm_theme: (
   max-width: 100%;
 }
 
+@mixin pnm_style_focus_outline($theme: $pnm_theme) {
+  outline: 1px solid map-get($theme, 'neutral_1');
+  outline-offset: 1px;
+}
+
 @mixin pnm_style_link($theme: $pnm_theme) {
   color: map-get($theme, 'primary_1');
-  line-height: 1.8em;
-  padding: 12px;
-  &:focus, &:hover {
-    background-color: map-get($theme, 'secondary_1');
-    color: map-get($theme, 'neutral_4');
-    text-decoration: none;
-  }
-}
-
-@mixin pnm_style_body_link($theme: $pnm_theme) {
-  color: map-get($theme, 'primary_1');
-  &:focus, &:hover {
-    color: map-get($theme, 'neutral_4');
-    text-decoration: none;
-  }
-}
-
-@mixin pnm_style_link_light($theme: $pnm_theme) {
-  color: map-get($theme, 'white');
-  line-height: 1.8em;
-  padding: 12px;
   text-decoration: none;
+  border-bottom: solid 1px map-get($theme, 'primary_1');
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  line-height: 1.8em;
   &:focus, &:hover {
-    text-decoration: underline;
+    background-color: map-get($theme, 'secondary_2');
+    color: map-get($theme, 'white');
+    border-color: transparent;
+    @include pnm_style_focus_outline($theme);
   }
+}
+@mixin pnm_style_link_light($theme: $pnm_theme) {
+  $breadcrumb_link: ( 'primary_1': white, 'secondary_2': white, 'white': map-get($theme, 'neutral_1'), 'neutral_1': white);
+  @include pnm_style_link(map-merge($theme, $breadcrumb_link));
 }
 
 @mixin pnm_style_background_dark($theme: $pnm_theme) {

@@ -49,4 +49,7 @@
     @include pnm_style_wysiwyg_olist;
     @include pnm_struct_wysiwyg_olist;
   }
+  a {
+    @include pnm_style_link;
+  }
 }

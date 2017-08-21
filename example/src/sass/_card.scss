@@ -21,6 +21,9 @@
     h3 {
       @include pnm_style_card_title;
       @include pnm_struct_card_title;
+      a {
+        @include pnm_style_link;
+      }
     }
     p {
       @include pnm_style_card_description;

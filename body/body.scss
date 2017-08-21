@@ -1,0 +1,47 @@
+// =========================================================
+// Body
+// =========================================================
+@mixin pnm_style_body($theme: $pnm_theme) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin pnm_struct_body() {
+  @include pnm_util_breakpoint(tablet) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 100%;
+    grid-template-columns: 25% 75%;
+    max-width: $desktop_column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// =========================================================
+// Body Aside Left
+// =========================================================
+@mixin pnm_style_body_aside_left($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_body_aside_left() {
+  @include pnm_util_breakpoint(tablet) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+
+// =========================================================
+// Body Aside Centre
+// =========================================================
+@mixin pnm_style_body_aside_centre($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_body_aside_centre() {
+  @include pnm_util_breakpoint(tablet) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}

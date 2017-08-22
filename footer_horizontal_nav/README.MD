@@ -6,7 +6,7 @@ Footer Horizontal Nav component for displaying horizontal links in footer.
 
 ### Example HTML
 ```html
-<ul class="footer-nav-container">
+<ul class="footer-nav">
   <li><a href="/">Disclaimer</a></li>
   <li><a href="/sitemap">Accessibility</a></li>
   <li><a href="/faq">Copyright</a></li>
@@ -18,13 +18,12 @@ Footer Horizontal Nav component for displaying horizontal links in footer.
 
 ### Example SCSS
 ```scss
-ul.footer-nav-container {
+ul.footer-nav {
+  @include pnm_style_footer_nav_container;
   @include pnm_struct_footer_nav_container;
   li {
+    @include pnm_style_footer_nav_item;
     @include pnm_struct_footer_nav_item;
-    a {
-      @include pnm_style_link_light;
-    }
   }
 }
 ```

@@ -2,9 +2,11 @@
   @include pnm_style_footer_copyright;
   @include pnm_struct_footer_copyright;
   .footer-logo-container {
-    @include pnm_struct_footer_logo-container;
+    @include pnm_style_footer_logo_container;
+    @include pnm_struct_footer_logo_container;
   }
   .copyright-text {
     @include pnm_style_footer_copyright_text;
+    @include pnm_struct_footer_copyright_text;
   }
 }

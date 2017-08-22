@@ -1,0 +1,16 @@
+.footer {
+  @include pnm_style_footer;
+  @include pnm_struct_footer;
+  .footer-inner {
+    @include pnm_style_footer_inner;
+    @include pnm_struct_footer_inner;
+  }
+  .footer-copyright {
+    @include pnm_style_footer_copyright;
+    @include pnm_struct_footer_copyright;
+  }
+  .footer-nav-container {
+    @include pnm_style_footer_nav;
+    @include pnm_struct_footer_nav;
+  }
+}

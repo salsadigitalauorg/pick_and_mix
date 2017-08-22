@@ -87,11 +87,6 @@ $pnm_theme: (
   @include pnm_style_link(map-merge($theme, $breadcrumb_link));
 }
 
-@mixin pnm_style_background_dark($theme: $pnm_theme) {
-  background-color: map-get($theme, 'secondary_1');
-  color: map-get($theme, 'white');
-}
-
 @mixin pnm_clearfix() {
   &::after {
     content: "";

@@ -2,25 +2,22 @@
 // Footer Copyright Container
 // =========================================================
 @mixin pnm_style_footer_copyright($theme: $pnm_theme) {
-  //...
+  width: 100%;
 }
 
 @mixin pnm_struct_footer_copyright() {
-  @include pnm_util_breakpoint(tablet) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: inline-block;
 }
 
 // =========================================================
 // Footer Copyright Logo Container
 // =========================================================
-@mixin pnm_style_footer_logo-container() {
+@mixin pnm_style_footer_logo_container() {
   //...
 }
 
-@mixin pnm_struct_footer_logo-container() {
-  padding-right: pnm_util_unit(16px);
+@mixin pnm_struct_footer_logo_container() {
+  // ...
 }
 
 // =========================================================

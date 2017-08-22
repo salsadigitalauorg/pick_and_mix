@@ -30,6 +30,7 @@
 @import '../../../partners/partners';
 @import '../../../header/header';
 @import '../../../body/body';
+@import '../../../footer/footer';
 // =========================================================
 // Implementation.
 // =========================================================
@@ -57,40 +58,11 @@
 @import 'partners';
 @import 'header';
 @import 'body';
+@import 'footer';
 // =========================================================
 // Custom Scaffolding.
 // =========================================================
 body {
   font-family: helvetica;
   margin: 0;
-}
-
-.sidebar-menu {
-  font-family: helvetica;
-}
-
-.custom-footer {
-  font-size: pnm_util_em(16px);
-  font-family: Arial;
-  @include pnm_style_background_dark;
-  .container {
-    padding-top: pnm_util_em(36px);
-    padding-bottom: pnm_util_em(36px);
-    .row {
-      max-width: 1168px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  .footer-container {
-    @include pnm_util_breakpoint(tablet) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-}
-
-.content-introduction {
-  font-family: helvetica;
 }

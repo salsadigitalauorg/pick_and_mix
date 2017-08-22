@@ -1,0 +1,64 @@
+// =========================================================
+// Footer
+// =========================================================
+@mixin pnm_style_footer($theme: $pnm_theme) {
+  background-color: map-get($theme, 'secondary_1');
+  color: map-get($theme, 'white');
+}
+
+@mixin pnm_struct_footer() {
+  // ...
+}
+
+// =========================================================
+// Footer Inner
+// =========================================================
+@mixin pnm_style_footer_inner($theme: $pnm_theme) {
+  padding-top: pnm_util_em(36px);
+  padding-bottom: pnm_util_em(36px);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin pnm_struct_footer_inner() {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include pnm_util_breakpoint(tablet) {
+    max-width: $desktop_column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// =========================================================
+// Footer Copyright
+// =========================================================
+@mixin pnm_style_footer_copyright($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_footer_copyright() {
+  width: 100%;
+  order: 2;
+  @include pnm_util_breakpoint(tablet) {
+    order: initial;
+  }
+}
+
+// =========================================================
+// Footer Navigation
+// =========================================================
+@mixin pnm_style_footer_nav($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_footer_nav() {
+  width: 100%;
+  order: 1;
+  @include pnm_util_breakpoint(tablet) {
+    order: initial;
+  }
+}

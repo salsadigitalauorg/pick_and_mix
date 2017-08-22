@@ -1,4 +1,5 @@
-ul.footer-nav-container {
+ul.footer-nav {
+  @include pnm_style_footer_nav_container;
   @include pnm_struct_footer_nav_container;
   li {
     @include pnm_style_footer_nav_item;

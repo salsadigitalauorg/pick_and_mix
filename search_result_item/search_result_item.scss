@@ -22,8 +22,7 @@
     line-height: pnm_util_unit(30px);
   }
   a {
-    color: map-get($theme, 'neutral_1');
-    text-decoration: underline;
+    @include pnm_style_link;
   }
 }
 

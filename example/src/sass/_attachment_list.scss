@@ -14,7 +14,6 @@
       a {
         @include pnm_style_attachment_list_item_link;
         @include pnm_struct_attachment_list_item_link;
-        @include pnm_style_link;
       }
     }
   }

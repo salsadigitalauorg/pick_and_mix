@@ -42,6 +42,7 @@ $pnm_theme: (
   box-sizing: border-box;
   &:focus, &:hover {
     background-color: mix(black, map-get($theme, 'button_default_background'), 25%);
+    color: map-get($theme, 'button_default_text');
   }
 }
 
@@ -67,20 +68,22 @@ $pnm_theme: (
 }
 
 @mixin pnm_style_link($theme: $pnm_theme) {
-  color: map-get($theme, 'primary_1');
   text-decoration: none;
+  color: map-get($theme, 'primary_1');
   border-bottom: solid 1px map-get($theme, 'primary_1');
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
   &:focus, &:hover {
-    background-color: map-get($theme, 'secondary_2');
     color: map-get($theme, 'white');
     border-color: transparent;
+    background-color: map-get($theme, 'secondary_2');
     @include pnm_style_focus_outline($theme);
   }
 }
+
 @mixin pnm_style_link_light($theme: $pnm_theme) {
-  $breadcrumb_link: ( 'primary_1': white, 'secondary_2': white, 'white': map-get($theme, 'neutral_1'), 'neutral_1': white);
+  $white: map-get($theme, 'white');
+  $black: map-get($theme, 'neutral_1');
+  $breadcrumb_link: ( 'primary_1': $white, 'secondary_2': $white, 'white': $black, 'neutral_1': $white);
   @include pnm_style_link(map-merge($theme, $breadcrumb_link));
 }
 
@@ -90,7 +93,7 @@ $pnm_theme: (
 }
 
 @mixin pnm_clearfix() {
-  &:after {
+  &::after {
     content: "";
     display: table;
     clear: both;

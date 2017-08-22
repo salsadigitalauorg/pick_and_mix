@@ -23,6 +23,7 @@
 
 @mixin pnm_struct_pagination_inner() {
   margin: 0;
+  position: relative;
 }
 
 // =========================================================
@@ -58,73 +59,41 @@
 // Pagination List Item Prev
 // =========================================================
 @mixin pnm_style_pagination_list_item_prev($theme: $pnm_theme) {
-  position: relative;
-  a {
-    text-indent: -99999px;
-    display: inline-block;
-    &:after {
-      position: absolute;
-      left: 0;
-      right: auto;
-      top: 0;
-      content: "<<";
-      text-indent: 0;
-    }
-  }
-  @include pnm_util_breakpoint(tablet) {
-    position: static;
-    a {
-      text-indent: 0;
-      &:after {
-        position: static;
-        content: "";
-      }
-    }
-  }
+  // ...
 }
 
 @mixin pnm_struct_pagination_list_item_prev() {
   display: inline-block;
+  position: absolute;
+  left: 0;
+  @include pnm_util_breakpoint(tablet) {
+    position: relative;
+    left: auto;
+  }
 }
 
 // =========================================================
 // Pagination List Item Next
 // =========================================================
 @mixin pnm_style_pagination_list_item_next($theme: $pnm_theme) {
-  position: relative;
-  a {
-    text-indent: -99999px;
-    display: inline-block;
-    &:after {
-      position: absolute;
-      right: 0;
-      left: auto;
-      top: 0;
-      content: ">>";
-      text-indent: 0;
-    }
-  }
-  @include pnm_util_breakpoint(tablet) {
-    position: static;
-    a {
-      text-indent: 0;
-      &:after {
-        position: static;
-        content: "";
-      }
-    }
-  }
+  // ...
 }
 
 @mixin pnm_struct_pagination_list_item_next() {
   display: inline-block;
+  position: absolute;
+  right: 0;
+  @include pnm_util_breakpoint(tablet) {
+    position: relative;
+    right: auto;
+  }
 }
 
 // =========================================================
 // Pagination Link
 // =========================================================
 @mixin pnm_style_pagination_link($theme: $pnm_theme) {
-  color: map-get($theme, 'primary_1');
+  @include pnm_style_link;
 }
 
 @mixin pnm_struct_pagination_link() {

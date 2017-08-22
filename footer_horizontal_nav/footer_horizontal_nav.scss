@@ -14,7 +14,9 @@
 // Footer Nav Item
 // =========================================================
 @mixin pnm_style_footer_nav_item($theme: $pnm_theme) {
-  // ...
+  a {
+    @include pnm_style_link_light;
+  }
 }
 
 @mixin pnm_struct_footer_nav_item() {

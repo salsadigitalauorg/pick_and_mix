@@ -564,8 +564,8 @@
 }
 
 .partner a {
+  color: #3C3C3C;
   text-decoration: none;
-  color: inherit;
   display: block;
 }
 
@@ -646,18 +646,17 @@ ul.footer-nav-container li {
 }
 
 ul.footer-nav-container li a {
-  color: white;
   text-decoration: none;
-  border-bottom: solid 1px white;
+  color: #FFFFFF;
+  border-bottom: solid 1px #FFFFFF;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
 }
 
 ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
-  background-color: white;
   color: #3C3C3C;
   border-color: transparent;
-  outline: 1px solid white;
+  background-color: #FFFFFF;
+  outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
 
@@ -794,9 +793,11 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 
 .homepage-banner-container .homepage-banner-details .homepage-banner-button {
   display: inline-block;
+  text-decoration: none;
   color: #FFFFFF;
+  border-bottom: solid 1px #FFFFFF;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
   font-size: 0.875rem;
-  text-decoration: underline;
   margin-top: 0.75rem;
 }
 
@@ -805,6 +806,14 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
     padding: 0 2.5rem;
     margin-top: 2.375rem;
   }
+}
+
+.homepage-banner-container .homepage-banner-details .homepage-banner-button:focus, .homepage-banner-container .homepage-banner-details .homepage-banner-button:hover {
+  color: #3C3C3C;
+  border-color: transparent;
+  background-color: #FFFFFF;
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
 }
 
 @media (min-width: 768px) {
@@ -820,6 +829,7 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   }
   .homepage-banner-container .homepage-banner-details .homepage-banner-button:focus, .homepage-banner-container .homepage-banner-details .homepage-banner-button:hover {
     background-color: #005676;
+    color: white;
   }
 }
 
@@ -883,21 +893,20 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .title-crumbs-banner .crumbs ul a {
-  color: white;
   text-decoration: none;
-  border-bottom: solid 1px white;
+  color: #FFFFFF;
+  border-bottom: solid 1px #FFFFFF;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
   font-size: 1rem;
   line-height: 1rem;
   whitespace: no-wrap;
 }
 
 .title-crumbs-banner .crumbs ul a:focus, .title-crumbs-banner .crumbs ul a:hover {
-  background-color: white;
   color: #3C3C3C;
   border-color: transparent;
-  outline: 1px solid white;
+  background-color: #FFFFFF;
+  outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
 
@@ -1042,6 +1051,7 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 
 .sidebar ul.sidebar-menu li button:focus, .sidebar ul.sidebar-menu li button:hover {
@@ -1089,11 +1099,17 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 
 .sidebar ul.sidebar-menu a {
   text-decoration: none;
-  color: #313131;
+  color: #006DAE;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
-.sidebar ul.sidebar-menu a:hover {
-  text-decoration: underline;
+.sidebar ul.sidebar-menu a:focus, .sidebar ul.sidebar-menu a:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #00739d;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .content-introduction {
@@ -1127,6 +1143,7 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   list-style: none;
   text-align: center;
   margin: 0;
+  position: relative;
 }
 
 .pagination-container ul li {
@@ -1151,79 +1168,62 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .pagination-container ul li.prev {
-  position: relative;
   display: inline-block;
-}
-
-.pagination-container ul li.prev a {
-  text-indent: -99999px;
-  display: inline-block;
-}
-
-.pagination-container ul li.prev a:after {
   position: absolute;
   left: 0;
-  right: auto;
-  top: 0;
-  content: "<<";
-  text-indent: 0;
 }
 
 @media (min-width: 768px) {
   .pagination-container ul li.prev {
-    position: static;
-  }
-  .pagination-container ul li.prev a {
-    text-indent: 0;
-  }
-  .pagination-container ul li.prev a:after {
-    position: static;
-    content: "";
+    position: relative;
+    left: auto;
   }
 }
 
 .pagination-container ul li.next {
-  position: relative;
   display: inline-block;
-}
-
-.pagination-container ul li.next a {
-  text-indent: -99999px;
-  display: inline-block;
-}
-
-.pagination-container ul li.next a:after {
   position: absolute;
   right: 0;
-  left: auto;
-  top: 0;
-  content: ">>";
-  text-indent: 0;
 }
 
 @media (min-width: 768px) {
   .pagination-container ul li.next {
-    position: static;
-  }
-  .pagination-container ul li.next a {
-    text-indent: 0;
-  }
-  .pagination-container ul li.next a:after {
-    position: static;
-    content: "";
+    position: relative;
+    right: auto;
   }
 }
 
 .pagination-container ul li a {
+  text-decoration: none;
   color: #006DAE;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.pagination-container ul li a:focus, .pagination-container ul li a:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #00739d;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .back-to-top {
+  text-decoration: none;
   color: #006DAE;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
   font-size: 0.875rem;
-  line-height: 1.875rem;
   display: inline-block;
   margin: 0.875rem;
+}
+
+.back-to-top:focus, .back-to-top:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #00739d;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 @media (min-width: 768px) {
@@ -1598,17 +1598,16 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .content-container a {
-  color: #006DAE;
   text-decoration: none;
+  color: #006DAE;
   border-bottom: solid 1px #006DAE;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
 }
 
 .content-container a:focus, .content-container a:hover {
-  background-color: #00739d;
   color: #FFFFFF;
   border-color: transparent;
+  background-color: #00739d;
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1676,27 +1675,24 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .attachments-container .files-list li a {
-  color: #006DAE;
-  text-decoration: underline;
-  color: #006DAE;
   text-decoration: none;
+  color: #006DAE;
   border-bottom: solid 1px #006DAE;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
+}
+
+.attachments-container .files-list li a:focus, .attachments-container .files-list li a:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #00739d;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 @media (min-width: 768px) {
   .attachments-container .files-list li a {
     margin-bottom: 0.75rem;
   }
-}
-
-.attachments-container .files-list li a:focus, .attachments-container .files-list li a:hover {
-  background-color: #00739d;
-  color: #FFFFFF;
-  border-color: transparent;
-  outline: 1px solid #3C3C3C;
-  outline-offset: 1px;
 }
 
 .card-container {
@@ -1815,21 +1811,16 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .card-container .card h3 a {
-  color: #006DAE;
-}
-
-.card-container .card h3 a {
-  color: #006DAE;
   text-decoration: none;
+  color: #006DAE;
   border-bottom: solid 1px #006DAE;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
 }
 
 .card-container .card h3 a:focus, .card-container .card h3 a:hover {
-  background-color: #00739d;
   color: #FFFFFF;
   border-color: transparent;
+  background-color: #00739d;
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1856,8 +1847,18 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .search-result-item h3 a {
-  color: #3C3C3C;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #006DAE;
+  border-bottom: solid 1px #006DAE;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.search-result-item h3 a:focus, .search-result-item h3 a:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #00739d;
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .search-result-item p {
@@ -1916,7 +1917,18 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .thick-link-container .thick-link a {
+  text-decoration: none;
   color: #FFFFFF;
+  border-bottom: solid 1px #FFFFFF;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.thick-link-container .thick-link a:focus, .thick-link-container .thick-link a:hover {
+  color: #3C3C3C;
+  border-color: transparent;
+  background-color: #FFFFFF;
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
 }
 
 .partner-container {
@@ -1959,8 +1971,8 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .partner a {
+  color: #3C3C3C;
   text-decoration: none;
-  color: inherit;
   display: block;
 }
 
@@ -2007,17 +2019,16 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li a {
-  color: #006DAE;
   text-decoration: none;
+  color: #006DAE;
   border-bottom: solid 1px #006DAE;
   transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
-  line-height: 1.8em;
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li a:focus, .header .header-inner .layer-1 ul.header-horizontal-link-container li a:hover {
-  background-color: #00739d;
   color: #FFFFFF;
   border-color: transparent;
+  background-color: #00739d;
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }

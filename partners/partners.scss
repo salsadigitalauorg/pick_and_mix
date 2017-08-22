@@ -42,8 +42,8 @@
 // Partner Link
 // =========================================================
 @mixin pnm_style_partner_link($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
   text-decoration: none;
-  color: inherit;
 }
 
 @mixin pnm_struct_partner_link() {

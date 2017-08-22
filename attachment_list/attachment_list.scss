@@ -74,8 +74,7 @@
 // Attachment List Item Link
 // =========================================================
 @mixin pnm_style_attachment_list_item_link($theme: $pnm_theme) {
-  color: map-get($theme, 'primary_1');
-  text-decoration: underline;
+  @include pnm_style_link;
 }
 
 @mixin pnm_struct_attachment_list_item_link() {

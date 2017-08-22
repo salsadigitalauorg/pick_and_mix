@@ -111,7 +111,7 @@
   color: map-get($theme, 'primary_1');
   line-height: 1.5em;
   a {
-    color: map-get($theme, 'primary_1');
+    @include pnm_style_link;
   }
 }
 

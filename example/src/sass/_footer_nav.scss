@@ -1,9 +1,7 @@
 ul.footer-nav-container {
   @include pnm_struct_footer_nav_container;
   li {
+    @include pnm_style_footer_nav_item;
     @include pnm_struct_footer_nav_item;
-    a {
-      @include pnm_style_link_light;
-    }
   }
 }

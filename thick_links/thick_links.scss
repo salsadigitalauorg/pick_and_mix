@@ -40,7 +40,7 @@
 // Thick Link Title
 // =========================================================
 @mixin pnm_style_thick_link_title($theme: $pnm_theme) {
-  color: map-get($pnm_theme, 'white');
+  @include pnm_style_link_light($theme);
 }
 
 @mixin pnm_struct_thick_link_title() {

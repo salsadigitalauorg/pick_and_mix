@@ -118,6 +118,7 @@
     background-color: transparent;
     background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
     appearance: none;
+    cursor: pointer;
     &:focus, &:hover {
       background-image: pnm_util_url("nav_up_arrow_secondary2_hover.svg");
     }
@@ -180,11 +181,7 @@
 // Sidebar Link
 // =========================================================
 @mixin pnm_style_sidebar_link($theme: $pnm_theme) {
-  text-decoration: none;
-  color: map-get($theme, 'neutral_5');
-  &:hover {
-    text-decoration: underline;
-  }
+  @include pnm_style_link;
 }
 
 @mixin pnm_struct_sidebar_link() {

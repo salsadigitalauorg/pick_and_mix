@@ -127,12 +127,11 @@ $desktop_details_width: 524px;
 // Feature Banner Button
 // =========================================================
 @mixin pnm_style_feature_details_button($theme: $pnm_theme) {
-  color: map-get($theme, 'white');
+  @include pnm_style_link_light;
   font-size: pnm_util_unit(14px);
-  text-decoration: underline;
   margin-top: pnm_util_unit(12px);
   @include pnm_util_breakpoint(tablet) {
-    @include pnm_style_button();
+    @include pnm_style_button;
     font-size: pnm_util_unit(16px);
     line-height: pnm_util_unit(48px);
     text-decoration: none;

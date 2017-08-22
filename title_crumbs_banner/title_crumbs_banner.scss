@@ -65,7 +65,7 @@
 @mixin pnm_style_title_crumbs_banner_breadcrumb_link($theme: $pnm_theme) {
   @include pnm_style_link_light;
   font-size: pnm_util_unit(16px);
-  line-height: pnm_util_unit(16px); // text-decoration: underline;
+  line-height: pnm_util_unit(16px);
   whitespace: no-wrap;
 }
 

@@ -1,4 +1,8 @@
-.back-to-top {
-  @include pnm_style_link_to_top;
-  @include pnm_struct_link_to_top;
+.back-to-top-container {
+  @include pnm_style_link_to_top_container;
+  @include pnm_struct_link_to_top_container;
+  .back-to-top {
+    @include pnm_style_link_to_top;
+    @include pnm_struct_link_to_top;
+  }
 }

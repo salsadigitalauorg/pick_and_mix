@@ -1208,7 +1208,19 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   outline-offset: 1px;
 }
 
-.back-to-top {
+.back-to-top-container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 73.125rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.back-to-top-container .back-to-top {
   text-decoration: none;
   color: #006DAE;
   border-bottom: solid 1px #006DAE;
@@ -1218,7 +1230,7 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
   margin: 0.875rem;
 }
 
-.back-to-top:focus, .back-to-top:hover {
+.back-to-top-container .back-to-top:focus, .back-to-top-container .back-to-top:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
@@ -1227,13 +1239,13 @@ ul.footer-nav-container li a:focus, ul.footer-nav-container li a:hover {
 }
 
 @media (min-width: 768px) {
-  .back-to-top {
+  .back-to-top-container .back-to-top {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .back-to-top {
+  .back-to-top-container .back-to-top {
     margin: 1rem;
   }
 }

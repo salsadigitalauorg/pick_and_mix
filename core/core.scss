@@ -76,6 +76,8 @@ $pnm_theme: (
     color: map-get($theme, 'white');
     border-color: transparent;
     background-color: map-get($theme, 'secondary_2');
+  }
+  &:focus {
     @include pnm_style_focus_outline($theme);
   }
 }

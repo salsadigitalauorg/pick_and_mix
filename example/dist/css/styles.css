@@ -676,6 +676,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #3C3C3C;
   border-color: transparent;
   background-color: #FFFFFF;
+}
+
+ul.footer-nav li a:focus {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
@@ -832,6 +835,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #3C3C3C;
   border-color: transparent;
   background-color: #FFFFFF;
+}
+
+.homepage-banner-container .homepage-banner-details .homepage-banner-button:focus {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
@@ -926,6 +932,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #3C3C3C;
   border-color: transparent;
   background-color: #FFFFFF;
+}
+
+.title-crumbs-banner .crumbs ul a:focus {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
@@ -1128,6 +1137,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.sidebar ul.sidebar-menu a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1224,6 +1236,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.pagination-container ul li a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1254,6 +1269,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.back-to-top-container .back-to-top:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1640,6 +1658,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.content-container a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1717,6 +1738,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.attachments-container .files-list li a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1853,6 +1877,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.card-container .card h3 a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1889,6 +1916,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.search-result-item h3 a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }
@@ -1959,6 +1989,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #3C3C3C;
   border-color: transparent;
   background-color: #FFFFFF;
+}
+
+.thick-link-container .thick-link a:focus {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
 }
@@ -2061,6 +2094,9 @@ ul.footer-nav li a:focus, ul.footer-nav li a:hover {
   color: #FFFFFF;
   border-color: transparent;
   background-color: #00739d;
+}
+
+.header .header-inner .layer-1 ul.header-horizontal-link-container li a:focus {
   outline: 1px solid #3C3C3C;
   outline-offset: 1px;
 }

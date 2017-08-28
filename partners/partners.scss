@@ -56,11 +56,14 @@
 @mixin pnm_style_partner_image($theme: $pnm_theme) {
   @include pnm_style_shrink_image;
   max-height: pnm_util_unit(260px);
+  height: pnm_util_unit(200px);
+  width: pnm_util_unit(200px);
 }
 
 @mixin pnm_struct_partner_image() {
   display: block;
   margin: 0 auto;
+  object-fit: scale-down;
 }
 
 // =========================================================

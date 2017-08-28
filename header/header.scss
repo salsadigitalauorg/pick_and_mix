@@ -4,7 +4,7 @@
 @mixin pnm_style_header($theme: $pnm_theme) {
   margin-left: auto;
   margin-right: auto;
-  max-width: $desktop_column;
+  max-width: map-get($theme, 'desktop_column');
 }
 
 @mixin pnm_struct_header() {
@@ -19,8 +19,8 @@
 }
 
 @mixin pnm_struct_header_inner() {
-  padding-top: pnm_util_em(15px);
-  padding-bottom: pnm_util_em(15px);
+  padding-top: pnm_util_unit(15px);
+  padding-bottom: pnm_util_unit(15px);
 }
 
 // =========================================================
@@ -32,8 +32,8 @@
 
 @mixin pnm_struct_header_layer_1() {
   text-align: right;
-  padding-top: pnm_util_em(15px);
-  padding-bottom: pnm_util_em(15px);
+  padding-top: pnm_util_unit(15px);
+  padding-bottom: pnm_util_unit(15px);
 }
 
 // =========================================================
@@ -59,15 +59,14 @@
 // Header All Layers
 // =========================================================
 @mixin pnm_style_header_layer($theme: $pnm_theme) {
-  // ...
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
+  max-width: map-get($theme, 'desktop_column');
 }
 
 @mixin pnm_struct_header_layer() {
   margin-left: auto;
   margin-right: auto;
-  max-width: $desktop_column;
-  padding-left: $mobile_column_padding;
-  padding-right: $mobile_column_padding;
 }
 
 // =========================================================

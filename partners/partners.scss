@@ -3,10 +3,10 @@
 // =========================================================
 @mixin pnm_style_partner_container($theme: $pnm_theme) {
   background-color: map-get($theme, 'white');
-  padding-left: pnm_util_unit(20px);
-  padding-right: pnm_util_unit(20px);
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_column;
+    max-width: map-get($theme, 'desktop_column');
   }
 }
 

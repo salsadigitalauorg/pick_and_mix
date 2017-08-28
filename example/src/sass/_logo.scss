@@ -1,9 +1,12 @@
 .logo-container {
   @include pnm_style_logo_container;
+  @include pnm_struct_logo_container;
   a {
     @include pnm_style_logo_link;
+    @include pnm_struct_logo_link;
     img {
       @include pnm_style_logo_image;
+      @include pnm_struct_logo_image;
     }
   }
 }

@@ -37,8 +37,8 @@
 @mixin pnm_style_header_search_container($theme: $pnm_theme) {
   &.search-open {
     position: absolute;
-    left: $mobile_column_padding;
-    right: $mobile_column_padding;
+    left: map-get($theme, 'mobile_column_padding');
+    right: map-get($theme, 'mobile_column_padding');
     margin-top: 15px;
     @include pnm_util_breakpoint(tablet) {
       position: relative;
@@ -102,7 +102,7 @@
   box-sizing: border-box;
   border: 0;
   border-right: 1px solid #BEBEBE;
-  padding: pnm_util_unit(20px);
+  padding: map-get($theme, 'mobile_column_padding');
   width: 100%;
   @include pnm_util_breakpoint(tablet) {
     width: pnm_util_unit(320px);

@@ -1,6 +1,3 @@
-$mobile_column_padding: pnm_util_unit(20px);
-$desktop_column: pnm_util_unit(1170px);
-
 $pnm_theme: (
   // Colours
   'primary_1': #057F83,
@@ -29,6 +26,13 @@ $pnm_theme: (
   // Button
   'button_default_background': #057F83,
   'button_default_text': white,
+
+  // Padding
+  'default_padding': pnm_util_unit(20px),
+  'mobile_column_padding': pnm_util_unit(20px),
+
+  // Site Column
+  'desktop_column': pnm_util_unit(1170px),
 
   // Fonts
   'font_primary': 'HelveticaNeue-Bold'

@@ -1,31 +1,33 @@
 // Header Search
 .header-search-toggle {
-  @include pnm_struct_header_search_toggle;
   @include pnm_style_header_search_toggle;
+  @include pnm_struct_header_search_toggle;
 }
 
 .header-search-container {
   @include pnm_style_header_search_container;
   @include pnm_struct_header_search_container;
   .header-search-field-container {
-    @include pnm_struct_header_search_field_container;
     @include pnm_style_header_search_field_container;
+    @include pnm_struct_header_search_field_container;
     .header-search-field {
+      @include pnm_style_header_search_field;
       @include pnm_struct_header_search_field;
     }
     .header-search-field:first-child {
+      @include pnm_style_header_search_input_field;
       @include pnm_struct_header_search_input_field;
     }
     .header-search-input {
-      @include pnm_struct_header_search_input;
       @include pnm_style_header_search_input;
+      @include pnm_struct_header_search_input;
     }
     label {
       @include pnm_style_hidden;
     }
     .header-search-button {
-      @include pnm_struct_header_search_button;
       @include pnm_style_header_search_button;
+      @include pnm_struct_header_search_button;
     }
   }
 }

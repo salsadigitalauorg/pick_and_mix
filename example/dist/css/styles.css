@@ -59,9 +59,9 @@
 }
 
 .header-search-container .header-search-field-container {
+  border: 1px solid #BEBEBE;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #BEBEBE;
 }
 
 .header-search-container .header-search-field-container .header-search-field:first-child {
@@ -247,9 +247,14 @@
 @media (min-width: 768px) {
   .main-navigation .main-navigation-inner {
     width: 100%;
-    max-width: 73.125rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-navigation .main-navigation-inner {
+    max-width: 73.125rem;
   }
 }
 
@@ -593,8 +598,8 @@
 .social-links-inner {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -723,13 +728,13 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .homepage-banner-container .homepage-banner-container-inner {
     background-color: transparent;
+    max-width: 73.125rem;
   }
 }
 
 @media (min-width: 768px) {
   .homepage-banner-container .homepage-banner-container-inner {
     box-sizing: content-box;
-    max-width: 73.125rem;
     margin-left: auto;
     margin-right: auto;
     min-height: 444px;
@@ -860,23 +865,18 @@ ul.footer-nav li a:focus {
 }
 
 .title-crumbs-banner {
-  width: 100%;
-  padding: 1.25rem 1.25rem 1.5rem;
-  box-sizing: border-box;
   background-color: #1D3E66;
-}
-
-@media (min-width: 768px) {
-  .title-crumbs-banner {
-    padding-top: 3.375rem;
-    padding-bottom: 3.25rem;
-  }
+  padding: 1.25rem 1.25rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
   .title-crumbs-banner {
     background-color: #006DAE;
     background-image: linear-gradient(#006DAE, #1D3E66);
+    padding-top: 3.375rem;
+    padding-bottom: 3.25rem;
   }
 }
 
@@ -887,6 +887,11 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .title-crumbs-banner .title-crumbs-banner-inner {
     max-width: 73.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-crumbs-banner .title-crumbs-banner-inner {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1246,9 +1251,9 @@ ul.footer-nav li a:focus {
 .back-to-top-container {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 73.125rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -1757,19 +1762,22 @@ ul.footer-nav li a:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.card-container.full-col-card-container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   max-width: 370px;
 }
 
 @media (min-width: 768px) {
-  .card-container {
+  .card-container.full-col-card-container {
     max-width: 780px;
   }
 }
 
 @media (min-width: 1024px) {
-  .card-container {
+  .card-container.full-col-card-container {
     max-width: 73.125rem;
   }
 }
@@ -1827,6 +1835,24 @@ ul.footer-nav li a:focus {
 @media (min-width: 1024px) {
   .card-container.full-col-card-container .card:nth-child(3n + 3) {
     padding-left: 20px;
+  }
+}
+
+.card-container.short-col-card-container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 370px;
+}
+
+@media (min-width: 768px) {
+  .card-container.short-col-card-container {
+    max-width: 780px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container.short-col-card-container {
+    max-width: 73.125rem;
   }
 }
 
@@ -1944,8 +1970,8 @@ ul.footer-nav li a:focus {
 }
 
 .thick-link-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   display: -ms-flexbox;
@@ -1963,13 +1989,14 @@ ul.footer-nav li a:focus {
 }
 
 .thick-link-container .thick-link {
-  box-sizing: border-box;
-  background-color: #00739d;
   display: block;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  background-color: #00739d;
   font-size: 1.125rem;
   padding: 1.25rem;
   width: 100%;
-  margin-bottom: 25px;
+  min-height: 7.875rem;
 }
 
 @media (min-width: 768px) {
@@ -2057,22 +2084,22 @@ ul.footer-nav li a:focus {
 }
 
 .header .header-inner {
-  padding-top: 0.9375em;
-  padding-bottom: 0.9375em;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .header .header-inner .layer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 73.125rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header .header-inner .layer-1 {
   text-align: right;
-  padding-top: 0.9375em;
-  padding-bottom: 0.9375em;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container {
@@ -2125,9 +2152,12 @@ ul.footer-nav li a:focus {
   display: flex;
 }
 
-.body-container {
-  padding-left: 20px;
-  padding-right: 20px;
+@media (min-width: 768px) {
+  .body-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 73.125rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2140,9 +2170,19 @@ ul.footer-nav li a:focus {
         grid-template-columns: 100%;
     -ms-grid-columns: 25% 75%;
         grid-template-columns: 25% 75%;
-    max-width: 73.125rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.body-container .body-sidebar {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .body-container .body-sidebar {
+    padding-left: 0;
   }
 }
 
@@ -2152,6 +2192,18 @@ ul.footer-nav li a:focus {
         grid-column-start: 1;
     -ms-grid-row: 1;
         grid-row-start: 1;
+  }
+}
+
+.body-container .body-centre {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .body-container .body-centre {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -2172,8 +2224,8 @@ ul.footer-nav li a:focus {
 .footer .footer-inner {
   padding-top: 2.25em;
   padding-bottom: 2.25em;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   display: -ms-flexbox;
@@ -2185,6 +2237,11 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .footer .footer-inner {
     max-width: 73.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .footer-inner {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-pack: justify;

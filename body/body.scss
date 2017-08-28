@@ -2,8 +2,11 @@
 // Body
 // =========================================================
 @mixin pnm_style_body($theme: $pnm_theme) {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: map-get($theme, 'mobile_column_padding');
+    padding-right: map-get($theme, 'mobile_column_padding');
+    max-width: map-get($theme, 'desktop_column');
+  }
 }
 
 @mixin pnm_struct_body() {
@@ -12,7 +15,6 @@
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 100%;
     grid-template-columns: 25% 75%;
-    max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
   }
@@ -22,7 +24,11 @@
 // Body Aside Left
 // =========================================================
 @mixin pnm_style_body_aside_left($theme: $pnm_theme) {
-  // ...
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: 0;
+  }
 }
 
 @mixin pnm_struct_body_aside_left() {
@@ -36,7 +42,12 @@
 // Body Aside Centre
 // =========================================================
 @mixin pnm_style_body_aside_centre($theme: $pnm_theme) {
-  // ...
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @mixin pnm_struct_body_aside_centre() {

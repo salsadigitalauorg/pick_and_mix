@@ -6,9 +6,11 @@
     @include pnm_struct_feature_container_inner;
   }
   .homepage-banner-image-wrapper {
+    @include pnm_style_feature_image_wrapper;
     @include pnm_struct_feature_image_wrapper;
   }
   img {
+    @include pnm_style_feature_image;
     @include pnm_struct_feature_image;
   }
   .homepage-banner-details {

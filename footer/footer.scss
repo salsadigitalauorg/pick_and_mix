@@ -16,8 +16,11 @@
 @mixin pnm_style_footer_inner($theme: $pnm_theme) {
   padding-top: pnm_util_em(36px);
   padding-bottom: pnm_util_em(36px);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
+  @include pnm_util_breakpoint(tablet) {
+    max-width: map-get($theme, 'desktop_column');
+  }
 }
 
 @mixin pnm_struct_footer_inner() {
@@ -26,7 +29,6 @@
   display: flex;
   flex-wrap: wrap;
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_column;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;

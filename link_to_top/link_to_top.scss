@@ -2,14 +2,14 @@
 // Link to top container
 // =========================================================
 @mixin pnm_style_link_to_top_container($theme: $pnm_theme) {
-  padding-left: $mobile_column_padding;
-  padding-right: $mobile_column_padding;
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
+  max-width: map-get($theme, 'desktop_column');
 }
 
 @mixin pnm_struct_link_to_top_container() {
   margin-left: auto;
   margin-right: auto;
-  max-width: $desktop_column;
   display: flex;
   justify-content: flex-end;
 }

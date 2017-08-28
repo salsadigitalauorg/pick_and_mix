@@ -3,29 +3,32 @@
 // =========================================================
 @mixin pnm_style_title_crumbs_banner_container($theme: $pnm_theme) {
   background-color: map-get($theme, 'secondary_1');
+  padding: pnm_util_unit(20px) map-get($theme, 'mobile_column_padding') pnm_util_unit(24px);
   @include pnm_util_breakpoint(tablet) {
     background-color: map-get($theme, 'gradient_top');
     background-image: linear-gradient(map-get($theme, 'gradient_top'), map-get($theme, 'gradient_bottom'));
-  }
-}
-
-@mixin pnm_struct_title_crumbs_banner_container() {
-  width: 100%;
-  padding: pnm_util_unit(20px) $mobile_column_padding pnm_util_unit(24px);
-  box-sizing: border-box;
-  @include pnm_util_breakpoint(tablet) {
     padding-top: pnm_util_unit(54px);
     padding-bottom: pnm_util_unit(52px);
   }
 }
 
+@mixin pnm_struct_title_crumbs_banner_container() {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 // =========================================================
 // Title Crumbs Banner Inner
 // =========================================================
+@mixin pnm_style_title_crumbs_banner_inner($theme: $pnm_theme) {
+  @include pnm_util_breakpoint(tablet) {
+    max-width: map-get($theme, 'desktop_column');
+  }
+}
+
 @mixin pnm_struct_title_crumbs_banner_inner() {
   width: 100%;
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
   }
@@ -34,6 +37,10 @@
 // =========================================================
 // Title Crumbs Banner Breadcrumbs Nav
 // =========================================================
+@mixin pnm_style_title_crumbs_banner_breadcrumb_nav($theme: $pnm_theme) {
+  // ...
+}
+
 @mixin pnm_struct_title_crumbs_banner_breadcrumb_nav() {
   padding: 0;
   margin: 0;
@@ -59,6 +66,10 @@
   }
 }
 
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_item() {
+  // ...
+}
+
 // =========================================================
 // Title Crumbs Banner Breadcrumb Link
 // =========================================================
@@ -67,6 +78,10 @@
   font-size: pnm_util_unit(16px);
   line-height: pnm_util_unit(16px);
   whitespace: no-wrap;
+}
+
+@mixin pnm_struct_title_crumbs_banner_breadcrumb_link() {
+  // ...
 }
 
 // =========================================================

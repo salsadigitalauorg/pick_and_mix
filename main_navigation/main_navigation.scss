@@ -52,13 +52,14 @@
 // MAIN NAVIGATION CONTAINER INNER
 // =========================================================
 @mixin pnm_style_main_navigation_container_inner($theme: $pnm_theme) {
-  // ...
+  @include pnm_util_breakpoint(tablet) {
+    max-width: map-get($theme, 'desktop_column');
+  }
 }
 
 @mixin pnm_struct_main_navigation_container_inner() {
   @include pnm_util_breakpoint(tablet) {
     width: 100%;
-    max-width: $desktop_column;
     margin-left: auto;
     margin-right: auto;
   }

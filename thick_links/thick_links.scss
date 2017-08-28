@@ -2,10 +2,10 @@
 // Thick Link Container
 // =========================================================
 @mixin pnm_style_thick_link_container($theme: $pnm_theme) {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: map-get($theme, 'default_padding');
+  padding-right: map-get($theme, 'default_padding');
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_column;
+    max-width: map-get($theme, 'desktop_column');
   }
 }
 
@@ -22,18 +22,19 @@
 // =========================================================
 @mixin pnm_style_thick_link($theme: $pnm_theme) {
   background-color: map-get($pnm_theme, 'secondary_2');
-  display: block;
   font-size: pnm_util_unit(18px);
-  padding: $mobile_column_padding;
+  padding: map-get($theme, 'default_padding');
   width: 100%;
-  margin-bottom: 25px;
+  min-height: pnm_util_unit(126px);
   @include pnm_util_breakpoint(tablet) {
     width: calc(25% - 10px);
   }
 }
 
 @mixin pnm_struct_thick_link() {
+  display: block;
   box-sizing: border-box;
+  margin-bottom: 25px;
 }
 
 // =========================================================

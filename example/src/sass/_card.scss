@@ -1,19 +1,22 @@
 .card-container {
   @include pnm_struct_card_container;
-  @include pnm_style_card_container;
   &.full-col-card-container {
+    @include pnm_style_card_container;
     .card {
       @include pnm_struct_card_3_2_1_col;
     }
   }
   &.short-col-card-container {
+    // Theme specific: This will exist in body component. Doesn not need mobile padding.
+    $no_mobile_padding: ('mobile_column_padding': 0);
+    @include pnm_style_card_container(map-merge($pnm_theme, $no_mobile_padding));
     .card {
       @include pnm_struct_card_2_1_col;
     }
   }
   .card {
-    @include pnm_struct_card;
     @include pnm_style_card;
+    @include pnm_struct_card;
     img {
       @include pnm_style_card_image;
       @include pnm_struct_card_image;

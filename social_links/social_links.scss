@@ -14,10 +14,10 @@
 // Social Links Container Inner
 // =========================================================
 @mixin pnm_style_social_links_container_inner($theme: $pnm_theme) {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: map-get($theme, 'mobile_column_padding');
+  padding-right: map-get($theme, 'mobile_column_padding');
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_column;
+    max-width: map-get($theme, 'desktop_column');
   }
 }
 

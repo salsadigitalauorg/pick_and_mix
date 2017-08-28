@@ -68,7 +68,13 @@ module.exports = function(grunt) {
   }
 
   // Custom addition to Pick and Mix.
-  style_files = style_files.concat([THEME_DIR + '../**/*.scss', '!' + THEME_DIR + '../core/core.scss', '!' + THEME_DIR + 'src/sass/theme.scss']);
+  style_files = style_files.concat([
+    THEME_DIR + '../**/*.scss',
+    '!' + THEME_DIR + '../core/core.scss',
+    '!' + THEME_DIR + '../example/grunt/**/*.scss',
+    '!' + THEME_DIR + '../example/src/sass/_theme.scss',
+    '!' + THEME_DIR + 'src/sass/_theme.scss'
+  ]);
 
   var jsbeautifier_files = script_files.concat(style_files);
 

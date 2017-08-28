@@ -7,7 +7,7 @@
     }
   }
   &.short-col-card-container {
-    // Theme specific: This will exist in body component. Doesn not need mobile padding.
+    // Theme specific: Padding will exist in body component. Doesn't need mobile padding.
     $no_mobile_padding: ('mobile_column_padding': 0);
     @include pnm_style_card_container(map-merge($pnm_theme, $no_mobile_padding));
     .card {

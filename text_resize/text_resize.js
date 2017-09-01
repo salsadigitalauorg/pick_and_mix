@@ -13,11 +13,6 @@ function pnm_text_resize() {
         return false;
     }
 
-    function reset_font() {
-        $widget.removeClass('pnm-text-resize-large');
-        return false;
-    }
-
     /**
      * options
      *   - root_element
@@ -30,7 +25,6 @@ function pnm_text_resize() {
         if ($widget.length > 0) {
             $(options.increase_button_element).unbind('click', increase_font).bind('click', increase_font);
             $(options.reduce_button_element).unbind('click', decrease_font).bind('click', decrease_font);
-            $(options.reset_button_element).unbind('click', reset_font).bind('click', reset_font);
         }
     }
 }

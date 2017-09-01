@@ -15,6 +15,7 @@
   font-size: 0;
   cursor: pointer;
   &:focus {
+    @include pnm_style_focus_outline;
     z-index: 1;
   }
 }
@@ -71,19 +72,5 @@
 }
 
 @mixin pnm_struct_text_resize_increase() {
-  // ...
-}
-
-// =========================================================
-// Reset
-// =========================================================
-@mixin pnm_style_text_resize_reset($theme: $pnm_theme) {
-  background-image: pnm_util_url('text_resize_reset.svg');
-  &:focus, &:hover {
-    background-image: pnm_util_url('text_resize_reset_hover.svg');
-  }
-}
-
-@mixin pnm_struct_text_resize_reset() {
   // ...
 }

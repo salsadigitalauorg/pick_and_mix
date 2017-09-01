@@ -21,7 +21,6 @@ $(function() {
     root_element: 'html',
     reduce_button_element: '.resize-container .resize-reduce',
     increase_button_element: '.resize-container .resize-increase',
-    reset_button_element: '.resize-container .resize-reset',
     on_change: function() { /* ... */ }
   });
 });

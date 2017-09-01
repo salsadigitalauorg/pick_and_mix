@@ -10,7 +10,6 @@ Text Resize component for resizing page content.
   <div class="resize-items">
     <button class="resize-reduce">Reduce text size</button>
     <button class="resize-increase">Increase text size</button>
-    <button class="resize-reset">Reset text size</button>
   </div>
 </div>
 ```
@@ -34,10 +33,6 @@ Text Resize component for resizing page content.
     @include pnm_struct_text_resize_increase;
     @include pnm_style_text_resize_increase;
   }
-  .resize-reset {
-    @include pnm_struct_text_resize_reset;
-    @include pnm_style_text_resize_reset;
-  }
 }
 ```
 
@@ -47,7 +42,6 @@ var text_resize = new pnm_text_resize();
 text_resize.init({
   root_element: 'html',
   reduce_button_element: '.resize-reduce',
-  increase_button_element: '.resize-increase',
-  reset_button_element: '.resize-reset'
+  increase_button_element: '.resize-increase'
 });
 ```

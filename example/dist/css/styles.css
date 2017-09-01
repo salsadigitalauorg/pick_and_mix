@@ -157,6 +157,8 @@
 }
 
 .resize-container .resize-reduce:focus, .resize-container .resize-increase:focus, .resize-container .resize-reset:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
   z-index: 1;
 }
 
@@ -174,14 +176,6 @@
 
 .resize-container .resize-increase:focus, .resize-container .resize-increase:hover {
   background-image: url(../images/svg/text_resize_increase_hover.svg);
-}
-
-.resize-container .resize-reset {
-  background-image: url(../images/svg/text_resize_reset.svg);
-}
-
-.resize-container .resize-reset:focus, .resize-container .resize-reset:hover {
-  background-image: url(../images/svg/text_resize_reset_hover.svg);
 }
 
 .pnm-text-resize-large {

@@ -320,6 +320,7 @@
   color: white;
   padding: 0.875rem 1.25rem;
   text-align: center;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -338,6 +339,11 @@
 
 .main-navigation ul.sf-menu a:focus, .main-navigation ul.sf-menu a:hover {
   background-color: #1D3E66;
+}
+
+.main-navigation ul.sf-menu a:focus {
+  outline: 1px solid #FFFFFF;
+  outline-offset: -1px;
 }
 
 @media (min-width: 768px) {
@@ -389,7 +395,7 @@
 
 @media (min-width: 768px) {
   .main-navigation ul.sf-menu > li.active-trail > a::before {
-    border-bottom-color: #00739d;
+    border-bottom-color: #00739D;
   }
 }
 
@@ -417,9 +423,16 @@
 }
 
 @media (min-width: 768px) {
-  .main-navigation ul.sf-menu > li > a:hover::before, .main-navigation ul.sf-menu > li > a:focus::before {
-    background-color: #1D3E66;
+  .main-navigation ul.sf-menu > li > a:hover, .main-navigation ul.sf-menu > li > a:focus {
+    background-color: transparent;
   }
+  .main-navigation ul.sf-menu > li > a:hover::before, .main-navigation ul.sf-menu > li > a:focus::before {
+    background-color: #1C1634;
+  }
+}
+
+.main-navigation ul.sf-menu > li > a::before {
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -464,7 +477,7 @@
 
 @media (min-width: 768px) {
   .main-navigation ul.sf-menu > li > ul li.active-trail > a {
-    border-bottom-color: #00739d;
+    border-bottom-color: #00739D;
   }
 }
 
@@ -2228,8 +2241,8 @@ ul.footer-nav li a:focus {
 }
 
 .footer .footer-inner {
-  padding-top: 2.25em;
-  padding-bottom: 2.25em;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   margin-left: auto;

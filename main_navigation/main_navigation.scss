@@ -131,6 +131,7 @@
   color: map-get($theme, 'main_navigation_link_text');
   padding: pnm_util_unit(14px) pnm_util_unit(20px);
   text-align: center;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
   @include pnm_util_breakpoint(tablet) {
     padding: pnm_util_unit(14px) pnm_util_unit(16px);
     font-size: pnm_util_unit(18px);
@@ -138,6 +139,10 @@
   }
   &:focus, &:hover {
     background-color: map-get($theme, 'secondary_1');
+  }
+  &:focus {
+    outline: 1px solid map-get($theme, 'white');
+    outline-offset: -1px;
   }
 }
 
@@ -255,13 +260,15 @@
     padding-right: pnm_util_unit(2px);
   }
   &:hover, &:focus {
-    &::before {
-      @include pnm_util_breakpoint(tablet) {
-        background-color: map-get($theme, 'main_navigation_link_over');
+    @include pnm_util_breakpoint(tablet) {
+      background-color: transparent;
+      &::before {
+        background-color: map-get($theme, 'main_navigation_link_1_over');
       }
     }
   }
   &::before {
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     @include pnm_util_breakpoint(tablet) {
       content: '';
       display: inline-block;
@@ -359,7 +366,7 @@
   }
   &:hover, &:focus {
     @include pnm_util_breakpoint(tablet) {
-      background-color: map-get($theme, 'main_navigation_link_over');
+      background-color: map-get($theme, 'main_navigation_link_n_over');
     }
   }
 }

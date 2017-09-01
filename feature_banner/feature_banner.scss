@@ -80,7 +80,7 @@ $desktop_details_width: 524px;
 @mixin pnm_style_feature_details($theme: $pnm_theme) {
   color: map-get($theme, 'white');
   @include pnm_util_breakpoint(tablet) {
-    background-color: map-get($theme, 'main_navigation_link_over');
+    background-color: map-get($theme, 'secondary_1');
   }
 }
 

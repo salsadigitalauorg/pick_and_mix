@@ -1,8 +1,16 @@
 function pnm_link_to_top() {
   var $widget = null;
 
-  function scroll_to_top() {
-    window.scrollTo(0,0);
+  function scroll_to_top(e) {
+    // Scroll viewport to top of page.
+    window.scrollTo(0, 0);
+
+    // Set focus to start of page.
+    var $target = $('html, body');
+    $target.attr('tabindex', '1');
+    $target.focus();
+    $target.removeAttr('tabindex');
+
     e.stopPropagation();
     return false;
   }

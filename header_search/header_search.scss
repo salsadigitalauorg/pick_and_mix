@@ -112,6 +112,18 @@
     outline-offset: 0;
     z-index: 1;
   }
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  &:-moz-placeholder {
+    font-style: italic;
+  }
+  &::-moz-placeholder {
+    font-style: italic;
+  }
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
 }
 
 @mixin pnm_struct_header_search_input() {

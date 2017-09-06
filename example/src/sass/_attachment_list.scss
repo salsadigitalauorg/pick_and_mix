@@ -1,7 +1,7 @@
 .attachments-container {
   @include pnm_style_attachment_list_container;
   @include pnm_struct_attachment_list_container;
-  h4 {
+  h2 {
     @include pnm_style_attachment_list_title;
     @include pnm_struct_attachment_list_title;
   }

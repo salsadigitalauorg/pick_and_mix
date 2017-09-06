@@ -6,14 +6,20 @@ Back to top component to bring focus back to top of page.
 
 ### Example HTML
 ```html
-<a href="#" title="Back to top" class="back-to-top">Back to top</a>
+<div class="back-to-top-container">
+  <a href="#" class="back-to-top">Back to top</a>
+</div>
 ```
 
 ### Example SCSS
 ```scss
-.back-to-top {
-  @include pnm_style_link_to_top;
-  @include pnm_struct_link_to_top;
+.back-to-top-container {
+  @include pnm_style_link_to_top_container;
+  @include pnm_struct_link_to_top_container;
+  .back-to-top {
+    @include pnm_style_link_to_top;
+    @include pnm_struct_link_to_top;
+  }
 }
 ```
 

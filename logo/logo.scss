@@ -13,7 +13,9 @@
 // Logo Link
 // =========================================================
 @mixin pnm_style_logo_link($theme: $pnm_theme) {
-  // ...
+  &:focus {
+    @include pnm_style_focus_outline;
+  }
 }
 
 @mixin pnm_struct_logo_link() {

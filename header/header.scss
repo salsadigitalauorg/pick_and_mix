@@ -33,7 +33,7 @@
 @mixin pnm_struct_header_layer_1() {
   text-align: right;
   padding-top: pnm_util_unit(15px);
-  padding-bottom: pnm_util_unit(15px);
+  padding-bottom: pnm_util_unit(22px);
 }
 
 // =========================================================
@@ -70,7 +70,7 @@
 }
 
 // =========================================================
-// Header All Layers
+// Header Tools Container
 // =========================================================
 @mixin pnm_style_header_tools_container($theme: $pnm_theme) {
   // ...
@@ -100,4 +100,7 @@
 
 @mixin pnm_struct_header_horizontal_nav_item() {
   display: inline-block;
+  @include pnm_util_breakpoint(tablet) {
+    margin-left: pnm_util_unit(22px);
+  }
 }

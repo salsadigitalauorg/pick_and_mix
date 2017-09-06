@@ -44,6 +44,9 @@
 @mixin pnm_style_partner_link($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
   text-decoration: none;
+  &:focus {
+    @include pnm_style_focus_outline;
+  }
 }
 
 @mixin pnm_struct_partner_link() {

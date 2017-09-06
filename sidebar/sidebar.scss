@@ -122,6 +122,9 @@
     &:focus, &:hover {
       background-image: pnm_util_url("nav_up_arrow_secondary2_hover.svg");
     }
+    &:focus {
+      @include pnm_style_focus_outline;
+    }
     &.menu-closed {
       background-image: pnm_util_url("nav_down_arrow_secondary2.svg");
       &:focus, &:hover {

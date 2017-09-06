@@ -21,6 +21,20 @@
 }
 
 // =========================================================
+// Footer Copyright Logo Container Link
+// =========================================================
+@mixin pnm_style_footer_logo_container_link($theme: $pnm_theme) {
+  &:focus {
+    $white: ('neutral_1': map-get($theme, 'white'));
+    @include pnm_style_focus_outline(map-merge($theme, $white));
+  }
+}
+
+@mixin pnm_struct_footer_logo_container_link() {
+  // ...
+}
+
+// =========================================================
 // Footer Copyright Text
 // =========================================================
 @mixin pnm_style_footer_copyright_text() {

@@ -63,7 +63,7 @@
 // Search Field Container
 // =========================================================
 @mixin pnm_style_header_search_field_container($theme: $pnm_theme) {
-  border: 1px solid #BEBEBE;
+  border: 1px solid map-get($theme, 'neutral_3');
 }
 
 @mixin pnm_struct_header_search_field_container() {
@@ -96,24 +96,26 @@
 // Search Input
 // =========================================================
 @mixin pnm_style_header_search_input($theme: $pnm_theme) {
-  position: relative;
-  background: #F6F6F6;
+  background-color: map-get($theme, 'neutral_4');
   height: pnm_util_unit(54px);
+  font-size: 1rem;
   box-sizing: border-box;
   border: 0;
-  border-right: 1px solid #BEBEBE;
+  border-right: 1px solid map-get($theme, 'neutral_3');
   padding: map-get($theme, 'mobile_column_padding');
   width: 100%;
   @include pnm_util_breakpoint(tablet) {
     width: pnm_util_unit(320px);
   }
   &:focus {
+    @include pnm_style_focus_outline;
+    outline-offset: 0;
     z-index: 1;
   }
 }
 
 @mixin pnm_struct_header_search_input() {
-  // ...
+  position: relative;
 }
 
 // =========================================================
@@ -121,7 +123,7 @@
 // =========================================================
 @mixin pnm_style_header_search_button($theme: $pnm_theme) {
   position: relative;
-  background: #F6F6F6;
+  background-color: map-get($theme, 'neutral_4');
   height: pnm_util_unit(54px);
   width: pnm_util_unit(54px);
   border: 0;
@@ -132,6 +134,8 @@
   font-size: 0;
   cursor: pointer;
   &:focus {
+    @include pnm_style_focus_outline;
+    outline-offset: 0;
     z-index: 1;
   }
   &:focus, &:hover {

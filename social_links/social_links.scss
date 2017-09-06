@@ -60,6 +60,10 @@
 @mixin pnm_style_social_links_item($theme: $pnm_theme) {
   border: none;
   color: map-get($pnm_theme, 'white');
+  &:focus {
+    $white: ('neutral_1': map-get($theme, 'white'));
+    @include pnm_style_focus_outline(map-merge($theme, $white));
+  }
 }
 
 @mixin pnm_struct_social_links_item() {

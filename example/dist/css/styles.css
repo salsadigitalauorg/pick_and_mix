@@ -69,14 +69,15 @@
 }
 
 .header-search-container .header-search-field-container .header-search-input {
-  position: relative;
-  background: #F6F6F6;
+  background-color: #F6F6F6;
   height: 3.375rem;
+  font-size: 1rem;
   box-sizing: border-box;
   border: 0;
   border-right: 1px solid #BEBEBE;
   padding: 1.25rem;
   width: 100%;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -86,6 +87,9 @@
 }
 
 .header-search-container .header-search-field-container .header-search-input:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+  outline-offset: 0;
   z-index: 1;
 }
 
@@ -102,7 +106,7 @@
 
 .header-search-container .header-search-field-container .header-search-button {
   position: relative;
-  background: #F6F6F6;
+  background-color: #F6F6F6;
   height: 3.375rem;
   width: 3.375rem;
   border: 0;
@@ -115,6 +119,9 @@
 }
 
 .header-search-container .header-search-field-container .header-search-button:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+  outline-offset: 0;
   z-index: 1;
 }
 
@@ -180,6 +187,11 @@
 
 .pnm-text-resize-large {
   font-size: 22px;
+}
+
+.logo-container a:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .logo-container a img {
@@ -581,6 +593,11 @@
   display: block;
 }
 
+.partner a:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+}
+
 .partner .partner-title {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -642,6 +659,11 @@
   display: inline-block;
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+
+.social-links a:focus {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
 }
 
 .social-links img {
@@ -709,6 +731,11 @@ ul.footer-nav li a:focus {
     -ms-flex-order: initial;
         order: initial;
   }
+}
+
+.logo-and-copyright-container .footer-logo-container a:focus {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
 }
 
 .logo-and-copyright-container .copyright-text {
@@ -1100,6 +1127,11 @@ ul.footer-nav li a:focus {
 
 .sidebar ul.sidebar-menu li button:focus, .sidebar ul.sidebar-menu li button:hover {
   background-image: url(../images/svg/nav_up_arrow_secondary2_hover.svg);
+}
+
+.sidebar ul.sidebar-menu li button:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
 }
 
 .sidebar ul.sidebar-menu li button.menu-closed {
@@ -2078,6 +2110,11 @@ ul.footer-nav li a:focus {
   display: block;
 }
 
+.partner a:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+}
+
 .partner .partner-title {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -2112,7 +2149,7 @@ ul.footer-nav li a:focus {
 .header .header-inner .layer-1 {
   text-align: right;
   padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
+  padding-bottom: 1.375rem;
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container {
@@ -2121,6 +2158,12 @@ ul.footer-nav li a:focus {
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li {
   display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .header .header-inner .layer-1 ul.header-horizontal-link-container li {
+    margin-left: 1.375rem;
+  }
 }
 
 .header .header-inner .layer-1 ul.header-horizontal-link-container li a {

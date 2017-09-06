@@ -4,6 +4,10 @@
   .footer-logo-container {
     @include pnm_style_footer_logo_container;
     @include pnm_struct_footer_logo_container;
+    a {
+      @include pnm_style_footer_logo_container_link;
+      @include pnm_struct_footer_logo_container_link;
+    }
   }
   .copyright-text {
     @include pnm_style_footer_copyright_text;

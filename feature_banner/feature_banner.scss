@@ -97,7 +97,7 @@ $desktop_details_width: 524px;
 // =========================================================
 @mixin pnm_style_feature_details_title($theme: $pnm_theme) {
   color: map-get($theme, 'white');
-  font-weight: normal;
+  font-weight: 300;
   font-size: pnm_util_unit(24px);
   line-height: pnm_util_unit(36px);
   @include pnm_util_breakpoint(tablet) {

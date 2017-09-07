@@ -735,7 +735,7 @@ ul.footer-nav li a:focus {
   margin: 0;
   padding: 0;
   color: #FFFFFF;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.25rem;
 }
@@ -1894,7 +1894,7 @@ ul.footer-nav li a:focus {
 }
 
 .title-crumbs-banner h1 {
-  font-weight: normal;
+  font-weight: 300;
   color: #FFFFFF;
   font-size: 1.5rem;
   line-height: 2.5rem;

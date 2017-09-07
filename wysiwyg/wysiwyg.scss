@@ -1,5 +1,5 @@
 // =========================================================
-// Wisiwyg Container
+// Wysiwyg Container
 // =========================================================
 @mixin pnm_style_wysiwyg_container($theme: $pnm_theme) {
   font-size: pnm_util_unit(14px);
@@ -29,7 +29,7 @@
 }
 
 // =========================================================
-// Wisiwyg Heading 2
+// Wysiwyg Heading 2
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_2($theme: $pnm_theme) {
   color: map-get($theme, 'secondary_2');
@@ -51,7 +51,7 @@
 }
 
 // =========================================================
-// Wisiwyg Heading 3
+// Wysiwyg Heading 3
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_3($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -73,7 +73,7 @@
 }
 
 // =========================================================
-// Wisiwyg Heading 4
+// Wysiwyg Heading 4
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_4($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -95,7 +95,7 @@
 }
 
 // =========================================================
-// Wisiwyg Heading 5
+// Wysiwyg Heading 5
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_5($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -117,7 +117,7 @@
 }
 
 // =========================================================
-// Wisiwyg Heading 6
+// Wysiwyg Heading 6
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_6($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -139,7 +139,7 @@
 }
 
 // =========================================================
-// Wisiwyg Table Responsive Wrapper
+// Wysiwyg Table Responsive Wrapper
 // =========================================================
 @mixin pnm_style_wysiwyg_table_responsive_wrapper($theme: $pnm_theme) {
   // ...
@@ -159,7 +159,7 @@
 }
 
 // =========================================================
-// Wisiwyg Table
+// Wysiwyg Table
 // =========================================================
 @mixin pnm_style_wysiwyg_table($theme: $pnm_theme) {
   background: transparent;
@@ -198,7 +198,7 @@
 }
 
 // =========================================================
-// Wisiwyg Table - Striped
+// Wysiwyg Table - Striped
 // =========================================================
 @mixin pnm_style_wysiwyg_table_striped($theme: $pnm_theme) {
   tbody>tr:nth-child(odd) {
@@ -211,7 +211,7 @@
 }
 
 // =========================================================
-// Wisiwyg Quote
+// Wysiwyg Quote
 // =========================================================
 @mixin pnm_style_wysiwyg_quote($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_5');
@@ -257,7 +257,7 @@
 }
 
 // =========================================================
-// Wisiwyg Quote Right Align
+// Wysiwyg Quote Right Align
 // =========================================================
 @mixin pnm_style_wysiwyg_quote_right_align($theme: $pnm_theme) {
   @include pnm_style_wysiwyg_quote;
@@ -278,16 +278,15 @@
   }
 }
 
-@mixin pnm_struct_wysiwyg_quote_right_align() {}
+@mixin pnm_struct_wysiwyg_quote_right_align() {
+  // ...
+}
 
 // =========================================================
-// Wisiwyg Unordered List
+// Wysiwyg Unordered List
 // =========================================================
 @mixin pnm_style_wysiwyg_ulist($theme: $pnm_theme) {
-  padding: 0;
-  li {
-    list-style: none;
-  }
+  padding-left: pnm_util_unit(20px);
 }
 
 @mixin pnm_struct_wysiwyg_ulist() {
@@ -295,12 +294,57 @@
 }
 
 // =========================================================
-// Wisiwyg Ordered List
+// Wysiwyg Ordered List
 // =========================================================
 @mixin pnm_style_wysiwyg_olist($theme: $pnm_theme) {
-  padding: 0 0 0 pnm_util_unit(20px);
+  padding-left: pnm_util_unit(20px);
 }
 
 @mixin pnm_struct_wysiwyg_olist() {
   margin: pnm_util_unit(16px) 0;
+}
+
+// =========================================================
+// Wysiwyg Float Left
+// =========================================================
+@mixin pnm_style_wysiwyg_float_left($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_wysiwyg_float_left() {
+  @include pnm_util_breakpoint(tablet) {
+    margin-top: 22px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    float: left;
+  }
+}
+
+// =========================================================
+// Wysiwyg Float Right
+// =========================================================
+@mixin pnm_style_wysiwyg_float_right($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_wysiwyg_float_right() {
+  @include pnm_util_breakpoint(tablet) {
+    margin-top: 22px;
+    margin-left: 22px;
+    margin-bottom: 22px;
+    float: right;
+  }
+}
+
+// =========================================================
+// Wysiwyg Unfloat
+// =========================================================
+@mixin pnm_style_wysiwyg_unfloat($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_wysiwyg_unfloat() {
+  @include pnm_util_breakpoint(tablet) {
+    clear: both;
+  }
 }

@@ -52,4 +52,16 @@
   a {
     @include pnm_style_link;
   }
+  .wysiwyg-float-left {
+    @include pnm_style_wysiwyg_float_left;
+    @include pnm_struct_wysiwyg_float_left;
+  }
+  .wysiwyg-float-right {
+    @include pnm_style_wysiwyg_float_right;
+    @include pnm_struct_wysiwyg_float_right;
+  }
+  .wysiwyg-unfloat {
+    @include pnm_style_wysiwyg_unfloat;
+    @include pnm_struct_wysiwyg_unfloat;
+  }
 }

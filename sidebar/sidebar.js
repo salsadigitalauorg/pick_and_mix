@@ -13,7 +13,7 @@ function pnm_sidebar_nav() {
   // =========================================================
   function toggle_button_click(e) {
     var $button = $(e.currentTarget);
-    var $menu = $button.parent().children('ul');
+    var $menu = $button.parent().parent().children('ul');
     var was_closed = $button.hasClass('menu-closed');
 
     if (was_closed) {
@@ -49,7 +49,7 @@ function pnm_sidebar_nav() {
         else {
           collapse($sub_menu, $button);
         }
-        $list_item.children('a').after($button);
+        $list_item.children('a').wrap('<div class="sidebar-toggle-menu-wrapper"></div>').after($button);
         $button.unbind('click', toggle_button_click).bind('click', toggle_button_click);
       }
     });
@@ -57,6 +57,7 @@ function pnm_sidebar_nav() {
 
   function remove_toggle_buttons() {
     // Clean up any elements and attributes created.
+    $widget.find('.sidebar-toggle-menu').unwrap();
     $widget.find('.sidebar-toggle-menu').remove();
     $widget.find('[id^=sidebar-submenu]').removeAttr('id').removeAttr('aria-hidden').removeClass('menu-closed');
   }

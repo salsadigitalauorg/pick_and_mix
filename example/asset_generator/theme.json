@@ -25,7 +25,7 @@
     "default": "nav_down_arrow_secondary2.svg",
     "secondary": "nav_down_arrow_secondary2_hover.svg",
     "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_secondary": "#FFFFFF"
   },
   {
     "template": "nav_right_arrow.svg",
@@ -46,7 +46,7 @@
     "default": "nav_up_arrow_secondary2.svg",
     "secondary": "nav_up_arrow_secondary2_hover.svg",
     "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_secondary": "#FFFFFF"
   },
   {
     "template": "search_icon.svg",
@@ -143,13 +143,6 @@
     "template": "text_resize_reduce.svg",
     "default": "text_resize_reduce.svg",
     "secondary": "text_resize_reduce_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
-  },
-  {
-    "template": "text_resize_reset.svg",
-    "default": "text_resize_reset.svg",
-    "secondary": "text_resize_reset_hover.svg",
     "colour_default": "#006DAE",
     "colour_secondary": "#1D3E66"
   },

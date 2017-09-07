@@ -16,26 +16,9 @@
   font-size: pnm_util_unit(18px);
   line-height: pnm_util_unit(48px);
   font-weight: normal;
-  button {
-    appearance: none;
-    text-align: left;
-    background-color: map-get($theme, 'neutral_4');
-    border: 0;
-    font-size: pnm_util_unit(18px);
-    padding: pnm_util_unit(20px);
-    padding-right: 30px;
-    background-image: pnm_util_url('nav_down_arrow_secondary2.svg');
-    background-repeat: no-repeat;
-    background-position: center right 15px;
-    &:focus, &:hover {
-      background-image: pnm_util_url('nav_down_arrow_secondary2_hover.svg');
-    }
-    &.menu-open {
-      background-image: pnm_util_url('nav_up_arrow_secondary2.svg');
-      &:focus, &:hover {
-        background-image: pnm_util_url('nav_up_arrow_secondary2_hover.svg');
-      }
-    }
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(30px);
+    color: map-get($theme, 'neutral_1');
   }
 }
 
@@ -44,41 +27,71 @@
   @include pnm_util_breakpoint(tablet) {
     margin-bottom: pnm_util_unit(30px);
   }
-  button {
-    display: block;
-    width: 100%;
-  }
 }
 
 // =========================================================
-// Sidebar Nav
+// Sidebar Title Toggle
 // =========================================================
-@mixin pnm_style_sidebar_nav($theme: $pnm_theme) {
-  list-style: none;
-  background-color: map-get($theme, 'neutral_7');
-  @include pnm_util_breakpoint(tablet) {
-    background: none;
-    ul {
-      background-color: map-get($theme, 'neutral_4');
-      border-top: 2px solid map-get($theme, 'neutral_6');
-      ul {
-        background-color: transparent;
-        border-top: none;
-        padding-top: 0;
-      }
+@mixin pnm_style_sidebar_title_toggle($theme: $pnm_theme) {
+  appearance: none;
+  text-align: left;
+  background-color: map-get($theme, 'neutral_4');
+  border: 0;
+  font-size: pnm_util_unit(18px);
+  padding: pnm_util_unit(20px);
+  padding-right: pnm_util_unit(30px);
+  background-image: pnm_util_url('nav_down_arrow_secondary2.svg');
+  background-repeat: no-repeat;
+  background-position: center right pnm_util_unit(15px);
+  &:focus, &:hover {
+    background-image: pnm_util_url('nav_down_arrow_secondary2_hover.svg');
+    background-color: map-get($theme, 'main_navigation_link_n_over');
+    color: map-get($theme, 'white');
+  }
+  &:focus {
+    @include pnm_style_focus_outline($theme);
+  }
+  &.menu-open {
+    background-image: pnm_util_url('nav_up_arrow_secondary2.svg');
+    &:focus, &:hover {
+      background-image: pnm_util_url('nav_up_arrow_secondary2_hover.svg');
     }
   }
 }
 
-@mixin pnm_struct_sidebar_nav() {
+@mixin pnm_struct_sidebar_title_toggle() {
+  display: block;
+  width: 100%;
+}
+
+// =========================================================
+// Sidebar List
+// =========================================================
+@mixin pnm_style_sidebar_list($theme: $pnm_theme) {
+  list-style: none;
+  background-color: map-get($theme, 'neutral_7');
+  border-top: 1px solid map-get($theme, 'neutral_6');
+  @include pnm_util_breakpoint(tablet) {
+    background-color: transparent;
+  }
+}
+
+@mixin pnm_struct_sidebar_list() {
   display: none;
-  padding: pnm_util_unit(20px) pnm_util_unit(20px) 0;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
   position: absolute;
   z-index: 100;
   position: static;
+  padding: 0;
+  @include pnm_util_breakpoint(tablet) {
+    z-index: auto;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
   &.menu-open {
     display: block;
   }
@@ -86,14 +99,8 @@
     display: block;
     padding-top: 0;
   }
-  @include pnm_util_breakpoint(tablet) {
-    display: block;
-    padding: 0;
-  }
   ul {
     @include pnm_util_breakpoint(tablet) {
-      padding: pnm_util_unit(18px) pnm_util_unit(8px) 0 pnm_util_unit(16px);
-      margin-bottom: pnm_util_unit(20px);
       display: block;
     }
     &.menu-closed {
@@ -103,54 +110,78 @@
 }
 
 // =========================================================
+// Sidebar List Level N
+// =========================================================
+@mixin pnm_struct_sidebar_list_n($theme: $pnm_theme) {
+  background-color: map-get($theme, 'neutral_4');
+}
+
+@mixin pnm_style_sidebar_list_n() {
+  // ...
+}
+
+// =========================================================
 // Sidebar list Item
 // =========================================================
 @mixin pnm_style_sidebar_list_item($theme: $pnm_theme) {
-  font-size: pnm_util_unit(14px);
-  line-height: pnm_util_unit(42px);
-  button {
-    border: none;
-    text-indent: -99999px;
-    height: pnm_util_unit(42px);
-    padding: 0 pnm_util_unit(6px);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
-    appearance: none;
-    cursor: pointer;
-    &:focus, &:hover {
-      background-image: pnm_util_url("nav_up_arrow_secondary2_hover.svg");
-    }
-    &:focus {
-      @include pnm_style_focus_outline;
-    }
-    &.menu-closed {
-      background-image: pnm_util_url("nav_down_arrow_secondary2.svg");
-      &:focus, &:hover {
-        background-image: pnm_util_url("nav_down_arrow_secondary2_hover.svg");
-      }
-    }
-  }
-  li {
-    font-weight: normal;
-  }
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(16px);
-    font-weight: bold;
-  }
+  // ...
 }
 
 @mixin pnm_struct_sidebar_list_item() {
-  padding: 0 pnm_util_unit(10px);
-  li {
-    padding: 0;
-  }
+  position: relative;
   @include pnm_util_breakpoint(tablet) {
-    button {
-      display: block;
-      float: right;
+    // display: grid;
+    // grid-template-columns: auto 42px;
+    // grid-auto-columns: auto 42px;
+  }
+}
+
+// =========================================================
+// Sidebar list Item Toggle
+// =========================================================
+@mixin pnm_style_sidebar_list_item_toggle_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_sidebar_list_item_toggle_container() {
+  display: flex;
+}
+
+// =========================================================
+// Sidebar list Item Toggle
+// =========================================================
+@mixin pnm_style_sidebar_list_item_toggle($theme: $pnm_theme) {
+  border: none;
+  font-size: 0;
+  width: pnm_util_unit(42px);
+  height: pnm_util_unit(42px);
+  background-position: 50% 50%;
+  background-image: pnm_util_url("nav_up_arrow_secondary2.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+  &:focus, &:hover {
+    background-color: map-get($theme, 'main_navigation_link_n_over');
+    background-image: pnm_util_url("nav_up_arrow_secondary2_hover.svg");
+  }
+  &:focus {
+    @include pnm_style_focus_outline;
+  }
+  &.menu-closed {
+    background-image: pnm_util_url("nav_down_arrow_secondary2.svg");
+    &:focus, &:hover {
+      background-image: pnm_util_url("nav_down_arrow_secondary2_hover.svg");
     }
+  }
+}
+
+@mixin pnm_struct_sidebar_list_item_toggle() {
+  @include pnm_util_breakpoint(tablet) {
+    display: block;
+    box-sizing: border-box;
+    height: auto;
+    z-index: 2;
   }
 }
 
@@ -158,14 +189,21 @@
 // Sidebar list Item Active Trail
 // =========================================================
 @mixin pnm_style_sidebar_list_item_active_trail($theme: $pnm_theme) {
-  background-color: map-get($theme, 'neutral_7');
-  ul {
-    background-color: transparent;
-    border: none;
-  }
+  // ...
 }
 
 @mixin pnm_struct_sidebar_list_item_active_trail() {
+  // ...
+}
+
+// =========================================================
+// Sidebar list Item Active Trail Link
+// =========================================================
+@mixin pnm_style_sidebar_list_item_active_trail_link($theme: $pnm_theme) {
+  border-left: 2px solid map-get($theme, 'secondary_2');
+}
+
+@mixin pnm_struct_sidebar_list_item_active_trail_link() {
   // ...
 }
 
@@ -181,12 +219,106 @@
 }
 
 // =========================================================
+// Sidebar list Item Active Link
+// =========================================================
+@mixin pnm_style_sidebar_list_item_active_link($theme: $pnm_theme) {
+  background-color: map-get($theme, 'secondary_2') !important;
+  color: map-get($theme, 'white') !important;
+  &:focus, &:hover {
+    background-color: map-get($theme, 'main_navigation_link_n_over') !important;
+    color: map-get($theme, 'white') !important;
+  }
+}
+
+@mixin pnm_struct_sidebar_list_item_active_link() {
+  // ...
+}
+
+// =========================================================
 // Sidebar Link
 // =========================================================
 @mixin pnm_style_sidebar_link($theme: $pnm_theme) {
-  @include pnm_style_link;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  padding: pnm_util_unit(22px);
+  font-size: pnm_util_unit(14px);
+  padding-right: pnm_util_unit(42px);
+  color: map-get($theme, 'neutral_1');
+  text-decoration: none;
+  @include pnm_util_breakpoint(tablet) {
+    width: 100%;
+    padding: pnm_util_unit(18px) pnm_util_unit(12px);
+    font-size: pnm_util_unit(16px);
+  }
+  &:focus, &:hover {
+    background-color: map-get($theme, 'main_navigation_link_n_over');
+    color: map-get($theme, 'white');
+  }
+  &:focus {
+    @include pnm_style_focus_outline($theme);
+    z-index: 2;
+  }
 }
 
 @mixin pnm_struct_sidebar_link() {
+  // ...
+}
+
+// =========================================================
+// Sidebar Link 1
+// =========================================================
+@mixin pnm_style_sidebar_link_1($theme: $pnm_theme) {
+  @include pnm_util_breakpoint(tablet) {
+    font-weight: 700;
+  }
+}
+
+@mixin pnm_struct_sidebar_link_1() {
+  // ...
+}
+
+// =========================================================
+// Sidebar Link 2
+// =========================================================
+@mixin pnm_style_sidebar_link_2($theme: $pnm_theme) {
+  padding-left: pnm_util_unit(44px);
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: pnm_util_unit(36px);
+    font-weight: 400;
+  }
+  &:focus, &:hover {
+    @include pnm_util_breakpoint(tablet) {
+      background-color: map-get($theme, 'main_navigation_link_n_over');
+      color: map-get($theme, 'white');
+    }
+  }
+}
+
+@mixin pnm_struct_sidebar_link_2() {
+  // ...
+}
+
+// =========================================================
+// Sidebar Link 3
+// =========================================================
+@mixin pnm_style_sidebar_link_3($theme: $pnm_theme) {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: pnm_util_unit(66px);
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: pnm_util_unit(60px);
+    font-weight: 400;
+    background-color: map-get($theme, 'neutral_4');
+  }
+  &:focus, &:hover {
+    @include pnm_util_breakpoint(tablet) {
+      background-color: map-get($theme, 'main_navigation_link_n_over');
+      color: map-get($theme, 'white');
+    }
+  }
+}
+
+@mixin pnm_struct_sidebar_link_3() {
   // ...
 }

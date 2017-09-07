@@ -147,13 +147,6 @@
     "colour_secondary": "#008488"
   },
   {
-    "template": "text_resize_reset.svg",
-    "default": "text_resize_reset.svg",
-    "secondary": "text_resize_reset_hover.svg",
-    "colour_default": "#057F83",
-    "colour_secondary": "#008488"
-  },
-  {
     "template": "time_icon.svg",
     "default": "time_icon.svg",
     "secondary": "time_icon_hover.svg",

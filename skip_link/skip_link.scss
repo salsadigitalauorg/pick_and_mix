@@ -16,7 +16,7 @@
   &:focus {
     @include pnm_style_focus_outline($theme);
     color: map-get($theme, 'white');
-    background-color: map-get($theme, 'primary_1');
+    background-color: map-get($theme, 'secondary_2');
     font-size: pnm_util_unit(21px);
     top: pnm_util_unit(12px);
     left: pnm_util_unit(12px);

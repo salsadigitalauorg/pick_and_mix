@@ -1,0 +1,38 @@
+// =========================================================
+// Skip Link container
+// =========================================================
+@mixin pnm_style_skip_link_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_skip_link_container() {
+  // ...
+}
+
+// =========================================================
+// Skip Link
+// =========================================================
+@mixin pnm_style_skip_link($theme: $pnm_theme) {
+  &:focus {
+    @include pnm_style_focus_outline($theme);
+    color: map-get($theme, 'white');
+    background-color: map-get($theme, 'primary_1');
+    font-size: pnm_util_unit(21px);
+    top: pnm_util_unit(12px);
+    left: pnm_util_unit(12px);
+    padding: pnm_util_unit(6px) pnm_util_unit(12px);
+  }
+}
+
+@mixin pnm_struct_skip_link() {
+  @include pnm_style_hidden;
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: absolute;
+    width: auto;
+    text-decoration: none;
+  }
+}

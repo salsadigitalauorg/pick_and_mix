@@ -1,0 +1,8 @@
+.skip-link-container {
+  @include pnm_style_skip_link_container;
+  @include pnm_struct_skip_link_container;
+  .skip-link {
+    @include pnm_style_skip_link;
+    @include pnm_struct_skip_link;
+  }
+}

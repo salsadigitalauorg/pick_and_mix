@@ -1705,6 +1705,38 @@ ul.footer-nav li a:focus {
   }
 }
 
+.skip-link-container .skip-link {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.skip-link-container .skip-link:focus {
+  outline: 1px solid #3C3C3C;
+  outline-offset: 1px;
+  color: #FFFFFF;
+  background-color: #006DAE;
+  font-size: 1.3125rem;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.skip-link-container .skip-link:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  width: auto;
+  text-decoration: none;
+}
+
 .social-links-container {
   padding: 2.375rem 0;
   width: 100%;

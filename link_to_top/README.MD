@@ -7,7 +7,7 @@ Back to top component to bring focus back to top of page.
 ### Example HTML
 ```html
 <div class="back-to-top-container">
-  <a href="#" class="back-to-top">Back to top</a>
+  <a href="#" class="back-to-top">[ Back to top ]</a>
 </div>
 ```
 

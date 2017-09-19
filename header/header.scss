@@ -88,7 +88,11 @@
 }
 
 @mixin pnm_struct_header_horizontal_nav_container() {
+  display: none;
   margin: 0;
+  @include pnm_util_breakpoint(tablet) {
+    display: block;
+  }
 }
 
 // =========================================================

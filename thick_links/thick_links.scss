@@ -21,7 +21,7 @@
 // Thick Link
 // =========================================================
 @mixin pnm_style_thick_link($theme: $pnm_theme) {
-  background-color: map-get($pnm_theme, 'secondary_2');
+  background-color: map-get($pnm_theme, 'primary_1');
   font-size: pnm_util_unit(18px);
   padding: map-get($theme, 'default_padding');
   width: 100%;

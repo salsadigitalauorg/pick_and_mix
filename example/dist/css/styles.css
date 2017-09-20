@@ -1786,39 +1786,54 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .social-links-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-links-inner {
     max-width: 73.125rem;
   }
 }
 
 .social-links-inner h2 {
-  display: inline;
   margin: 0 1rem 0 0;
   color: #FFFFFF;
   font-size: 1rem;
-  line-height: 2.25rem;
+  margin-bottom: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .social-links-inner h2 {
+    margin-bottom: 0;
+  }
 }
 
 .social-links {
   display: block;
 }
 
-@media (min-width: 768px) {
-  .social-links {
-    display: inline;
-  }
-}
-
 .social-links a {
   border: none;
   color: #FFFFFF;
   display: inline-block;
-  margin-right: 0.5rem;
   vertical-align: middle;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .social-links a:focus {
   outline: 1px solid #FFFFFF;
   outline-offset: 1px;
+}
+
+@media (min-width: 768px) {
+  .social-links a {
+    margin-bottom: 0;
+  }
 }
 
 .social-links img {

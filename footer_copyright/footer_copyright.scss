@@ -7,6 +7,10 @@
 
 @mixin pnm_struct_footer_copyright() {
   display: inline-block;
+  order: 2;
+  @include pnm_util_breakpoint(tablet) {
+    order: 0;
+  }
 }
 
 // =========================================================

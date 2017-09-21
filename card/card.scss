@@ -109,6 +109,7 @@
   font-size: pnm_util_unit(24px);
   color: map-get($theme, 'primary_1');
   line-height: 1.5em;
+  margin: pnm_util_unit(18px) 0;
   a {
     @include pnm_style_link;
   }

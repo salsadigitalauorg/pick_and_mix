@@ -101,6 +101,7 @@
   font-size: 1rem;
   box-sizing: border-box;
   border: 0;
+  border-radius: 0;
   border-right: 1px solid map-get($theme, 'neutral_3');
   padding: map-get($theme, 'mobile_column_padding');
   width: 100%;
@@ -139,6 +140,7 @@
   height: pnm_util_unit(54px);
   width: pnm_util_unit(54px);
   border: 0;
+  border-radius: 0;
   background-image: pnm_util_url('search_icon.svg');
   background-repeat: no-repeat;
   background-position: center;

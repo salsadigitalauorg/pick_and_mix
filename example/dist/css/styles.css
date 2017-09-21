@@ -618,6 +618,7 @@ ul.footer-nav li a:focus {
   font-size: 1rem;
   box-sizing: border-box;
   border: 0;
+  border-radius: 0;
   border-right: 1px solid #BEBEBE;
   padding: 1.25rem;
   width: 100%;
@@ -670,6 +671,7 @@ ul.footer-nav li a:focus {
   height: 3.375rem;
   width: 3.375rem;
   border: 0;
+  border-radius: 0;
   background-image: url(../images/svg/search_icon.svg);
   background-repeat: no-repeat;
   background-position: center;

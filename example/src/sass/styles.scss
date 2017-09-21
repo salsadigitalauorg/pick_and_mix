@@ -3,6 +3,7 @@
 // =========================================================
 @import '../../../utils/utils';
 @import '../../../core/core';
+@import '../../../core/typography';
 // Add custom theme colours.
 @import 'theme';
 // Add individual PNM Components
@@ -58,14 +59,5 @@
 @import 'text_resize';
 @import 'thick_links';
 @import 'title_crumbs_banner';
+@import 'typography';
 @import 'wysiwyg';
-// =========================================================
-// Custom Scaffolding.
-// =========================================================
-body {
-  font-family: helvetica;
-  margin: 0;
-  input {
-    font-family: helvetica;
-  }
-}

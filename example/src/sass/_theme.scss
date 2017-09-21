@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+
+$font_primary: "Helvetica", Arial, san-serif;
+$font_secondary: "Open Sans", sans-serif;
+$font_tertiary: "Roboto Condensed", sans-serif;
+$font_quaternary: "Roboto", serif;
+$font_quinary: "Gentium Book Basic", serif;
+
 // Custom implementation of default theme.
 $pnm_theme: (
   // Colours
@@ -37,5 +48,9 @@ $pnm_theme: (
   'desktop_column': pnm_util_unit(1170px),
 
   // Fonts
-  'font_primary': 'HelveticaNeue-Bold'
+  'font_primary': $font_primary,
+  'font_secondary': $font_secondary,
+  'font_tertiary': $font_tertiary,
+  'font_quaternary': $font_quaternary,
+  'font_quinary': $font_quinary
 );

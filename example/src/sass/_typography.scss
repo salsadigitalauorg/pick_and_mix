@@ -1,0 +1,30 @@
+body {
+  @include pnm_style_typography_body;
+  input, textarea {
+    @include pnm_style_typography_input;
+  }
+}
+
+.typography_test {
+  h2 {
+    @include pn_style_typography_heading_extra_large;
+  }
+  h3 {
+    @include pn_style_typography_heading_large;
+  }
+  h4 {
+    @include pn_style_typography_heading_medium;
+  }
+  h5 {
+    @include pn_style_typography_heading_small;
+  }
+  p.large {
+    @include pn_style_typography_paragraph_large;
+  }
+  p.regular {
+    @include pn_style_typography_paragraph_body;
+  }
+  p.small {
+    @include pn_style_typography_paragraph_small;
+  }
+}

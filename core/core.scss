@@ -37,7 +37,11 @@ $pnm_theme: (
   'desktop_column': pnm_util_unit(1170px),
 
   // Fonts
-  'font_primary': 'HelveticaNeue-Bold'
+  'font_primary': san-serif,
+  'font_secondary': sans-serif,
+  'font_tertiary': sans-serif,
+  'font_quaternary': sans-serif,
+  'font_quinary': sans-serif
 );
 
 @mixin pnm_style_button($theme: $pnm_theme) {

@@ -1072,7 +1072,13 @@ ul.footer-nav li a:focus {
 }
 
 .main-navigation ul.sf-menu a:focus, .main-navigation ul.sf-menu a:hover {
-  background-color: #1D3E66;
+  background-color: #005676;
+}
+
+@media (min-width: 768px) {
+  .main-navigation ul.sf-menu a:focus, .main-navigation ul.sf-menu a:hover {
+    background-color: #1D3E66;
+  }
 }
 
 .main-navigation ul.sf-menu a:focus {
@@ -1124,6 +1130,16 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .main-navigation ul.sf-menu > li.menuparent > a:focus::after, .main-navigation ul.sf-menu > li.menuparent > a:hover::after {
     background-image: url(../images/svg/nav_down_arrow_hover.svg);
+  }
+}
+
+.main-navigation ul.sf-menu > li.active-trail > a {
+  background-color: #1D3E66;
+}
+
+@media (min-width: 768px) {
+  .main-navigation ul.sf-menu > li.active-trail > a {
+    background-color: transparent;
   }
 }
 

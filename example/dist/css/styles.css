@@ -1409,9 +1409,25 @@ ul.footer-nav li a:focus {
   width: 50%;
 }
 
+.partner:nth-child(odd) {
+  padding-right: 20px;
+}
+
+.partner:nth-child(even) {
+  padding-left: 20px;
+}
+
 @media (min-width: 768px) {
   .partner {
     width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .partner:nth-child(4n + 1) {
+    padding-left: 0;
+  }
+  .partner:nth-child(4n) {
+    padding-right: 0;
   }
 }
 

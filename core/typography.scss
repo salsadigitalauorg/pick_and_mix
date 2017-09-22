@@ -18,7 +18,7 @@
 // Content Heading Styles
 // =========================================================
 @mixin pn_style_typography_heading_extra_large($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_tertiary');
+  font-family: map-get($theme, 'font_secondary');
   font-size: pnm_util_unit(48px);
   font-weight: 300;
   color: map-get($theme, 'primary_1');
@@ -26,7 +26,7 @@
 }
 
 @mixin pn_style_typography_heading_large($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_quinary');
+  font-family: map-get($theme, 'font_quaternary');
   font-size: pnm_util_unit(36px);
   font-weight: 400;
   color: map-get($theme, 'primary_1');
@@ -34,7 +34,7 @@
 }
 
 @mixin pn_style_typography_heading_medium($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_tertiary');
+  font-family: map-get($theme, 'font_secondary');
   font-size: pnm_util_unit(30px);
   font-weight: 400;
   color: map-get($theme, 'neutral_1');
@@ -42,7 +42,7 @@
 }
 
 @mixin pn_style_typography_heading_small($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_tertiary');
+  font-family: map-get($theme, 'font_secondary');
   font-size: pnm_util_unit(24px);
   font-weight: 400;
   color: map-get($theme, 'neutral_1');
@@ -53,7 +53,7 @@
 // Content Paragraph Styles
 // =========================================================
 @mixin pn_style_typography_paragraph_large($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_tertiary');
+  font-family: map-get($theme, 'font_secondary');
   font-size: pnm_util_unit(22px);
   font-weight: 300;
   color: map-get($theme, 'neutral_1');
@@ -69,7 +69,7 @@
 }
 
 @mixin pn_style_typography_paragraph_small($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_quaternary');
+  font-family: map-get($theme, 'font_tertiary');
   font-size: pnm_util_unit(14px);
   font-weight: 400;
   color: map-get($theme, 'neutral_2');

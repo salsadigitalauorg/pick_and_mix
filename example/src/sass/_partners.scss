@@ -3,6 +3,11 @@
   @include pnm_struct_partner_container;
 }
 
+.partner-list {
+  @include pnm_style_partner_list;
+  @include pnm_struct_partner_list;
+}
+
 .partner {
   @include pnm_style_partner;
   @include pnm_struct_partner;

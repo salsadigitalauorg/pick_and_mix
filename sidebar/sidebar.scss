@@ -13,6 +13,7 @@
 // Sidebar Title
 // =========================================================
 @mixin pnm_style_sidebar_title($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
   font-size: pnm_util_unit(18px);
   line-height: pnm_util_unit(48px);
   font-weight: normal;

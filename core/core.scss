@@ -14,6 +14,7 @@ $pnm_theme: (
   'neutral_8': #DDDDDD,
   'neutral_9': #F9F9F9,
   'white': #FFFFFF,
+  'black': #000000,
   'gradient_top': #079BA0,
   'gradient_bottom': #137779,
 
@@ -37,11 +38,10 @@ $pnm_theme: (
   'desktop_column': pnm_util_unit(1170px),
 
   // Fonts
-  'font_primary': san-serif,
+  'font_primary': sans-serif,
   'font_secondary': sans-serif,
   'font_tertiary': sans-serif,
-  'font_quaternary': sans-serif,
-  'font_quinary': sans-serif
+  'font_quaternary': serif
 );
 
 @mixin pnm_style_button($theme: $pnm_theme) {

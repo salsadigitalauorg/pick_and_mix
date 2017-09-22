@@ -96,6 +96,7 @@ $desktop_details_width: 524px;
 // Feature Banner Title
 // =========================================================
 @mixin pnm_style_feature_details_title($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
   color: map-get($theme, 'white');
   font-weight: 300;
   font-size: pnm_util_unit(24px);

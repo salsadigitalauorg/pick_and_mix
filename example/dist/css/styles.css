@@ -281,7 +281,9 @@
 
 .card-container .card h3 {
   font-size: 1.5rem;
+  font-family: "Century Schoolbook", Georgia, "Times New Roman", Times, serif;
   color: #006DAE;
+  font-weight: 400;
   line-height: 1.5em;
   margin: 1.125rem 0;
 }
@@ -772,6 +774,7 @@ ul.footer-nav li a:focus {
 .homepage-banner-container .homepage-banner-details .homepage-banner-title {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
   color: #FFFFFF;
   font-weight: 300;
   font-size: 1.5rem;
@@ -862,10 +865,14 @@ ul.footer-nav li a:focus {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
   font-size: 1.375rem;
+  line-height: 1.6em;
+  text-align: center;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  color: #000000;
 }
 
 @media (min-width: 1200px) {
@@ -1051,7 +1058,7 @@ ul.footer-nav li a:focus {
 
 .main-navigation ul.sf-menu a {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Arial, san-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   color: white;
   padding: 0.875rem 1.25rem;
   text-align: center;
@@ -1378,15 +1385,10 @@ ul.footer-nav li a:focus {
 }
 
 .partner-container {
-  background-color: #FFFFFF;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   box-sizing: border-box;
 }
 
@@ -1400,6 +1402,13 @@ ul.footer-nav li a:focus {
   .partner-container {
     box-sizing: content-box;
   }
+}
+
+.partner-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .partner {
@@ -1444,10 +1453,19 @@ ul.footer-nav li a:focus {
 }
 
 .partner .partner-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #3C3C3C;
+  font-weight: 400;
+  line-height: 1.8em;
+  font-size: 0.875rem;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .partner .partner-title {
+    font-size: 1.25rem;
+  }
 }
 
 .partner img {
@@ -1463,10 +1481,11 @@ ul.footer-nav li a:focus {
 
 .search-result-item h3 {
   margin: 1.5rem 0 1rem;
-  font-weight: normal;
-  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  color: #3C3C3C;
+  line-height: 1.2em;
   font-size: 1.125rem;
-  line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1478,7 +1497,6 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .search-result-item h3 {
     font-size: 1.875rem;
-    line-height: 1.875rem;
   }
 }
 
@@ -1525,6 +1543,7 @@ ul.footer-nav li a:focus {
 }
 
 .sidebar .section-title {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125rem;
   line-height: 3rem;
   font-weight: normal;
@@ -2074,6 +2093,7 @@ ul.footer-nav li a:focus {
 }
 
 .title-crumbs-banner h1 {
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   color: #FFFFFF;
   font-size: 1.5rem;
@@ -2092,73 +2112,138 @@ ul.footer-nav li a:focus {
 }
 
 body {
-  font-family: "Helvetica Neue", "Helvetica", Arial, san-serif;
-  font-size: 1rem;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
   color: #3C3C3C;
   line-height: 1.8em;
+  font-size: 0.875rem;
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 body input, body textarea {
-  font-family: "Helvetica Neue", "Helvetica", Arial, san-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 1rem;
 }
 
 .typography_test h2 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 3rem;
   font-weight: 300;
   color: #006DAE;
   line-height: 1.13em;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test h2 {
+    font-size: 3rem;
+  }
 }
 
 .typography_test h3 {
   font-family: "Century Schoolbook", Georgia, "Times New Roman", Times, serif;
-  font-size: 2.25rem;
   font-weight: 400;
   color: #006DAE;
   line-height: 1.17em;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test h3 {
+    font-size: 2.25rem;
+  }
 }
 
 .typography_test h4 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.875rem;
   font-weight: 400;
   color: #3C3C3C;
   line-height: 1.2em;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test h4 {
+    font-size: 1.875rem;
+  }
 }
 
 .typography_test h5 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
   color: #3C3C3C;
   line-height: 1.5em;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .typography_test h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 }
 
 .typography_test p.large {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.375rem;
   font-weight: 300;
   color: #3C3C3C;
   line-height: 1.6em;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test p.large {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.375rem;
+  }
 }
 
 .typography_test p.regular {
-  font-family: "Helvetica Neue", "Helvetica", Arial, san-serif;
-  font-size: 1rem;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
   color: #3C3C3C;
   line-height: 1.8em;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test p.regular {
+    font-size: 1rem;
+  }
 }
 
 .typography_test p.small {
-  font-family: "Roboto", serif;
-  font-size: 0.875rem;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
   color: #505050;
   line-height: 2em;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .typography_test p.small {
+    font-size: 0.875rem;
+    font-family: "Roboto", serif;
+  }
+}
+
+.heading-large {
+  font-family: "Century Schoolbook", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #006DAE;
+  line-height: 1.17em;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .heading-large {
+    font-size: 2.25rem;
+  }
 }
 
 .content-container {
@@ -2191,18 +2276,17 @@ body input, body textarea {
 }
 
 .content-container h2 {
-  color: #00739d;
-  font-weight: normal;
-  padding: 0;
+  font-family: "Century Schoolbook", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #006DAE;
+  line-height: 1.17em;
   font-size: 1.25rem;
-  line-height: 1.875rem;
   margin: 1.875rem 0;
 }
 
 @media (min-width: 768px) {
   .content-container h2 {
     font-size: 2.25rem;
-    line-height: 2.625rem;
   }
 }
 
@@ -2213,18 +2297,17 @@ body input, body textarea {
 }
 
 .content-container h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
   color: #3C3C3C;
-  font-weight: normal;
-  padding: 0;
+  line-height: 1.2em;
   font-size: 1.125rem;
-  line-height: 2.25rem;
   margin: 1rem 0 0.625rem;
 }
 
 @media (min-width: 768px) {
   .content-container h3 {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -2235,18 +2318,18 @@ body input, body textarea {
 }
 
 .content-container h4 {
+  font-family: "Roboto Condensed", sans-serif;
   color: #3C3C3C;
-  font-weight: normal;
-  padding: 0;
+  line-height: 1.5em;
   font-size: 1rem;
-  line-height: 1.875rem;
+  font-weight: 700;
   margin: 1rem 0;
 }
 
 @media (min-width: 768px) {
   .content-container h4 {
+    font-weight: 400;
     font-size: 1.5rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -2257,18 +2340,17 @@ body input, body textarea {
 }
 
 .content-container h5 {
+  font-family: "Roboto Condensed", sans-serif;
   color: #3C3C3C;
-  font-weight: normal;
-  padding: 0;
+  font-weight: 400;
+  line-height: 1.8em;
   font-size: 0.875rem;
-  line-height: 1.875rem;
   margin: 0.875rem 0;
 }
 
 @media (min-width: 768px) {
   .content-container h5 {
     font-size: 1.25rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -2279,6 +2361,7 @@ body input, body textarea {
 }
 
 .content-container h6 {
+  font-family: "Roboto Condensed", sans-serif;
   color: #3C3C3C;
   font-weight: normal;
   padding: 0;

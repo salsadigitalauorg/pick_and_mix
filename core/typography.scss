@@ -19,59 +19,94 @@
 // =========================================================
 @mixin pnm_style_typography_heading_extra_large($theme: $pnm_theme) {
   font-family: map-get($theme, 'font_secondary');
-  font-size: pnm_util_unit(48px);
   font-weight: 300;
   color: map-get($theme, 'primary_1');
   line-height: 1.13em;
+  font-size: pnm_util_unit(24px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(48px);
+  }
 }
 
 @mixin pnm_style_typography_heading_large($theme: $pnm_theme) {
   font-family: map-get($theme, 'font_quaternary');
-  font-size: pnm_util_unit(36px);
   font-weight: 400;
   color: map-get($theme, 'primary_1');
   line-height: 1.17em;
+  font-size: pnm_util_unit(20px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(36px);
+  }
 }
 
 @mixin pnm_style_typography_heading_medium($theme: $pnm_theme) {
   font-family: map-get($theme, 'font_secondary');
-  font-size: pnm_util_unit(30px);
   font-weight: 400;
   color: map-get($theme, 'neutral_1');
   line-height: 1.2em;
+  font-size: pnm_util_unit(18px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(30px);
+  }
 }
 
 @mixin pnm_style_typography_heading_small($theme: $pnm_theme) {
   font-family: map-get($theme, 'font_secondary');
-  font-size: pnm_util_unit(24px);
-  font-weight: 400;
   color: map-get($theme, 'neutral_1');
   line-height: 1.5em;
+  font-size: pnm_util_unit(16px);
+  font-weight: 700;
+  @include pnm_util_breakpoint(tablet) {
+    font-weight: 400;
+    font-size: pnm_util_unit(24px);
+  }
+}
+
+@mixin pnm_style_typography_heading_extra_small($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
+  color: map-get($theme, 'neutral_1');
+  font-weight: 400;
+  line-height: 1.8em;
+  font-size: pnm_util_unit(14px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(20px);
+  }
 }
 
 // =========================================================
 // Content Paragraph Styles
 // =========================================================
 @mixin pnm_style_typography_paragraph_large($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_secondary');
-  font-size: pnm_util_unit(22px);
   font-weight: 300;
   color: map-get($theme, 'neutral_1');
   line-height: 1.6em;
+  font-family: map-get($theme, 'font_primary');
+  font-size: pnm_util_unit(14px);
+  @include pnm_util_breakpoint(tablet) {
+    font-family: map-get($theme, 'font_secondary');
+    font-size: pnm_util_unit(22px);
+  }
 }
 
 @mixin pnm_style_typography_paragraph_body($theme: $pnm_theme) {
   font-family: map-get($theme, 'font_primary');
-  font-size: pnm_util_unit(16px);
   font-weight: 400;
   color: map-get($theme, 'neutral_1');
   line-height: 1.8em;
+  font-size: pnm_util_unit(14px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(16px);
+  }
 }
 
 @mixin pnm_style_typography_paragraph_small($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_tertiary');
-  font-size: pnm_util_unit(14px);
+  font-family: map-get($theme, 'font_primary');
   font-weight: 400;
   color: map-get($theme, 'neutral_2');
   line-height: 2em;
+  font-size: pnm_util_unit(12px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(14px);
+    font-family: map-get($theme, 'font_tertiary');
+  }
 }

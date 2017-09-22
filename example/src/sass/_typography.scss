@@ -28,3 +28,7 @@ body {
     @include pnm_style_typography_paragraph_small;
   }
 }
+
+.heading-large {
+  @include pnm_style_typography_heading_large;
+}

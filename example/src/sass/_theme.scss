@@ -1,7 +1,7 @@
 // Custom implementation of fonts.
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400');
 
-$font_primary: "Helvetica Neue", "Helvetica", Arial, san-serif;
+$font_primary: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 $font_secondary: "Roboto Condensed", sans-serif;
 $font_tertiary: "Roboto", serif;
 $font_quaternary: "Century Schoolbook", Georgia, "Times New Roman", Times, serif;
@@ -23,6 +23,7 @@ $pnm_theme: (
   'neutral_8': #DDDDDD,
   'neutral_9': #F9F9F9,
   'white': #FFFFFF,
+  'black': #000000,
   'gradient_top': #006DAE,
   'gradient_bottom': #1D3E66,
 

@@ -32,15 +32,7 @@
 // Wysiwyg Heading 2
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_2($theme: $pnm_theme) {
-  color: map-get($theme, 'secondary_2');
-  font-weight: normal;
-  padding: 0;
-  font-size: pnm_util_unit(20px);
-  line-height: pnm_util_unit(30px);
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(36px);
-    line-height: pnm_util_unit(42px);
-  }
+  @include pnm_style_typography_heading_large($theme);
 }
 
 @mixin pnm_struct_wysiwyg_heading_2() {
@@ -54,15 +46,7 @@
 // Wysiwyg Heading 3
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_3($theme: $pnm_theme) {
-  color: map-get($theme, 'neutral_1');
-  font-weight: normal;
-  padding: 0;
-  font-size: pnm_util_unit(18px);
-  line-height: pnm_util_unit(36px);
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(30px);
-    line-height: pnm_util_unit(36px);
-  }
+  @include pnm_style_typography_heading_medium($theme);
 }
 
 @mixin pnm_struct_wysiwyg_heading_3() {
@@ -76,15 +60,7 @@
 // Wysiwyg Heading 4
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_4($theme: $pnm_theme) {
-  color: map-get($theme, 'neutral_1');
-  font-weight: normal;
-  padding: 0;
-  font-size: pnm_util_unit(16px);
-  line-height: pnm_util_unit(30px);
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(24px);
-    line-height: pnm_util_unit(36px);
-  }
+  @include pnm_style_typography_heading_small($theme);
 }
 
 @mixin pnm_struct_wysiwyg_heading_4() {
@@ -98,15 +74,7 @@
 // Wysiwyg Heading 5
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_5($theme: $pnm_theme) {
-  color: map-get($theme, 'neutral_1');
-  font-weight: normal;
-  padding: 0;
-  font-size: pnm_util_unit(14px);
-  line-height: pnm_util_unit(30px);
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(20px);
-    line-height: pnm_util_unit(36px);
-  }
+  @include pnm_style_typography_heading_extra_small($theme);
 }
 
 @mixin pnm_struct_wysiwyg_heading_5() {
@@ -120,6 +88,7 @@
 // Wysiwyg Heading 6
 // =========================================================
 @mixin pnm_style_wysiwyg_heading_6($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
   color: map-get($theme, 'neutral_1');
   font-weight: normal;
   padding: 0;

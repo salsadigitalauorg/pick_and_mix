@@ -16,10 +16,14 @@
 // Homepage Introduction Content
 // =========================================================
 @mixin pnm_style_homepage_introduction_content($theme: $pnm_theme) {
-  text-align: center;
+  font-family: map-get($theme, 'font_secondary');
+  font-weight: 300;
   font-size: pnm_util_unit(22px);
+  line-height: 1.6em;
+  text-align: center;
   padding-left: map-get($theme, 'mobile_column_padding');
   padding-right: map-get($theme, 'mobile_column_padding');
+  color: map-get($theme, 'black');
   @include pnm_util_breakpoint(desktop) {
     max-width: pnm_util_unit(930px);
   }

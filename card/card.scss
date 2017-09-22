@@ -107,7 +107,9 @@
 // =========================================================
 @mixin pnm_style_card_title($theme: $pnm_theme) {
   font-size: pnm_util_unit(24px);
+  font-family: map-get($theme, 'font_quaternary');
   color: map-get($theme, 'primary_1');
+  font-weight: 400;
   line-height: 1.5em;
   margin: pnm_util_unit(18px) 0;
   a {

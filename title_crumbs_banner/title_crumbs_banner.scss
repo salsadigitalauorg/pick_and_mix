@@ -88,6 +88,7 @@
 // Title Crumbs Banner Title
 // =========================================================
 @mixin pnm_style_title_crumbs_banner_title($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
   font-weight: 300;
   color: map-get($theme, 'white');
   font-size: pnm_util_unit(24px);

@@ -1,6 +1,3 @@
-$mobile_image_height: 276px;
-$desktop_details_height: 444px;
-$desktop_details_width: 524px;
 // =========================================================
 // Feature Banner Container
 // =========================================================
@@ -36,18 +33,17 @@ $desktop_details_width: 524px;
 // =========================================================
 // Feature Banner Image
 // =========================================================
-@mixin pnm_style_feature_image() {
-  // ...
-}
-
-@mixin pnm_struct_feature_image() {
-  height: $mobile_image_height;
+@mixin pnm_style_feature_image($theme: $pnm_theme) {
   width: 100%;
-  object-fit: cover;
-  display: block;
+  height: map-get($theme, 'mobile_image_height');
   @include pnm_util_breakpoint(tablet) {
     height: 100%;
   }
+}
+
+@mixin pnm_struct_feature_image() {
+  object-fit: cover;
+  display: block;
 }
 
 // =========================================================
@@ -69,7 +65,6 @@ $desktop_details_width: 524px;
     box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
-    min-height: $desktop_details_height;
     position: relative;
   }
 }
@@ -81,13 +76,15 @@ $desktop_details_width: 524px;
   color: map-get($theme, 'white');
   @include pnm_util_breakpoint(tablet) {
     background-color: map-get($theme, 'secondary_1');
+    max-width: map-get($theme, 'desktop_details_width');
+    min-height: map-get($theme, 'desktop_details_height');
   }
 }
 
 @mixin pnm_struct_feature_details() {
   padding: pnm_util_unit(22px) pnm_util_unit(2px) pnm_util_unit(36px);
   @include pnm_util_breakpoint(tablet) {
-    max-width: $desktop_details_width;
+    box-sizing: border-box;
     padding: pnm_util_unit(44px) pnm_util_unit(46px) pnm_util_unit(48px);
   }
 }

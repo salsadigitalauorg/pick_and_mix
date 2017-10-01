@@ -725,7 +725,6 @@ ul.footer-nav li a:focus {
     box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
-    min-height: 444px;
     position: relative;
   }
 }
@@ -741,8 +740,8 @@ ul.footer-nav li a:focus {
 }
 
 .homepage-banner-container img {
-  height: 276px;
   width: 100%;
+  height: 17.25rem;
   object-fit: cover;
   display: block;
 }
@@ -760,7 +759,7 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .homepage-banner-container .homepage-banner-details {
-    max-width: 524px;
+    box-sizing: border-box;
     padding: 2.75rem 2.875rem 3rem;
   }
 }
@@ -768,6 +767,8 @@ ul.footer-nav li a:focus {
 @media (min-width: 768px) {
   .homepage-banner-container .homepage-banner-details {
     background-color: #1D3E66;
+    max-width: 32.75rem;
+    min-height: 27.75rem;
   }
 }
 

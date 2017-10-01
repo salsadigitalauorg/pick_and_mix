@@ -34,6 +34,11 @@ $pnm_theme: (
   'main_navigation_sub_menu_background': #00739D,
   'main_navigation_link_text': white,
 
+  // Feature Banner
+  'mobile_image_height': pnm_util_unit(276px),
+  'desktop_details_height': pnm_util_unit(444px),
+  'desktop_details_width': pnm_util_unit(524px),
+
   // Button
   'button_default_background': #00739D,
   'button_default_text': white,

@@ -11,7 +11,7 @@ Requirements
 -----------
 * jQuery
 
-Exmaple Site
+Example Site
 -----------
 Open `example` folder for an example implementation of Pick and Mix.
 * Icons can be generated in `asset_generator` folder (run `npm install` and `npm start`). See readme for more details.

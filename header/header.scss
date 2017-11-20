@@ -19,8 +19,12 @@
 }
 
 @mixin pnm_struct_header_inner() {
-  padding-top: pnm_util_unit(15px);
-  padding-bottom: pnm_util_unit(15px);
+  padding-top: pnm_util_unit(22px);
+  padding-bottom: pnm_util_unit(22px);
+  @include pnm_util_breakpoint(tablet) {
+    padding-top: pnm_util_unit(15px);
+    padding-bottom: pnm_util_unit(15px);
+  }
 }
 
 // =========================================================
@@ -34,6 +38,10 @@
   text-align: right;
   padding-top: pnm_util_unit(15px);
   padding-bottom: pnm_util_unit(22px);
+  display: none;
+  @include pnm_util_breakpoint(tablet) {
+    display: block;
+  }
 }
 
 // =========================================================
@@ -44,11 +52,18 @@
 }
 
 @mixin pnm_struct_header_layer_2() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  @include pnm_util_breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    width: auto;
+  }
   &.search-open {
-    margin-bottom: pnm_util_unit(54px + 30px);
+    margin-bottom: pnm_util_unit(54px);
     @include pnm_util_breakpoint(tablet) {
       margin-bottom: auto;
     }
@@ -77,7 +92,37 @@
 }
 
 @mixin pnm_struct_header_tools_container() {
-  display: flex;
+  display: table-cell;
+  vertical-align: middle;
+  width: pnm_util_unit(70px);
+  @include pnm_util_breakpoint(tablet) {
+    display: flex;
+    width: pnm_util_unit(472px);
+  }
+}
+
+// =========================================================
+// Header Tool
+// =========================================================
+@mixin pnm_style_header_tool($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_tool() {
+  display: inline-block;
+}
+
+// =========================================================
+// Header Logo Container
+// =========================================================
+@mixin pnm_style_header_logo_container($theme: $pnm_theme) {
+  // ...
+}
+
+@mixin pnm_struct_header_logo_container() {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: pnm_util_unit(15px);
 }
 
 // =========================================================
@@ -88,7 +133,6 @@
 }
 
 @mixin pnm_struct_header_horizontal_nav_container() {
-  display: none;
   margin: 0;
   @include pnm_util_breakpoint(tablet) {
     display: block;

@@ -4,8 +4,6 @@
 @mixin pnm_style_header_search_toggle($theme: $pnm_theme) {
   position: relative;
   background-color: transparent;
-  height: pnm_util_unit(54px);
-  width: pnm_util_unit(54px);
   border: 0;
   background-image: pnm_util_url('search_icon.svg');
   background-repeat: no-repeat;
@@ -13,6 +11,12 @@
   color: transparent;
   font-size: 0;
   cursor: pointer;
+  width: pnm_util_unit(30px);
+  height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    height: pnm_util_unit(54px);
+    width: pnm_util_unit(54px);
+  }
   &:focus {
     z-index: 1;
   }
@@ -67,7 +71,7 @@
 }
 
 @mixin pnm_struct_header_search_field_container() {
-  display: flex;
+  display: table;
 }
 
 // =========================================================
@@ -78,7 +82,8 @@
 }
 
 @mixin pnm_struct_header_search_field() {
-  // ...
+  display: table-cell;
+  vertical-align: top;
 }
 
 // =========================================================

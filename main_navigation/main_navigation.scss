@@ -7,11 +7,16 @@
   background-image: pnm_util_url('menu_open.svg');
   background-repeat: no-repeat;
   background-position: center;
-  height: pnm_util_unit(54px);
-  width: pnm_util_unit(54px);
   border: 0;
   font-size: 0;
   cursor: pointer;
+  width: pnm_util_unit(30px);
+  height: pnm_util_unit(30px);
+  @include pnm_util_breakpoint(tablet) {
+    margin-right: 0;
+    height: pnm_util_unit(54px);
+    width: pnm_util_unit(54px);
+  }
   &:focus, &:hover {
     background-image: pnm_util_url('menu_open_hover.svg');
   }
@@ -365,6 +370,7 @@
     color: map-get($theme, 'main_navigation_link_text');
     text-decoration: none;
     font-size: pnm_util_unit(16px);
+    font-weight: 600;
     border-bottom: 1px solid transparent;
     padding-left: pnm_util_unit(30px);
     padding-right: pnm_util_unit(30px);

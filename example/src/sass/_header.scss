@@ -24,9 +24,17 @@
     .layer-2 {
       @include pnm_style_header_layer_2;
       @include pnm_struct_header_layer_2;
+      .logo-container {
+        @include pnm_style_header_logo_container;
+        @include pnm_struct_header_logo_container;
+      }
       .tools-container {
         @include pnm_style_header_tools_container;
         @include pnm_struct_header_tools_container;
+      }
+      .header-tool {
+        @include pnm_style_header_tool;
+        @include pnm_struct_header_tool;
       }
     }
   }

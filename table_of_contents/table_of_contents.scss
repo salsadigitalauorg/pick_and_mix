@@ -1,0 +1,146 @@
+// =========================================================
+// Table of contents Wrapper
+// =========================================================
+@mixin pnm_style_toc_wrapper($theme: $pnm_theme) {
+  background-color: map-get($pnm_theme, 'white');
+  border-left: 5px solid map-get($theme, 'secondary_2');
+  z-index: 10;
+}
+
+@mixin pnm_struct_toc_wrapper() {
+  width: 100%;
+  padding: pnm_util_unit(24px) pnm_util_unit(26px) pnm_util_unit(6px);
+  @include pnm_util_breakpoint(tablet) {
+    padding: pnm_util_unit(20px) pnm_util_unit(12px) pnm_util_unit(10px);
+  }
+}
+
+// =========================================================
+// Table of contents Inner
+// =========================================================
+@mixin pnm_style_toc_inner($theme: $pnm_theme) {
+  margin-left: pnm_util_unit(16px);
+  margin-bottom: pnm_util_unit(56px);
+  @include pnm_util_breakpoint(tablet) {
+    max-width: map-get($theme, 'desktop_column');
+    margin-bottom: pnm_util_unit(40px);
+  }
+}
+
+@mixin pnm_struct_toc_inner() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// =========================================================
+// Table of contents Title
+// =========================================================
+@mixin pnm_style_toc_title($theme: $pnm_theme) {
+  font-family: map-get($theme, 'font_secondary');
+  color: map-get($theme, 'neutral_1');
+  font-weight: 300;
+  font-size: pnm_util_unit(24px);
+  line-height: pnm_util_unit(36px);
+  @include pnm_util_breakpoint(tablet) {
+    font-size: pnm_util_unit(48px);
+    line-height: pnm_util_unit(56px);
+    margin-bottom: pnm_util_unit(18px);
+  }
+}
+
+@mixin pnm_struct_toc_title() {
+  margin: 0 0 pnm_util_unit(22px) 0;
+}
+
+// =========================================================
+// Table of contents list
+// =========================================================
+@mixin pnm_style_toc_list($theme: $pnm_theme) {
+  list-style: none;
+}
+
+@mixin pnm_struct_toc_list() {
+  display: block;
+}
+
+// =========================================================
+// Social Links Item
+// =========================================================
+@mixin pnm_style_toc_item($theme: $pnm_theme) {
+  color: map-get($theme, 'neutral_1');
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: pnm_image('png', 'arrow-down.png');
+}
+
+@mixin pnm_struct_toc_item() {
+  padding-left: pnm_util_unit(30px);
+  margin-bottom: pnm_util_unit(20px);
+  @include pnm_util_breakpoint(tablet) {
+    margin-bottom: pnm_util_unit(14px);
+  }
+}
+
+@mixin pnm_style_toc_item_link($theme: $pnm_theme) {
+  @include pnm_style_link;
+  &:focus {
+    @include pnm_style_focus_outline($theme);
+    color: map-get($theme, 'white');
+    background-color: map-get($theme, 'secondary_2');
+    font-size: pnm_util_unit(21px);
+  }
+}
+
+@mixin pnm_struct_toc_item_link() {
+  @include pnm_util_breakpoint(tablet) {
+    margin-bottom: o
+  }
+}
+
+@mixin pnm_style_toc_select_wrapper($theme: $pnm_theme) {
+  position: relative;
+  @include pnm_util_breakpoint(tablet) {
+    padding-left: map-get($theme, 'mobile_column_padding');
+    padding-right: map-get($theme, 'mobile_column_padding');
+    max-width: map-get($theme, 'desktop_column');
+  }
+}
+
+@mixin pnm_struct_toc_select_wrapper() {
+  @include pnm_util_breakpoint(tablet) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 100%;
+    grid-template-columns: 25% 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin pnm_style_toc_select_inner($theme: $pnm_theme) {
+  display: none;
+  background-color: map-get($theme, 'neutral_4');
+  padding: pnm_util_unit(10px);
+  @include pnm_util_breakpoint(tablet) {
+    padding: 20px;
+  }
+}
+
+@mixin pnm_struct_toc_select_inner() {
+  position: fixed;
+  top: 0;
+  @include pnm_util_breakpoint(tablet) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}
+
+@mixin pnm_style_toc_select_selectbox() {
+  width: 80%;
+}
+
+@mixin pnm_style_toc_select_display() {
+  display: block;
+  opacity: 1;
+}

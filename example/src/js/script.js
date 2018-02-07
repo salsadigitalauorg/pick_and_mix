@@ -65,3 +65,15 @@ $(function() {
     on_change: function() { /* ... */ }
   });
 });
+
+// =========================================================
+// TABLE OF CONTENTS
+// =========================================================
+$(function() {
+  var toc = new pnm_table_of_contents();
+  toc.init({
+    bodyField: '.body-centre',
+    toc_container: '.table_of_contents-wrapper',
+    list_selector: '.list-selector'
+  });
+});

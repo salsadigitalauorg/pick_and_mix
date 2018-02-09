@@ -36,16 +36,7 @@
 // Table of contents Title
 // =========================================================
 @mixin pnm_style_toc_title($theme: $pnm_theme) {
-  font-family: map-get($theme, 'font_secondary');
-  color: map-get($theme, 'neutral_1');
-  font-weight: 300;
-  font-size: pnm_util_unit(24px);
-  line-height: pnm_util_unit(36px);
-  @include pnm_util_breakpoint(tablet) {
-    font-size: pnm_util_unit(48px);
-    line-height: pnm_util_unit(56px);
-    margin-bottom: pnm_util_unit(18px);
-  }
+  @include pnm_style_typography_heading_extra_large;
 }
 
 @mixin pnm_struct_toc_title() {
@@ -64,7 +55,7 @@
 }
 
 // =========================================================
-// Social Links Item
+// TOC Item
 // =========================================================
 @mixin pnm_style_toc_item($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -84,35 +75,20 @@
 
 @mixin pnm_style_toc_item_link($theme: $pnm_theme) {
   @include pnm_style_link;
-  &:focus {
-    @include pnm_style_focus_outline($theme);
-    color: map-get($theme, 'white');
-    background-color: map-get($theme, 'secondary_2');
-    font-size: pnm_util_unit(21px);
-  }
 }
 
 @mixin pnm_struct_toc_item_link() {
   @include pnm_util_breakpoint(tablet) {
-    margin-bottom: o
+    margin-bottom: 0;
   }
 }
 
 @mixin pnm_style_toc_select_wrapper($theme: $pnm_theme) {
   position: relative;
-  @include pnm_util_breakpoint(tablet) {
-    padding-left: map-get($theme, 'mobile_column_padding');
-    padding-right: map-get($theme, 'mobile_column_padding');
-    max-width: map-get($theme, 'desktop_column');
-  }
 }
 
 @mixin pnm_struct_toc_select_wrapper() {
   @include pnm_util_breakpoint(tablet) {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: 100%;
-    grid-template-columns: 25% 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -120,27 +96,43 @@
 
 @mixin pnm_style_toc_select_inner($theme: $pnm_theme) {
   display: none;
-  background-color: map-get($theme, 'neutral_4');
-  padding: pnm_util_unit(10px);
-  @include pnm_util_breakpoint(tablet) {
-    padding: 20px;
-  }
 }
 
 @mixin pnm_struct_toc_select_inner() {
   position: fixed;
   top: 0;
+  left: 0;
+  display: none;
   @include pnm_util_breakpoint(tablet) {
-    grid-column-start: 2;
-    grid-row-start: 1;
+    width: 50%;
+    left: auto;
+  }
+}
+
+@mixin pnm_style_toc_select_inner_table($theme: $pnm_theme) {
+  width: 100%;
+  display: table;
+  background-color: map-get($theme, 'neutral_4');
+  padding: pnm_util_unit(10px);
+  @include pnm_util_breakpoint(tablet) {
+    padding: pnm_util_unit(20px);
   }
 }
 
 @mixin pnm_style_toc_select_selectbox() {
-  width: 80%;
+  display: table-cell;
+  min-width: pnm_util_unit(100px);
+  max-width: pnm_util_unit(300px);
+  @include pnm_util_breakpoint(tablet) {
+    max-width: 100%;
+  }
 }
 
 @mixin pnm_style_toc_select_display() {
-  display: block;
   opacity: 1;
+  width: 100%;
+  display: block;
+  @include pnm_util_breakpoint(tablet) {
+    width: 50%;
+  }
 }

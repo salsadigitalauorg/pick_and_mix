@@ -1,4 +1,4 @@
-.table_of_contents-wrapper {
+.table-of-contents-wrapper {
   @include pnm_struct_toc_wrapper;
   @include pnm_style_toc_wrapper;
   .toc-inner {
@@ -29,8 +29,11 @@
   .list-selector {
     @include pnm_style_toc_select_inner;
     @include pnm_struct_toc_select_inner;
-    select {
-      @include pnm_style_toc_select_selectbox;
+    .top-bar {
+      @include pnm_style_toc_select_inner_table;
+      select, label {
+        @include pnm_style_toc_select_selectbox;
+      }
     }
     &.is-display-ready {
       @include pnm_style_toc_select_display;

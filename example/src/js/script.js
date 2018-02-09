@@ -73,7 +73,7 @@ $(function() {
   var toc = new pnm_table_of_contents();
   toc.init({
     bodyField: '.body-centre',
-    toc_container: '.table_of_contents-wrapper',
+    toc_container: '.table-of-contents-wrapper',
     list_selector: '.list-selector'
   });
 });

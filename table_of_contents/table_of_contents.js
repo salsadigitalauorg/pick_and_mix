@@ -29,13 +29,13 @@ function pnm_table_of_contents() {
   /**
    * options
    *   - toc_container  = The 'Table of contents' container.
-   *   - bodyField = The field to get headings.
+   *   - body_field = The field to get headings.
    */
   this.init = function(options) {
     $widget = $(options.toc_container);
     if ($widget.length > 0) {
-      var $bodyField = $(options.bodyField);
-      $($bodyField.find('h2').get().reverse()).each(function(){
+      var $body_field = $(options.body_field);
+      $($body_field.find('h2').get().reverse()).each(function(){
         var text = $(this).text();
         var id = typeof $(this).attr('id') === 'undefined' ? _self.convertToID(text) : $(this).attr('id');
         var $anchor = $('<a></a>').html(text).attr('href', '#' + id);

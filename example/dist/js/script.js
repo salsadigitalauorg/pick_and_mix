@@ -72,7 +72,7 @@ $(function() {
 $(function() {
   var toc = new pnm_table_of_contents();
   toc.init({
-    bodyField: '.body-centre',
+    body_field: '.body-centre',
     toc_container: '.table-of-contents-wrapper',
     list_selector: '.list-selector'
   });

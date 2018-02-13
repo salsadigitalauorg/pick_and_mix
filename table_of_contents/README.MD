@@ -67,11 +67,10 @@ Table of content
     }
   }
 }
-
-
 ```
 
 ### Example JS
+```js
 $(function() {
   var toc = new pnm_table_of_contents();
   toc.init({
@@ -80,3 +79,4 @@ $(function() {
     list_selector: '.list-selector'
   });
 });
+```

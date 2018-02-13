@@ -1,5 +1,5 @@
 // =========================================================
-// Table of contents Wrapper
+// TABLE OF CONTENTS WRAPPER
 // =========================================================
 @mixin pnm_style_toc_wrapper($theme: $pnm_theme) {
   background-color: map-get($pnm_theme, 'white');
@@ -16,7 +16,7 @@
 }
 
 // =========================================================
-// Table of contents Inner
+// TABLE OF CONTENTS INNER
 // =========================================================
 @mixin pnm_style_toc_inner($theme: $pnm_theme) {
   margin-left: pnm_util_unit(16px);
@@ -33,7 +33,7 @@
 }
 
 // =========================================================
-// Table of contents Title
+// TABLE OF CONTENTS TITLE
 // =========================================================
 @mixin pnm_style_toc_title($theme: $pnm_theme) {
   @include pnm_style_typography_heading_extra_large;
@@ -44,7 +44,7 @@
 }
 
 // =========================================================
-// Table of contents list
+// TABLE OF CONTENTS LIST
 // =========================================================
 @mixin pnm_style_toc_list($theme: $pnm_theme) {
   list-style: none;
@@ -55,7 +55,7 @@
 }
 
 // =========================================================
-// TOC Item
+// TABLE OF CONTENTS ITEM
 // =========================================================
 @mixin pnm_style_toc_item($theme: $pnm_theme) {
   color: map-get($theme, 'neutral_1');
@@ -73,8 +73,11 @@
   }
 }
 
+// =========================================================
+// TABLE OF CONTENTS ITEM LINK
+// =========================================================
 @mixin pnm_style_toc_item_link($theme: $pnm_theme) {
-  @include pnm_style_link;
+  @include pnm_style_link($theme);
 }
 
 @mixin pnm_struct_toc_item_link() {
@@ -83,6 +86,9 @@
   }
 }
 
+// =========================================================
+// TABLE OF CONTENTS SELECT WRAPPER
+// =========================================================
 @mixin pnm_style_toc_select_wrapper($theme: $pnm_theme) {
   position: relative;
 }
@@ -94,6 +100,9 @@
   }
 }
 
+// =========================================================
+// TABLE OF CONTENTS SELECT INNER
+// =========================================================
 @mixin pnm_style_toc_select_inner($theme: $pnm_theme) {
   display: none;
 }
@@ -109,6 +118,9 @@
   }
 }
 
+// =========================================================
+// TABLE OF CONTENTS SELECT INNER TABLE
+// =========================================================
 @mixin pnm_style_toc_select_inner_table($theme: $pnm_theme) {
   width: 100%;
   display: table;
@@ -119,7 +131,14 @@
   }
 }
 
-@mixin pnm_style_toc_select_selectbox() {
+@mixin pnm_struct_toc_select_inner_table() {
+  // ...
+}
+
+// =========================================================
+// TABLE OF CONTENTS SELECT BOX
+// =========================================================
+@mixin pnm_style_toc_select_selectbox($theme: $pnm_theme) {
   display: table-cell;
   min-width: pnm_util_unit(100px);
   max-width: pnm_util_unit(300px);
@@ -128,11 +147,22 @@
   }
 }
 
-@mixin pnm_style_toc_select_display() {
+@mixin pnm_struct_toc_select_selectbox() {
+  // ...
+}
+
+// =========================================================
+// TABLE OF CONTENTS SELECT DISPLAY
+// =========================================================
+@mixin pnm_style_toc_select_display($theme: $pnm_theme) {
   opacity: 1;
   width: 100%;
   display: block;
   @include pnm_util_breakpoint(tablet) {
     width: 50%;
   }
+}
+
+@mixin pnm_struct_toc_select_display() {
+  // ...
 }

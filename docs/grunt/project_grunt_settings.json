@@ -8,7 +8,8 @@
     "../../header_search/header_search.js",
     "../../text_resize/text_resize.js",
     "../../sidebar/sidebar.js",
-    "../../link_to_top/link_to_top.js"
+    "../../link_to_top/link_to_top.js",
+    "../../table_of_contents/table_of_contents.js"
   ],
   "custom_beautify": [
     "!../src/sass/_theme.scss"

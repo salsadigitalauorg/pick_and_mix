@@ -74,6 +74,6 @@ $(function() {
   toc.init({
     body_field: '.body-centre',
     toc_container: '.table-of-contents-wrapper',
-    list_selector: '.list-selector'
+    list_selector: '.toc-sticky-selector'
   });
 });

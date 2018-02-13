@@ -23,13 +23,13 @@
   }
 }
 
-.list-selector-wrapper {
+.table-of-contents-sticky {
   @include pnm_style_toc_select_wrapper;
   @include pnm_struct_toc_select_wrapper;
-  .list-selector {
+  .toc-sticky-selector {
     @include pnm_style_toc_select_inner;
     @include pnm_struct_toc_select_inner;
-    .top-bar {
+    .toc-top-bar {
       @include pnm_style_toc_select_inner_table;
       @include pnm_struct_toc_select_inner_table;
       select, label {

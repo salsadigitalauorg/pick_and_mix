@@ -2749,7 +2749,7 @@ body input, body textarea {
 }
 
 .table-of-contents-wrapper .toc-inner h2 {
-  margin: 0 0 1.375rem 0;
+  margin: 0 0 1.375rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   color: #006DAE;
@@ -2773,7 +2773,7 @@ body input, body textarea {
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: url(../images/png/arrow-down.png);
+  background-image: url(../images/svg/arrow_down.svg);
   padding-left: 1.875rem;
   margin-bottom: 1.25rem;
 }

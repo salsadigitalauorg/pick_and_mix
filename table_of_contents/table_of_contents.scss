@@ -40,7 +40,7 @@
 }
 
 @mixin pnm_struct_toc_title() {
-  margin: 0 0 pnm_util_unit(22px) 0;
+  margin: 0 0 pnm_util_unit(22px);
 }
 
 // =========================================================
@@ -62,7 +62,7 @@
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-color: transparent;
-  background-image: pnm_image('png', 'arrow-down.png');
+  background-image: pnm_image('svg', 'arrow_down.svg');
 }
 
 @mixin pnm_struct_toc_item() {

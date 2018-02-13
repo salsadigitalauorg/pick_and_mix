@@ -1,0 +1,40 @@
+files:
+  include: '**/*.s+(a|c)ss'
+options:
+  formatter: stylish
+  merge-default-rules: true
+rules:
+  function-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: snakecase
+  mixin-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: snakecase
+  placeholder-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: snakecase
+  variable-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: snakecase
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - pnm_util_breakpoint
+  empty-args: 0
+  empty-line-between-blocks: 0
+  hex-notation: 0
+  hex-length: 0
+  no-color-keywords: 0
+  single-line-per-selector: 0
+  no-color-literals: 0
+  leading-zero: 0
+  no-warn: 0
+  no-empty-rulesets: 0
+  property-sort-order: 0
+  nesting-depth: 0
+  no-qualifying-elements: 0

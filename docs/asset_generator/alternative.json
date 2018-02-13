@@ -63,9 +63,9 @@
     "colour_secondary": "#008488"
   },
   {
-    "template": "social-Instagram.svg",
-    "default": "social-Instagram.svg",
-    "secondary": "social-Instagram_hover.svg",
+    "template": "social-instagram.svg",
+    "default": "social-instagram.svg",
+    "secondary": "social-instagram_hover.svg",
     "colour_default": "#FFF",
     "colour_secondary": null
   },

@@ -1,4 +1,0 @@
-{
-  "use_image_compression": true,
-  "prefixer_browsers": ["last 2 versions", "not ie <= 8", "iOS >= 7"]
-}

@@ -3,29 +3,29 @@
     "template": "search_icon.svg",
     "default": "search_icon.svg",
     "secondary": "search_icon_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "menu_open.svg",
     "default": "menu_open.svg",
     "secondary": "menu_open_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "nav_down_arrow.svg",
     "default": "nav_down_arrow.svg",
     "secondary": "nav_down_arrow_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#FFFFFF"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "nav_down_arrow_secondary2.svg",
     "default": "nav_down_arrow_secondary2.svg",
     "secondary": "nav_down_arrow_secondary2_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#FFFFFF"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "nav_right_arrow.svg",
@@ -45,27 +45,27 @@
     "template": "nav_up_arrow_secondary2.svg",
     "default": "nav_up_arrow_secondary2.svg",
     "secondary": "nav_up_arrow_secondary2_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#FFFFFF"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "search_icon.svg",
     "default": "search_icon.svg",
     "secondary": "search_icon_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "search_icon_close.svg",
     "default": "search_icon_close.svg",
     "secondary": "search_icon_close_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
-    "template": "social-Instagram.svg",
-    "default": "social-Instagram.svg",
-    "secondary": "social-Instagram_hover.svg",
+    "template": "social-instagram.svg",
+    "default": "social-instagram.svg",
+    "secondary": "social-instagram_hover.svg",
     "colour_default": "#FFF",
     "colour_secondary": null
   },
@@ -136,21 +136,21 @@
     "template": "text_resize_increase.svg",
     "default": "text_resize_increase.svg",
     "secondary": "text_resize_increase_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "text_resize_reduce.svg",
     "default": "text_resize_reduce.svg",
     "secondary": "text_resize_reduce_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   },
   {
     "template": "time_icon.svg",
     "default": "time_icon.svg",
     "secondary": "time_icon_hover.svg",
-    "colour_default": "#006DAE",
-    "colour_secondary": "#1D3E66"
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   }
 ]

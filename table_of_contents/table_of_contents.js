@@ -13,14 +13,14 @@ function pnm_table_of_contents() {
     var $top_height = $widget.height() + $widget.offset().top;
     if ($(window).scrollTop() > ($top_height)) {
       $otp.addClass('is-display-ready')
-      setTimeout(function () {
+      setTimeout(function() {
         $otp.addClass('is-displayed');
       }, 1);
     }
     else {
       if ($otp.hasClass('is-displayed')) {
         $otp.hasClass('is-displayed');
-        setTimeout(function () {
+        setTimeout(function() {
           $otp.removeClass('is-display-ready');
         }, 250);
       }
@@ -35,7 +35,7 @@ function pnm_table_of_contents() {
     $widget = $(options.toc_container);
     if ($widget.length > 0) {
       var $body_field = $(options.body_field);
-      $($body_field.find('h2').get().reverse()).each(function(){
+      $($body_field.find('h2').get().reverse()).each(function() {
         var text = $(this).text();
         var id = typeof $(this).attr('id') === 'undefined' ? _self.convertToID(text) : $(this).attr('id');
         var $anchor = $('<a></a>').html(text).attr('href', '#' + id);
@@ -55,11 +55,11 @@ function pnm_table_of_contents() {
 
       /* Insert the new ones from the array above */
       $.each($list_items, function(index, value) {
-          $otp_select.prepend($("<option></option>")
+        $otp_select.prepend($("<option></option>")
           .attr("value", value.attr('href')).text(value.text()));
       });
       // Trigger click on select element.
-      $otp_select.on('change', function () {
+      $otp_select.on('change', function() {
         $i = $otp_select.prop('selectedIndex');
         $widget.find('ul.toc-list li a').eq($i)[0].click();
       });
@@ -69,7 +69,7 @@ function pnm_table_of_contents() {
     }
   }
 
-  this.convertToID = function (str) {
+  this.convertToID = function(str) {
     return 'goto-' + str.replace(/\s+/g, '-').replace(/[^A-Za-z0-9]/, '').replace(/-+/, '-').toLowerCase();
   }
 }

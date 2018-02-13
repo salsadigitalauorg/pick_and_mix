@@ -1,0 +1,16 @@
+{
+  "use_image_compression": true,
+  "prefixer_browsers": ["last 2 versions", "not ie <= 8", "iOS >= 7"],
+  "custom_script_paths": [
+    "../../main_navigation/node_modules/superfish/dist/js/hoverIntent.js",
+    "../../main_navigation/node_modules/superfish/dist/js/superfish.js",
+    "../../main_navigation/main_navigation.js",
+    "../../header_search/header_search.js",
+    "../../text_resize/text_resize.js",
+    "../../sidebar/sidebar.js",
+    "../../link_to_top/link_to_top.js"
+  ],
+  "custom_beautify": [
+    "!../src/sass/_theme.scss"
+  ]
+}

@@ -17,7 +17,7 @@ function loadExternalGruntSettings(path, setting_type) {
 module.exports = function(grunt) {
 
   console.log("================================================");
-  console.log("Grunt for Drupal - v2.8");
+  console.log("Grunt for Drupal - v2.12");
   console.log("================================================");
   var localSettings         = loadExternalGruntSettings('.local_grunt_settings.json', 'Local');
   var projectSettings       = loadExternalGruntSettings('project_grunt_settings.json', 'Project');
@@ -25,6 +25,8 @@ module.exports = function(grunt) {
   var THEME_DIR             = localSettings.theme_directory || projectSettings.theme_directory || '../';
   var MODULE_DIR            = localSettings.custom_modules_directory || projectSettings.custom_modules_directory || null;
   var PROFILE_MODULE_DIR    = localSettings.profile_modules_directory || projectSettings.profile_modules_directory || null;
+  var CUSTOM_SCRIPTS        = localSettings.custom_script_paths || projectSettings.custom_script_paths || false;
+  var CUSTOM_BEAUTIFY       = localSettings.custom_beautify || projectSettings.custom_beautify || false;
   var USE_COMPASS           = localSettings.use_compass || projectSettings.use_compass || false;
   var USE_IMAGE_COMPRESSION = localSettings.use_image_compression || projectSettings.use_image_compression || false;
   var USE_SCSS_FILENAME     = localSettings.use_scss_filename || projectSettings.use_scss_filename || 'styles';
@@ -48,38 +50,43 @@ module.exports = function(grunt) {
     watch: {}
   };
 
+  // =========================================================
+  // File Prep
+  // =========================================================
+  var script_files = [THEME_DIR + "src/js/**/*.js"];
+  var style_files = [THEME_DIR + "src/sass/**/*.scss"];
+
+  if (CUSTOM_SCRIPTS) {
+    script_files = script_files.concat(CUSTOM_SCRIPTS);
+  }
+
   // ================================================
   // JavaScript / SASS Beautifier
   // ================================================
   grunt.loadNpmTasks("grunt-jsbeautifier");
   REGISTERED_TASKS = REGISTERED_TASKS.concat(['jsbeautifier']);
 
-  var script_files = [THEME_DIR + "src/js/**/*.js"];
-  var style_files = [THEME_DIR + "src/sass/**/*.scss"];
+  var beautify_js = [];
+  var beautify_scss = [];
+
+  beautify_js = beautify_js.concat(script_files);
+  beautify_scss = beautify_js.concat(style_files);
+
   if (MODULE_DIR !== null) {
-    script_files = script_files.concat([
-      MODULE_DIR + "**/*.js"
-    ]);
+    beautify_js = beautify_js.concat([ MODULE_DIR + "**/*.js" ]);
   }
   if (PROFILE_MODULE_DIR !== null) {
-    script_files = script_files.concat([
-      PROFILE_MODULE_DIR + "**/*.js"
-    ]);
+    beautify_js = beautify_js.concat([ PROFILE_MODULE_DIR + "**/*.js" ]);
   }
 
-  // Custom addition to Pick and Mix.
-  style_files = style_files.concat([
-    THEME_DIR + '../**/*.scss',
-    '!' + THEME_DIR + '../core/core.scss',
-    '!' + THEME_DIR + '../example/grunt/**/*.scss',
-    '!' + THEME_DIR + '../example/src/sass/_theme.scss',
-    '!' + THEME_DIR + 'src/sass/_theme.scss'
-  ]);
+  var beautify_all = beautify_js.concat(beautify_scss);
 
-  var jsbeautifier_files = script_files.concat(style_files);
+  if (CUSTOM_BEAUTIFY) {
+    beautify_all = beautify_all.concat(CUSTOM_BEAUTIFY);
+  }
 
   GRUNT_CONFIG['jsbeautifier'] = {
-    files : jsbeautifier_files,
+    files : beautify_all,
     options : {
       html: {
         braceStyle: "end-expand",
@@ -122,7 +129,7 @@ module.exports = function(grunt) {
   };
 
   GRUNT_CONFIG.watch['scripts'] = {
-    files: script_files,
+    files: beautify_js,
     tasks: ['jsbeautifier'],
     options: {
       spawn: false,
@@ -130,7 +137,7 @@ module.exports = function(grunt) {
   };
 
   GRUNT_CONFIG.watch['styles'] = {
-    files: style_files,
+    files: beautify_scss,
     tasks: ['jsbeautifier'],
     options: {
       spawn: false,
@@ -236,7 +243,7 @@ module.exports = function(grunt) {
       separator: '\n\n',
     },
     dist: {
-      src: [THEME_DIR + 'src/js/**/*.js'],
+      src: script_files,
       dest: THEME_DIR + 'dist/js/script.js'
     }
   };

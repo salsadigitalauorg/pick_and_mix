@@ -1,6 +1,6 @@
 {
   "name": "grunt-for-drupal",
-  "version": "2.8.0",
+  "version": "2.12.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "grunt": "~1.0.1",
+    "js-beautify": "1.6.8",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",

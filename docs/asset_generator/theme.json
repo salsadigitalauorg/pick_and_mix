@@ -157,5 +157,33 @@
     "template": "arrow_down.svg",
     "default": "arrow_down.svg",
     "colour_default": "#006DAE"
+  },
+  {
+    "template": "slider-next.svg",
+    "default": "slider-next.svg",
+    "secondary": "slider-next-hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "slider-prev.svg",
+    "default": "slider-prev.svg",
+    "secondary": "slider-prev-hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "slider-play.svg",
+    "default": "slider-play.svg",
+    "secondary": "slider-play-hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
+  },
+  {
+    "template": "slider-pause.svg",
+    "default": "slider-pause.svg",
+    "secondary": "slider-pause-hover.svg",
+    "colour_default": "#057F83",
+    "colour_secondary": "#008488"
   }
 ]

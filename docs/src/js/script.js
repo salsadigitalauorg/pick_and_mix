@@ -77,3 +77,12 @@ $(function() {
     list_selector: '.toc-sticky-selector'
   });
 });
+// =========================================================
+// Feature Carousel
+// =========================================================
+$(function() {
+  var feature_carousel = new pnm_feature_carousel();
+  feature_carousel.init({
+    container_element: '.feature-carousel',
+  });
+});

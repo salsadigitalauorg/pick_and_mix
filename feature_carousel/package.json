@@ -1,0 +1,15 @@
+{
+  "name": "feature_carousel",
+  "version": "1.0.0",
+  "description": "Feature carousel component.",
+  "main": "feature_carousel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "owl.carousel": "^2.2",
+    "object-fit-images": "^3.2"
+  }
+}

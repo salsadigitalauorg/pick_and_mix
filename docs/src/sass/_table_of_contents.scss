@@ -1,0 +1,45 @@
+.table-of-contents-wrapper {
+  @include pnm_style_toc_wrapper;
+  @include pnm_struct_toc_wrapper;
+  .toc-inner {
+    @include pnm_style_toc_inner;
+    @include pnm_struct_toc_inner;
+    h2 {
+      @include pnm_style_toc_title;
+      @include pnm_struct_toc_title;
+    }
+    .toc-list {
+      @include pnm_style_toc_list;
+      @include pnm_struct_toc_list;
+      li {
+        @include pnm_style_toc_item;
+        @include pnm_struct_toc_item;
+        a {
+          @include pnm_style_toc_item_link;
+          @include pnm_struct_toc_item_link;
+        }
+      }
+    }
+  }
+}
+
+.table-of-contents-sticky {
+  @include pnm_style_toc_select_wrapper;
+  @include pnm_struct_toc_select_wrapper;
+  .toc-sticky-selector {
+    @include pnm_style_toc_select_inner;
+    @include pnm_struct_toc_select_inner;
+    .toc-top-bar {
+      @include pnm_style_toc_select_inner_table;
+      @include pnm_struct_toc_select_inner_table;
+      select, label {
+        @include pnm_style_toc_select_selectbox;
+        @include pnm_struct_toc_select_selectbox;
+      }
+    }
+    &.is-display-ready {
+      @include pnm_style_toc_select_display;
+      @include pnm_struct_toc_select_display;
+    }
+  }
+}

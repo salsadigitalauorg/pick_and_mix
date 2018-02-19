@@ -35,7 +35,7 @@ if (theme_name !== undefined) {
   for (var i = 0; i < sprites.length; i++) {
     var options = sprites[i];
     generate(options.template, options.default, options.colour_default);
-    if (options.colour_secondary !== null) {
+    if (options.colour_secondary != null) {
       generate(options.template, options.secondary, options.colour_secondary);
     }
   }

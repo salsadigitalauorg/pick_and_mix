@@ -106,7 +106,7 @@ $pnm_theme: (
 
 @mixin pnm_clearfix() {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }

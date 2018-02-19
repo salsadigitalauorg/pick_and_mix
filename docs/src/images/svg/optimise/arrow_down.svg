@@ -1,0 +1,18 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>arrow_down</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(0 -1)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 0 1L 20 1L 20 21L 0 21L 0 1Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="arrow_down" clip-path="url(#clip-0)">
+<path d="M 0 1L 20 1L 20 21L 0 21L 0 1Z" fill="#FFFFFF"/>
+<g id="arrow_down_path">
+<use xlink:href="#path0_stroke" transform="translate(5 4)" fill="#006DAE"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 6 0C 6 -0.552285 5.55228 -1 5 -1C 4.44772 -1 4 -0.552285 4 0L 6 0ZM 5 14L 4.29289 14.7071C 4.68342 15.0976 5.31658 15.0976 5.70711 14.7071L 5 14ZM 0.707107 8.29289C 0.316582 7.90237 -0.316582 7.90237 -0.707107 8.29289C -1.09763 8.68342 -1.09763 9.31658 -0.707107 9.70711L 0.707107 8.29289ZM 10.7071 9.70711C 11.0976 9.31658 11.0976 8.68342 10.7071 8.29289C 10.3166 7.90237 9.68342 7.90237 9.29289 8.29289L 10.7071 9.70711ZM 4 0L 4 14L 6 14L 6 0L 4 0ZM 5.70711 13.2929L 0.707107 8.29289L -0.707107 9.70711L 4.29289 14.7071L 5.70711 13.2929ZM 5.70711 14.7071L 10.7071 9.70711L 9.29289 8.29289L 4.29289 13.2929L 5.70711 14.7071Z"/>
+</defs>
+</svg>

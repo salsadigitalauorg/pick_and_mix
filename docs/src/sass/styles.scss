@@ -32,6 +32,7 @@
 @import '../../../thick_links/thick_links';
 @import '../../../title_crumbs_banner/title_crumbs_banner';
 @import '../../../wysiwyg/wysiwyg';
+@import '../../../table_of_contents/table_of_contents';
 // =========================================================
 // Implementation.
 // =========================================================
@@ -61,3 +62,4 @@
 @import 'title_crumbs_banner';
 @import 'typography';
 @import 'wysiwyg';
+@import 'table_of_contents';

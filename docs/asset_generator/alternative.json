@@ -152,5 +152,10 @@
     "secondary": "time_icon_hover.svg",
     "colour_default": "#057F83",
     "colour_secondary": "#008488"
+  },
+  {
+    "template": "arrow_down.svg",
+    "default": "arrow_down.svg",
+    "colour_default": "#057F83"
   }
 ]

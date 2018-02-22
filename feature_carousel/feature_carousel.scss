@@ -315,9 +315,9 @@
   }
 }
 @mixin pnm_struct_feature_carousel_slider_controls_pause($theme: $pnm_theme) {
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 // =========================================================
@@ -325,4 +325,8 @@
 // =========================================================
 @mixin pnm_style_feature_carousel_slider_disabled($theme: $pnm_theme) {
   display:none;
+}
+
+@mixin pnm_struct_feature_carousel_slider_disabled() {
+  // ...
 }

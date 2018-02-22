@@ -84,5 +84,8 @@ $(function() {
   var feature_carousel = new pnm_feature_carousel();
   feature_carousel.init({
     container_element: '.feature-carousel',
+    current_slide: 0,
+    tablet_breakpoint: 768,
+    desktop_column: 1170
   });
 });

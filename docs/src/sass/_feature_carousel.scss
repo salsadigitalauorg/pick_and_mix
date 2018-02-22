@@ -78,5 +78,6 @@
   }
   .disabled {
     @include pnm_style_feature_carousel_slider_disabled();
+    @include pnm_struct_feature_carousel_slider_disabled();
   }
 }

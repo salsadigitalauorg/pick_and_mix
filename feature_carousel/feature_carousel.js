@@ -1,8 +1,6 @@
 function pnm_feature_carousel() {
   var _self = this;
 
-  var $widget = null;
-
   // =========================================================
   // SLIDER INITIALIZATION
   // =========================================================
@@ -24,10 +22,8 @@ function pnm_feature_carousel() {
     nav: false,
     dots: false
   };
-  var desktop_breakpoint = 1200;
-  var large_tablet_breakpoint = 1024;
+
   var tablet_breakpoint = 768;
-  var mobile_breakpoint = 420;
   var desktop_column = 1170;
   var current_slide = 0;
 
@@ -80,13 +76,13 @@ function pnm_feature_carousel() {
   }
 
   function destroy_custom_controls() {
-    $('.slider-controls').remove();
+    $slider.next('.slider-controls').remove();
   }
 
   function update_dots_custom_controls() {
     if (owl !== null) {
       var dot_item = current_slide;
-      var $pagination = $('.slider-pagination');
+      var $pagination = $slider.next('slider-controls').find('.slider-pagination');
       $pagination.find('.slider-dot').removeClass('active');
       $pagination.find('.slider-dot[data-slide="' + dot_item + '"]').addClass('active');
     }
@@ -98,7 +94,7 @@ function pnm_feature_carousel() {
     var scale_perc = base_scale / 16;
     var left = ($(window).width() * 0.5) - ((desktop_column * 0.5) * scale_perc);
     left = (left < 20) ? '20px' : (left / base_scale) + 'rem';
-    $('.slider-controls').css('left', left);
+    $slider.next('.slider-controls').css('left', left);
   }
 
   function previous_button_click(e) {
@@ -131,9 +127,15 @@ function pnm_feature_carousel() {
   /**
    * options
    *   - container_element = Element that contains the nav.
+   *   - current_slide = Initial active slide. Number . Default 0.
+   *   - tablet_breakpoint = The breakpoint of the tablet version. Number. Default 768.
+   *   - desktop_column = The desktop column max width. Number. Default 1170.
    */
   this.init = function(options) {
     $slider = $(options.container_element);
+    current_slide = options.current_slide;
+    tablet_breakpoint = options.tablet_breakpoint;
+    desktop_column = options.desktop_column;
     if ($slider.length > 0) {
       // Slider only initialized if more than 1 item present.
       if ($slider.children().length > 1) {

@@ -150,10 +150,12 @@
 }
 
 .card-container {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: auto;
 }
 
@@ -333,10 +335,12 @@
   padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -349,53 +353,62 @@
 
 @media (min-width: 768px) {
   .footer .footer-inner {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .footer .footer-copyright {
   width: 100%;
   display: inline-block;
-  -ms-flex-order: 2;
-      order: 2;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media (min-width: 768px) {
   .footer .footer-copyright {
-    -ms-flex-order: 0;
-        order: 0;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
 .footer .footer-nav-container {
   width: 100%;
-  -ms-flex-order: 1;
-      order: 1;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media (min-width: 768px) {
   .footer .footer-nav-container {
-    -ms-flex-order: initial;
-        order: initial;
+    -webkit-order: initial;
+        -ms-flex-order: initial;
+            order: initial;
   }
 }
 
 .logo-and-copyright-container {
   width: 100%;
   display: inline-block;
-  -ms-flex-order: 2;
-      order: 2;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media (min-width: 768px) {
   .logo-and-copyright-container {
-    -ms-flex-order: 0;
-        order: 0;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 
@@ -413,20 +426,24 @@ ul.footer-nav {
   padding: 0;
   margin-bottom: 1.25rem;
   width: 100%;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 0;
 }
 
 @media (min-width: 768px) {
   ul.footer-nav {
     margin-bottom: 0;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -544,12 +561,15 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .header .header-inner .layer-2 {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     box-sizing: content-box;
     width: auto;
   }
@@ -579,6 +599,7 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .header .header-inner .layer-2 .tools-container {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 29.5rem;
@@ -971,10 +992,12 @@ ul.footer-nav li a:focus {
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .back-to-top-container .back-to-top {
@@ -1063,14 +1086,18 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .main-navigation ul.sf-menu {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -1470,10 +1497,12 @@ ul.footer-nav li a:focus {
 }
 
 .partner-list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .partner {
@@ -1734,6 +1763,7 @@ ul.footer-nav li a:focus {
 }
 
 .sidebar ul.sidebar-menu li > .sidebar-toggle-menu-wrapper {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1906,10 +1936,12 @@ ul.footer-nav li a:focus {
 
 @media (min-width: 768px) {
   .social-links-inner {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1975,10 +2007,12 @@ ul.footer-nav li a:focus {
 }
 
 .resize-container .resize-items {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -2028,12 +2062,15 @@ ul.footer-nav li a:focus {
   padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 768px) {

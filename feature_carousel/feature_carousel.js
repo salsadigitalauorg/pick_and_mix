@@ -67,10 +67,10 @@ function pnm_feature_carousel() {
     $slider.after(html);
 
     // Apply listeners.
-    $('.slider-prev').bind('click', previous_button_click);
-    $('.slider-next').bind('click', next_button_click);
-    $('.slider-dot').bind('click', dot_button_click);
-    $('.slider-play').bind('click', play_button_click);
+    $slider.next('.slider-controls').find('.slider-prev').bind('click', previous_button_click);
+    $slider.next('.slider-controls').find('.slider-next').bind('click', next_button_click);
+    $slider.next('.slider-controls').find('.slider-dot').bind('click', dot_button_click);
+    $slider.next('.slider-controls').find('.slider-play').bind('click', play_button_click);
     update_dots_custom_controls();
     position_custom_controls();
   }
@@ -82,7 +82,7 @@ function pnm_feature_carousel() {
   function update_dots_custom_controls() {
     if (owl !== null) {
       var dot_item = current_slide;
-      var $pagination = $slider.next('slider-controls').find('.slider-pagination');
+      var $pagination = $slider.next('.slider-controls').find('.slider-pagination');
       $pagination.find('.slider-dot').removeClass('active');
       $pagination.find('.slider-dot[data-slide="' + dot_item + '"]').addClass('active');
     }

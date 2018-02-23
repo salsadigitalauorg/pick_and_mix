@@ -264,15 +264,15 @@
 // Feature Carousel Slider control Prev Button.
 // =========================================================
 @mixin pnm_style_feature_carousel_slider_controls_prev($theme: $pnm_theme) {
-    background-image: pnm_image('svg', 'slider-prev.svg');
-    &:hover, &:focus {
-      background-image: pnm_image('svg', 'slider-prev-hover.svg');
-    }
+  background-image: pnm_image('svg', 'slider-prev.svg');
+  &:hover, &:focus {
+    background-image: pnm_image('svg', 'slider-prev-hover.svg');
+  }
 }
 @mixin pnm_struct_feature_carousel_slider_controls_prev($theme: $pnm_theme) {
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 // =========================================================
@@ -285,24 +285,24 @@
   }
 }
 @mixin pnm_struct_feature_carousel_slider_controls_next($theme: $pnm_theme) {
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 // =========================================================
 // Feature Carousel Slider control Play Button.
 // =========================================================
 @mixin pnm_style_feature_carousel_slider_controls_play($theme: $pnm_theme) {
-    background-image: pnm_image('svg', 'slider-play.svg');
-    &:hover, &:focus {
-      background-image: pnm_image('svg', 'slider-play-hover.svg');
-    }
+  background-image: pnm_image('svg', 'slider-play.svg');
+  &:hover, &:focus {
+    background-image: pnm_image('svg', 'slider-play-hover.svg');
+  }
 }
 @mixin pnm_struct_feature_carousel_slider_controls_play($theme: $pnm_theme) {
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 // =========================================================

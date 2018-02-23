@@ -9,7 +9,7 @@
     "../../text_resize/text_resize.js",
     "../../sidebar/sidebar.js",
     "../../link_to_top/link_to_top.js",
-    "../../table_of_contents/table_of_contents.js"
+    "../../table_of_contents/table_of_contents.js",
     "../../feature_carousel/node_modules/object-fit-images/dist/ofi.js",
     "../../feature_carousel/node_modules/owl.carousel/dist/owl.carousel.js",
     "../../feature_carousel/feature_carousel.js"

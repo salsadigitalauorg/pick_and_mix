@@ -6,11 +6,12 @@ Homepage Introduction component for displaying introduction / welcome message on
 
 ### Example HTML
 ```html
+<!-- Feature Carousel -->
 <div class="feature-carousel-container">
   <div class="feature-carousel feature-carousel-container-inner">
     <div class="feature-carousel-row">
       <div class="feature-carousel-image-wrapper">
-        <img src="http://via.placeholder.com/1600x444" alt="carousel" image" title="carousel" image">
+        <img src="http://via.placeholder.com/1600x444" alt="carousel image" title="carousel image">
       </div>
       <div class="feature-carousel-body">
         <div class="feature-carousel-details">
@@ -24,7 +25,7 @@ Homepage Introduction component for displaying introduction / welcome message on
     </div>
     <div class="feature-carousel-row">
       <div class="feature-carousel-image-wrapper">
-        <img src="http://via.placeholder.com/1600x444" alt="carousel" image" title="carousel" image">
+        <img src="http://via.placeholder.com/1600x444" alt="carousel image" title="carousel image">
       </div>
       <div class="feature-carousel-body">
         <div class="feature-carousel-details">
@@ -38,7 +39,7 @@ Homepage Introduction component for displaying introduction / welcome message on
     </div>
     <div class="feature-carousel-row">
       <div class="feature-carousel-image-wrapper">
-        <img src="http://via.placeholder.com/1600x444" alt="carousel" image" title="carousel" image">
+        <img src="http://via.placeholder.com/1600x444" alt="carousel image" title="carousel image">
       </div>
       <div class="feature-carousel-body">
         <div class="feature-carousel-details">

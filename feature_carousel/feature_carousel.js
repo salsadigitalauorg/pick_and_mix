@@ -64,13 +64,14 @@ function pnm_feature_carousel() {
     html += '<button class="slider-next" title="Next slide">Next Slide</button>';
     html += '<button class="slider-play paused" title="Play slideshow">Play</button>';
     html += '</div>';
-    $slider.after(html);
+    var $slider_controls = $(html);
+    $slider.after($slider_controls);
 
     // Apply listeners.
-    $slider.next('.slider-controls').find('.slider-prev').bind('click', previous_button_click);
-    $slider.next('.slider-controls').find('.slider-next').bind('click', next_button_click);
-    $slider.next('.slider-controls').find('.slider-dot').bind('click', dot_button_click);
-    $slider.next('.slider-controls').find('.slider-play').bind('click', play_button_click);
+    $slider_controls.find('.slider-prev').bind('click', previous_button_click);
+    $slider_controls.find('.slider-next').bind('click', next_button_click);
+    $slider_controls.find('.slider-dot').bind('click', dot_button_click);
+    $slider_controls.find('.slider-play').bind('click', play_button_click);
     update_dots_custom_controls();
     position_custom_controls();
   }
